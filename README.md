@@ -1,2 +1,6 @@
 # EDA-Documentation
-test the new repo and add basic documentation
+The structure of the repository is as below
+- EDS Product documentation
+- EDS Catalog API documentation
+- Sample Jupyter Notebooks
+- Images

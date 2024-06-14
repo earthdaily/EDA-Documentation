@@ -1,0 +1,256 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://earthdaily-stac-extensions.s3.amazonaws.com/eda/v0.1.0/schema.json",
+    "title": "EDA Extension",
+    "description": "STAC EDA Extension for STAC Items and STAC Collections.",
+    "oneOf": [
+        {
+            "$comment": "This is the schema for STAC Items. Remove this object if this extension only applies to Collections.",
+            "allOf": [
+                {
+                    "type": "object",
+                    "required": [
+                        "properties"
+                    ],
+                    "properties": {
+                        "type": {
+                            "const": "Feature"
+                        },
+                        "properties": {
+                            "allOf": [
+                                {
+                                    "$ref": "#/definitions/properties_fields"
+                                }
+                            ]
+                        }
+                    }
+                }
+            ]
+        }
+    ],
+    "definitions": {
+        "stringArray": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "attitude": {
+            "type": "array",
+            "minItems": 3,
+            "maxItems": 3,
+            "items": {
+                "type": "number"
+            }
+        },
+        "properties_fields": {
+            "$comment": "Allowed field in properties of an STAC item.",
+            "type": "object",
+            "properties": {
+                "eda:status": {
+                    "type": "string",
+                    "enum": [
+                        "CREATED",
+                        "PUBLISHED",
+                        "UNPUBLISHED"
+                    ]
+                },
+                "eda:order_line_item_id": {
+                    "type": "string"
+                },
+                "eda:geometry_tags": {
+                    "$ref": "#/definitions/stringArray"
+                },
+                "eda:tags": {
+                    "$ref": "#/definitions/stringArray"
+                },
+                "eda:original_geometry": {
+                    "type": "object"
+                },
+                "eda:tracking_id": {
+                    "type": "string",
+                    "maxLength": 22
+                },
+                "eda:account_id": {
+                    "maxLength": 22,
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "eda:source_l0_ids": {
+                    "$ref": "#/definitions/stringArray"
+                },
+                "eda:source_l0_scene_ids": {
+                    "$ref": "#/definitions/stringArray"
+                },
+                "eda:segment_id": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "eda:processor_version": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "eda:loose_validation_status": {
+                    "type": "string",
+                    "enum": [
+                        "VALID",
+                        "SCHEMA_NOT_FOUND",
+                        "UNRESOLVABLE_ERRORS"
+                    ]
+                },
+                "eda:imager_mode": {
+                    "type": "string"
+                },
+                "eda:image_section_counter": {
+                    "type": "number"
+                },
+                "eda:geometric_accuracy_rmse": {
+                    "type": "number"
+                },
+                "eda:band_to_band_accuracy_rmse": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "rmse": {
+                                "type": "number",
+                                "exclusiveMinimum": 0
+                            },
+                            "ref_pixel_size_metres": {
+                                "type": "number",
+                                "exclusiveMinimum": 0
+                            },
+                            "bands": {
+                                "type": "array",
+                                "items": {
+                                    "type": "string"
+                                },
+                                "minItems": 1
+                            }
+                        }
+                    }
+                },
+                "eda:source_created": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "eda:source_updated": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "eda:unusable_cover": {
+                    "type": "number"
+                },
+                "eda:sensor_type": {
+                    "type": "string"                   
+                },
+                "eda:num_cols": {
+                    "type": "number"
+                },
+                "eda:num_rows": {
+                    "type": "number"
+                },
+                "eda:product_type": {
+                    "type": "string"     
+                },
+                "eda:water_cover": {
+                    "type": "number"  
+                },
+                "eda:derived_from_l1c_item_id": {
+                    "type": "string"  
+                },
+                "eda:derived_from_l1c_collection_id": {
+                    "type": "string"  
+                },
+                "eda:derived_from_item_id": {
+                    "type": "string"  
+                },
+                "eda:derived_from_collection_id": {
+                    "type": "string"  
+                },
+                "eda:ag_cloud_mask_available": {
+                    "type": "boolean"  
+                },
+                "eda:ag_cloud_mask_item_id": {
+                    "type": "string"  
+                },
+                "eda:ag_cloud_mask_collection_id": {
+                    "type": "string"  
+                },
+                "eda:altitude": {
+                    "type": "number"
+                },
+                "eda:bearing": {
+                    "type": "number"
+                },
+                "eda:start_attitude": {
+                    "$ref": "#/definitions/attitude"
+                },
+                "eda:end_attitude": {
+                    "$ref": "#/definitions/attitude"
+                },
+                "eda:mean_attitude": {
+                    "$ref": "#/definitions/attitude"
+                },
+                "eda:mtf_enhancement_applied": {
+                    "type": "boolean"
+                },
+                "eda:bands": {
+                    "$ref": "#/definitions/stringArray"
+                },
+                "eda:product_status": {
+                    "type": "string",
+                    "enum": [
+                        "PENDING_VALIDATION",
+                        "VALID",
+                        "DEPRECATED"
+                    ]
+                },
+                "eda:source": {
+                    "type": "string"  
+                },
+                "eda:auxiliary_atmospheric_sources": {
+                    "type": "object"
+                },
+                "eda:basemap": {
+                    "type": "string"
+                },
+                "eda:area_km2": {
+                    "type": "number"
+                },
+                "eda:radiometric_scaling": {
+                    "type": "number"
+                },
+                "eda:download_bundle_status": {
+                    "type": "string",
+                    "enum": [
+                        "AVAILABLE",
+                        "IN_PROGRESS"
+                    ]
+                },
+                "eda:aocs_mode": {
+                    "type": "string",
+                    "enum": [
+                        "Nadir",
+                        "DEM",
+                        "Side Slither"
+                    ]
+                }
+            },
+            "patternProperties": {
+                "^(?!eda:)": {}
+            },
+            "additionalProperties": false
+        }
+    }
+}
