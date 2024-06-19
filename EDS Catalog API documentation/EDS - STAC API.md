@@ -1,68 +1,93 @@
 # Table of Contents
-* [Definitions](#definitions)
-* [Introduction](introduction)
-> - [UI](#ui)
-* [API Clients](#api-clients)
+* [Getting Started](#getting-started)
+> * [Welcome Email](#welcome-email)
+> * [Authentication](#authentication)
+* [API](#api)
+> * [API Details and Limits](#api-details-and-limits)
 > * [Python](#python)
-* [Authentication](#authentication)
-* [STAC API](*stac-api)
-> * [The STAC Specification](#the-stac-specification)
-* [STAC Endpoints](#stac-endpoints)
-> * [Collections](#collections)
-> * [Collection](#collection)
-> * [Items](#items)
-> * [Item](#item)
-> * [Queryables](#queryables)
-> * [Search](#search)
->> * [Basic Search via GET Method](#basic-search-get)
->> * [Basic Search via POST Method](#basic-search-post)
->> * [Query Extension via POST Method](#query-extension-post)
->> * [Fields Extension](#field-extension)
->> * [Sortby Extension](#sortby-extension)
-> * [Queryables general](#queryables-general)
-> * [Downloading Assets](#downloading-assets)
-* [Performant Query Best Practices](#performant-query-best-practices)
-> * [Specify collections](#specify-collections)
-> * [Datetime Range](#datetime-range)
-> * [Use fields extension](#use-fields-extension)
-> * [Only request Signed URLs when needed](#signed-urls)
-> * [ID Batching](#id-batching)
-* [Throttling](#throttling)
-* [Improved Cloud Masks](#improved-cloud-masks)
-> * [Cloud Mask Versioning](#cloud-mask-versioning)
->> * [Original Version](#original-version)
->> * [Version 2](#version-2)
+> * [Command Line](#command-line)
+* [Spatial Temporal Asset Catalogs](#spatial-temporal-asset-catalogs)
+> * [STAC Details](#stac-api)
+> * [EDS Collections](#the-stac-specification)
+> * [Search Filters](#search-filtering)
+* [Integrations and Pluins](#integrations-and-pluins)
+* [Help and FAQ](#help-and-faq)
 
-## Definitions
-## Introduction
-### UI
-## API Clients 
-### Python
+----------
+---
+----------
+
+# Getting Started
+## Welcome Email
+<span style="color:green">[Introduction]<span>
+
 ## Authentication
-## STAC API
-### The STAC Specification
-## STAC Endpoints
-### Collections
-### Collection
-### Items
-### Item
-### Queryables
-### Search
-#### Basic Search via GET Method 
-#### Basic Search via POST Method
-#### Query Extensio via POST Method
-#### Fields Extension 
-#### Sortby Extension
-## Queryables general
-## Downloading Assets 
-## Performant Query Best Practices
-### Specify collections
-### Datetime Range
-### Use fields extension
-### Only request Signed URLs when needed 
-### ID Batching
-## Throttling
-## Improved Cloud Masks 
-### Cloud Mask Versioning
-#### Original Version
-#### Version 2 
+
+# Catalog
+<span style="color:green">[EDS - Catalog UI]<span>
+
+# API
+
+## API Details and Limits
+
+<span style="color:green">[Performant Quary Best Practicies]<span>
+
+<span style="color:orange">[Usage Limts]<span>
+
+## Python
+
+## Command Line
+<span style="color:orange">[CURL details - Auth, etc. ]<span>
+
+<span style="color:green">[CURL details on STAC Endpoints should be in the this section. This includes respones as well]<span>
+
+<span style="color:green">[Get and Post Reqeusts]<span>
+
+# Spatial Temporal Asset Catalogs
+<span style="color:green">[STAC API]<span>
+
+## STAC Details
+
+<span style="color:green">[STAC Specification]<span>
+
+<span style="color:green">[STAC Querables - what endpoints to hit etc.]<span>
+
+## Items
+<span style="color:green">[Items]<span>
+
+<span style="color:green">[Item]<span>
+
+## EDS Collections
+<span style="color:red">[This section should just list and describe the collections available in EDS]<span>
+
+<span style="color:green">[Downloading Assets]<span>
+
+## EDS Products
+
+### Advanced Cloud Masks
+<span style="color:orange">[Advanced Cloud Masks]<span>
+
+### AI-Ready Mosaics
+<span style="color:orange">[Mosaic Details]<span>
+
+## Search Filtering
+<span style="color:green">[Queryables]<span>
+
+<span style="color:green">[Search]<span>
+
+<span style="color:green">[Supported Operators]<span>
+
+<span style="color:green">[Fields Extension]<span>
+
+<span style="color:green">[Sort By Extension]<span>
+
+# Resources
+## Definitions
+<span style="color:greem">[Definitions]<span>
+
+## Plugins
+<span style="color:orange">[Some Other Projects on Git and what they are]<span>
+
+## Example Notebooks
+<span style="color:orange">[Anything additional notebooks]<span>
+
