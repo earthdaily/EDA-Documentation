@@ -24,10 +24,10 @@
 ## EDS API
 * ### API Design
      * #### [Spatial Temporal Asset Catalog](./EDS%20API/API%20Design/Spatial%20Temporal%20Asset%20Catalogs.md)
-* ### API Usage
-    * #### Command Line
-    * #### Postman
-    * #### Python
+* ### [API Usage](./EDS%20API/API%20Usage/API%20endpoints.md)
+    * #### [Command Line](./EDS%20API/API%20Usage/Command%20Line.md)
+    * #### [Postman](./EDS%20API/API%20Usage/Postman.md)
+    * #### [Python](./EDS%20API/API%20Usage/Python.md)
 
 ## EDS Collections
 * ### EDS STAC Items
