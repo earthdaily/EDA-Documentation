@@ -3,7 +3,7 @@
 
 <br/>
 
-## <img width="20%" alt="Azure Machine Learning.jpg" src="https://raw.githubusercontent.com/earthdaily/Images/main/Corporate/EarthDaily.png" style="border-radius: 15%">
+## <img width="50%" alt="Azure Machine Learning.jpg" src="https://raw.githubusercontent.com/earthdaily/Images/main/Corporate/EarthDaily.png" style="border-radius: 15%">
 
 
 <br/>
