@@ -22,15 +22,16 @@
 * ### [Mosaic UI](./EDS%20Platform/EDS%20-%20Mosaic%20UI.md)
 
 ## EDS API
-  * ### [API Usage Design and Limits](./EDS%20API/API%20Design/API%20Details%20and%20Limits.md)
   * ### [Spatial Temporal Asset Catalog](./EDS%20API/API%20Design/Spatial%20Temporal%20Asset%20Catalogs.md)
+    * #### [EDA STAC Extensions](./EDS%20API/Extensions/EDA%20STAC%20extension.md)
   * ### [API Usage](./EDS%20API/API%20Usage/API%20endpoints.md)
-  * #### [Command Line](./EDS%20API/API%20Usage/Command%20Line.md)
-  * #### [Postman](./EDS%20API/API%20Usage/Postman.md)
-  * #### [Python](./EDS%20API/API%20Usage/Python.md)
+    * #### [Command Line](./EDS%20API/API%20Usage/Command%20Line.md)
+    * #### [Postman](./EDS%20API/API%20Usage/Postman.md)
+    * #### [Python](./EDS%20API/API%20Usage/Python.md)
+  * ### [API Usage Design and Limits](./EDS%20API/API%20Design/API%20Details%20and%20Limits.md)
+
 
 ## EDS Collections
-* ### [EDS STAC Items](EDS%20Collections/EDS%20STAC%20Items.md)
 * ### [Open Collections](EDS%20Collections/Open%20Collections.md)
 * ### [EDA Mosaics](EDS%20Collections/EDA%20Mosaics.md)
 * ### [EDA Cloud Masks](EDS%20Collections/EDA%20Cloud%20Masks.md)
