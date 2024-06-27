@@ -17,9 +17,9 @@
 * ### [Quick Start](./Getting%20Started/QuickStart.md)
 
 ## EDS Platform
-* ### [Catalog UI](./EDS%20Platform/EDS%20-%20Catalog%20UI.md)
 * ### [Account Information UI](./EDS%20Platform/EDS%20-%20Account%20Information%20UI.md)
-* ### [Mosaic UI](./EDS%20Platform/EDS%20-%20Mosaic%20UI.md)
+* ### [EarthPlatform UI](./EDS%20Platform/EDS%20-%20Catalog%20UI.md)
+* ### [EarthMosaic UI](./EDS%20Platform/EDS%20-%20Mosaic%20UI.md)
 
 ## EDS API
   * ### [Spatial Temporal Asset Catalog](./EDS%20API/API%20Design/Spatial%20Temporal%20Asset%20Catalogs.md)
