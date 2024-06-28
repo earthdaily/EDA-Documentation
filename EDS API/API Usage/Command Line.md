@@ -189,3 +189,19 @@ Example response
     }
 }
 ```
+
+## Cloud Masks
+
+```
+curl --location 'https://api.eds.earthdaily.com/archive/v1/stac/v1/search' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Bearer <ACCESS_TOKEN HERE>' \
+--data '{
+    "collections": ["sentinel-2-l2a"],
+    "query": {
+            "eda:ag_cloud_mask_available": {
+                "eq": true
+            }
+      }
+}'
+```

@@ -72,3 +72,8 @@ Sorting by property `eo:cloud_cover` is also supported on the `/search` endpoint
 ## Downloading Assets
 
 ![Collections](../../Images/STAC%20API/Postman%20Examples/Downloading%20assets.png)
+
+## CloudMasks
+
+![Collections](../../Images/STAC%20API/Postman%20Examples/CloudMask.png)
+

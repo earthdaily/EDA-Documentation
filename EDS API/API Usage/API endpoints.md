@@ -14,13 +14,14 @@ The base URL of the STAC catalog is https://api.eds.earthdaily.com/archive/v1/st
     * [Fields Extension](#fields-extension)
     * [Sortby Extension](#sortby-extension)
 * [Downloading Assets](#downloading-assets)
+* [Cloud Mask Query](#cloud-mask-query)
 
 ## Collections 
 Return list of all Collections
 ```
 GET https://api.eds.earthdaily.com/archive/v1/stac/v1/collections
 ```
-**Example** : [Command Line](Command%20Line.md#collections) | [Postman](Postman.md#collections) 
+**Example** : [Command Line](Command%20Line.md#collections) | [Postman](Postman.md#collections) | | [Python](./Python.md#get-collections)
 
 ## Collection 
 Return specific Collection
@@ -37,7 +38,7 @@ This end point takes the collection id as parameter. Below are some examples
 | Landsat Collection 2 L1 | https://api.eds.earthdaily.com/archive/v1/stac/v1/collections/landsat-c2l1 |
 | CBERS-4 Mux L1C   | https://api.eds.earthdaily.com/archive/v1/stac/v1/collections/cbers4-mux |
 
-Example : [Command Line](Command%20Line.md#collection) | [Postman](Postman.md#collection) 
+Example : [Command Line](Command%20Line.md#collection) | [Postman](Postman.md#collection) | [Python](./Python.md#get-a-specific-collection)
 
 
 ## Items 
@@ -66,7 +67,7 @@ Returns a single Item for a given Collection and Item ID
 ```
 GET https://api.eds.earthdaily.com/archive/v1/stac/v1/collections/<COLLECTION_ID>/items/<ITEM_ID>
 ```
-Example : [Command Line](Command%20Line.md#item) | [Postman](Postman.md#item) 
+Example : [Command Line](Command%20Line.md#item) | [Postman](Postman.md#item) | [Python](./Python.md#specific-item)
 
 ## Queryables 
 Returns the queryable names for the STAC API Item Search using Query Extension. which allows you to discover which properties are queryable for all collections, a specific collection, or an intersection of collections.
@@ -132,7 +133,7 @@ https://api.eds.earthdaily.com/archive/v1/stac/v1/search?datetime=2023-01-01T18:
 
 Shows use of datetime, collections and intersects
 
-Example : [Command Line](Command%20Line.md#search) | [Postman](Postman.md#search) 
+Example : [Command Line](Command%20Line.md#search) | [Postman](Postman.md#search) | [Python](./Python.md#search)
 
 
 ### **[Query Extension](https://github.com/stac-api-extensions/query) via POST Method**
@@ -181,7 +182,7 @@ Each property and each operation is treated as an `AND` cause
 
 So the above would result in a query of `view:sun_elevation > 40 AND view:sun_elevation < 60 AND eo:cloud_cover < 10`
 
-Example : [Command Line](Command%20Line.md#query-extension-via-post-method) | [Postman](Postman.md#query-extension-via-post-method) 
+Example : [Command Line](Command%20Line.md#query-extension-via-post-method) | [Postman](Postman.md#query-extension-via-post-method) | | [Python](./Python.md#search)
 
 
 ????? **Supported Operators** do we need the table?
@@ -205,7 +206,7 @@ GET https://api.eds.earthdaily.com/archive/v1/stac/v1/search?fields=-links,-geom
 ```
 POST example
 
-Example : [Command Line](Command%20Line.md#fields-extension) | [Postman](Postman.md#fields-extension) 
+Example : [Command Line](Command%20Line.md#fields-extension) | [Postman](Postman.md#fields-extension) | [Python](./Python.md#search)
 
 ### [Sortby Extension](https://github.com/stac-api-extensions/sort)
 By default, Items are returned by `datetime` descending. Then by `id` ascending.
@@ -223,7 +224,7 @@ GET https://api.eds.earthdaily.com/stac/v1/search?sortby=-eo:cloud_cover
 
 > When sorting by `eo:cloud_cover`, only items with non-null `eo:cloud_cover` property values will be returned.
 
-Example : [Command Line](Command%20Line.md#sortby-extension) | [Postman](Postman.md#sortby-extension) 
+Example : [Command Line](Command%20Line.md#sortby-extension) | [Postman](Postman.md#sortby-extension) | [Python](./Python.md#search)
 
 ## Downloading Assets
 The STAC `assets` property will contain `href`s to files on various hosts, depending on the original data provider. S3 hosted assets will have `s3://` protocol `href`s *
@@ -242,3 +243,9 @@ Presigned URLs are available for EDA buckets for all customer accounts. Presigne
 
 Example : [Command Line](Command%20Line.md#downloading-assets) | [Postman](Postman.md#downloading-assets) 
  
+
+ ## Cloud Mask Query
+
+ You can use the post Query method above to  get the earthdaily cloud masks as well.
+ 
+Example : [Command Line](Command%20Line.md#cloud-masks) | [Postman](Postman.md#cloudmasks) | [Python](./Python.md#cloud-masks)
