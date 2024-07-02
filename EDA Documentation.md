@@ -16,10 +16,10 @@
 * ### [Authentication](./Getting%20Started/API%20Authentication.md)
 * ### [Quick Start](./Getting%20Started/QuickStart.md)
 
-## EDS Platform
-* ### [Account Information UI](./EDS%20Platform/EDS%20-%20Account%20Information%20UI.md)
-* ### [EarthPlatform UI](./EDS%20Platform/EDS%20-%20Catalog%20UI.md)
-* ### [EarthMosaic UI](./EDS%20Platform/EDS%20-%20Mosaic%20UI.md)
+## EDS Console
+* ### [Account Information](./EDS%20Platform/EDS%20-%20Account%20Information%20UI.md)
+* ### [EarthPlatform](./EDS%20Platform/EDS%20-%20Catalog%20UI.md)
+* ### [EarthMosaic](./EDS%20Platform/EDS%20-%20Mosaic%20UI.md)
 
 ## EDS API
   * ### [Spatial Temporal Asset Catalog](./EDS%20API/API%20Design/Spatial%20Temporal%20Asset%20Catalogs.md)
