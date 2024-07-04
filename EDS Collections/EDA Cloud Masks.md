@@ -29,15 +29,3 @@ EDA's Auto Clear Mask (ACM) improves the detection and the efficeny of clouds in
 |:---:|:----:|
 |<img src="../Images/Product Images/Base Cloud Mask Mosaic.png" width=100% height=500> | <img src="../Images/Product Images/EDA Cloud Mask Mosaic.png" width=100% height=500>|
 
-
-### Pixel Composition
-EDA's AI-Ready Mosaics employ a customer 'Best Measurment' algorithm by extending the work by [White et. al (2014)](#reference)
-
-This includes pixel-by-pixel weighting for several factors such as: sensor platform, scene content (clear, cloud, cloud shadow, water, snow), and spatial distancing from measurement contamination.
-
-### Reference
-[White, J. C., Wulder, M. A., Hobart, G. W., Luther, J. E., Hermosilla, T., Griffiths, P., Coops, N. C., Hall, R. J., Hostert, P., Dyk, A., & Guindon, L. (2014). Pixel-Based Image Compositing for Large-Area Dense Time Series Applications and Science. In Canadian Journal of Remote Sensing (Vol. 40, Issue 3, pp. 192–212). Informa UK Limited.](https://doi.org/10.1080/07038992.2014.945827)
-
-
-# Custom Orders
-Mosaics that are available outside of the self-serve interface, please contact EDA for more customization to your buisness needs.
