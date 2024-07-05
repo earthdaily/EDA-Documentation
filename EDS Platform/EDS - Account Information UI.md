@@ -6,7 +6,7 @@
 * [My Subscription Areas](#my-subscription-areas)
 
 ## Introduction
-The Account Information page is the landing page for each user of the customer account when they login to the URL Account Management It allows the user to check his own account details, his orders , his subscriptions etc. It also has the link to the other applications like Catalog UI, Mosaic etc
+The Account Information page is the landing page for each user of the customer account when they login to the [Account Information](https://earthplatform.eds.earthdaily.com/am) It allows the user to check his own account details, his orders , his subscriptions etc. It also has the link to the other applications like Catalog UI, Mosaic etc
 
 <br></br>
 

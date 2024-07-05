@@ -1,7 +1,7 @@
 # Open Collections 
 
 Below is the list of collections available in our free tier to start with. You can search and interact with them using various ways outlined below
-* #### [Catalog UI](../EDS%20Platform/EDS%20-%20Catalog%20UI.md)
+* #### [EarthPlatform](../EDS%20Platform/EDS%20-%20Catalog%20UI.md)
      This is the interactive UI available through EDS Platform  
 * #### [EDS API](../EDS%20API/API%20Usage/API%20endpoints.md) 
     It has [Command line](../EDS%20API/API%20Usage/Command%20Line.md) examples as well as [Postman](../EDS%20API/API%20Usage/Postman.md) examples for your reference. We also have [Example Python script](../EDS%20API/API%20Usage/Python.md) to get you started.
