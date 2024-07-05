@@ -10,14 +10,32 @@ ARM mosaics are produced with 6 bands from the four possible input sources:
 
 All input data is level 2A meaning atmospherically corrected, surface reflectance products. 
 
+### Single Source (Sentinel-2A/B) Mosaics
+|ARM Band Name|Sentinel-2 A/B Band|Approximate Center Wavelength (μm)|
+|--|--|--|
+|coastal|Band 1 - Coastal|0.443
+|blue|Band 2 - Blue|0.490
+|green|Band 3 - Green|0.560
+|red|Band 4 - Red|0.665
+|rededge1|Band 5 - Vegetation Red Edge|0.705
+|rededge2|Band 6 - Vegetation Red Edge|0.740
+|rededge3|Band 7 - Vegetation Red Edge|0.783
+|nir|Band 8 - NIR|0.842
+|nir08|Band 8A - NIR|0.865
+|swir16|Band 11 - SWIR|1.610
+|swir22|Band 12 - SWIR|2.190
+
+
+
+### Dual Source (Sentinel-2A/B + Landsat8/9) Mosaics
 |ARM Band Name|Sentinel-2 A/B Band|Landsat 8/9 Band|Approximate Center Wavelength (μm)|
-|--|--|--|--|
-|Blue|Band 2 - Blue|Band 2 - Blue|0.490
-|Green|Band 3 - Green|Band 3 - Green|0.560
-|RED|Band 4 - Red|Band 4 - Red|0.665
-|NIR08|Band 8A - NIR|Band 5 - NIR|0.865
-|SWIR16|Band 11 - SWIR|Band 6 - SWIR 1|1.610
-|SWIR22|Band 12 - SWIR|Band 7 - SWIR 2|2.190
+|--|--|--| -- |
+|blue|Band 2 - Blue|Band 2 - Blue|0.490
+|green|Band 3 - Green|Band 3 - Green|0.560
+|red|Band 4 - Red|Band 4 - Red|0.665
+|nir08|Band 8A - NIR|Band 5 - NIR|0.865
+|swir16|Band 11 - SWIR|Band 6 - SWIR 1|1.610
+|swir22|Band 12 - SWIR|Band 7 - SWIR 2|2.190
 
 ## Area of Interest (AOI)
 
@@ -55,6 +73,7 @@ ARM's 'Peak Burn Severity' seeks to maximize the response from burned pixels in 
 ARM's Percentile selection uses a purely statistical approach to identify common pixels from the stack of images, this approach can be very effective with larger volumes of data, from time ranges. This is a classical approach to pixel selection, but generally has poorer results compared to Best Measurement.
 
 ## Source
+Select if your mosaic will be made using only Sentinel-2A/B or the combination of Sentinel-2A/B and Landsat-8/9.
 
 ## Reference
 [White, J. C., Wulder, M. A., Hobart, G. W., Luther, J. E., Hermosilla, T., Griffiths, P., Coops, N. C., Hall, R. J., Hostert, P., Dyk, A., & Guindon, L. (2014). Pixel-Based Image Compositing for Large-Area Dense Time Series Applications and Science. In Canadian Journal of Remote Sensing (Vol. 40, Issue 3, pp. 192–212). Informa UK Limited.](https://doi.org/10.1080/07038992.2014.945827)
