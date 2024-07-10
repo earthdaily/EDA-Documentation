@@ -1,7 +1,8 @@
 # Table of Contents
-* [Introduction]
-* [Mosaic Preview Order]
-* [Mosaic Full resolution Order]
+* [Introduction](#introduction)
+* [Getting started with Mosaics](#getting-started-with-mosaics)
+* [Mosaic Preview Order](#mosaic-preview-order)
+* [Mosaic Full resolution Order](#mosaic-full-resolution-order)
 
 ## Introduction
 [**EarthMosaics**](https://earthplatform.eds.earthdaily.com/ecommerce) delivers cloud-free, temporally coherent mosaics with ​the highest possible geolocation, radiometric ​quality, enabling users to examine true signals, minimize false positives in change detection, and easily contextualize with other geospatial datasets. From analysing a regional forest to monitoring a mining site, predicting water reservoir levels to measuring melting permafrost, EarthMosaics (now in beta) offers application-specific and customized insights fulfilling unique needs of each use case.
@@ -10,7 +11,7 @@ Analysis Ready Mosaics are complex, costly to produce, and designed to feed dire
 
 [EarthMosaics](https://earthplatform.eds.earthdaily.com/ecommerce)  from EarthDaily Analytics provides you a way to explore and get a free preview and you can also place ordewrs for full resolution Mosaics. 
 
-## Getting started with Mosaics / Mosaic Preview Order
+## Getting started with Mosaics
 
 Below is the landing page you see when you navigate to [EarthMosaics](https://earthplatform.eds.earthdaily.com/ecommerce)
 
@@ -24,7 +25,7 @@ Pressing the `GetStarted` will take you to a NewOrders page. Lets see what all o
 
 | S. No     | Label     | Description       |
 |-----------|-----------|-------------------|
-| <span style="background-color:orange"> " 1 "  </span> | Area of Interest | You can start drawing a polygon for your mosaics order. The limit currently is < 100,000 km<sup>2</sup>   |
+| ![](https://img.shields.io/static/v1?label=&message=1&color=orange)  | Area of Interest | You can start drawing a polygon for your mosaics order. The limit currently is < 100,000 km<sup>2</sup>   |
 | <span style="background-color:orange"> " 2 "  </span> | GeoJSON | Instead of drawing a polygon, if you have an existing GeoJSON, you have an option to enter it here. The restriction of < 100,000 km<sup>2</sup> applies to this too |
 | <span style="background-color:orange"> " 3 "  </span> | Time of Interest | Specify the time of interest for your Mosaics order |
 | <span style="background-color:orange"> " 4 "  </span> | Settings | This one gives you multiple choices to place your order as per your needs|
@@ -49,7 +50,7 @@ Once you draw a polygon, you will see the area calculator diaplays the total are
 
 ![ToI](../Images/EarthMosaics%20UI/ToI.png)
 
-
+## Mosaic Preview Order
 The settings define how your mosaic will be generated. 
 * Resolution determines the quality of your mosaic: Preview is free, whereas Full is paid. You are advised to first create a Preview Resolution mosaic, with your desired settings, to preview your order. 
 * Processing type determines the pixel selection process: 
@@ -98,5 +99,34 @@ Below is the Visualizer that open up when you click on the View button on the Or
 ![Visualizer](../Images/EarthMosaics%20UI/Visualizer.png)
 
 
-
 ## Mosaic Full resolution Order
+
+Mosaics Full Resolution Order is very similar to the preview except that it has an additional step for payment.
+
+As you will notice in the above images, the Preview order has mainly 2 steps
+* Configuration
+* Confirmation
+
+Now, the Full Resolution Mosaic has an additional step 
+* Quote
+
+To place the Full resolution Mosaics order you will primarily use "Full" as your Resolution setting as shown below
+
+![FullResOrder](../Images/EarthMosaics%20UI/FullResOrder.png)
+
+Please confirm the order settings in order to checkout
+
+![Checkout](../Images/EarthMosaics%20UI/Checkout.png)
+
+The checkout screen below shows you the order price. If you are ready to pay, go ahead and chekout to get to the payment page below.
+
+![CouponandPay](../Images/EarthMosaics%20UI/Couponand%20Pay.png)
+
+If you have any coupons from earthdaily to redeem, you can enter the coupon code in order to get the eligible discount. Once you are ok with total amount and have entered relevant payment details, please proceed to pay
+
+You will be redirected to your Orders page where yopu can see all your orders.
+![All Orders-Full](../Images/EarthMosaics%20UI/All%20Orders-Full.png)
+
+This is the same page as mentioned for the preview orders and works the same way if you want to copy your order, download or view your Mosaic.
+
+That is it !! Happy Mosaicking !! :smile:
