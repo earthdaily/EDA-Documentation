@@ -36,6 +36,14 @@ The area of interest (AOI) defines the geographic extent used to build the mosai
 ![AoI](../Images/EarthMosaics%20UI/AoI.png)
 <br></br>
 
+Once you draw a polygon, you will see the area calculator diaplays the total area selected by you. You will see three options appear 
+| S. No     | Label     | Description       |
+|-----------|-----------|-------------------|
+| <span style="background-color:orange"> " 5 "   </span> | Fit Bounds | This option allows you to bring back the focus on the area drawn and fits it to the viewport    |
+| <span style="background-color:orange"> " 6 "  </span> | GeoJSON | Instead of drawing a polygon, if you have an existing GeoJSON, you have an option to enter it here. The restriction of < 100,000 km<sup>2</sup> applies to this too |
+| <span style="background-color:orange"> " 7 "  </span> | Delete | Delete the existing AoI |
+
+<br></br>
 ![GeoJSON](../Images/EarthMosaics%20UI/GeoJSON.png)
 <br></br>
 
@@ -59,20 +67,35 @@ Now, after you confirm all settings, submit the order
 
 ![Submit](../Images/EarthMosaics%20UI/Submit.png)
 
-Once you submit your order, you will see that your order is in Processing state. There is a button on top right of the panel if you want to check out all of your Mosaic Orders
+Once you submit your order, you will see that your order is in Processing state. There is a button on top right of the panel if you want to View all of your Mosaic Orders
 <br></br>
 
 ![Processing](../Images/EarthMosaics%20UI/Processing.png)
 
 Mosaic "All Oders" page below
 <br></br>
+
 ![AllOrders](../Images/EarthMosaics%20UI/All%20Orders.png)
 
 The orderId you see in this page can be found as a LineItemId in your AccountInformation page under "MyOrders"
 
 ![MyOrders](../Images/EarthMosaics%20UI/MyOrders.png)
 
+Once the order is processed successfully, you will see the state changed to "Processed" and some other options enabled for the order
+![OrdersMgmt](../Images/EarthMosaics%20UI/OrdersMgmt.png)
 
+
+| S.No        | Label     | Description       |
+|--------------|-----------|-------------------|
+| <span style="background-color:orange"> " 8 "  </span> | Copy | This option allows you to copy the order in case you want to use the same settings or have a minor modification to place another order     |
+| <span style="background-color:orange"> " 9 "  </span> | Download | This is where you can download your product - preview or full |
+| <span style="background-color:orange"> "10"  </span> | View | This option allows you to view the product in the Visualizer which is very similar to the Catalog Ui and allows  |
+
+<br></br>
+Below is the Visualizer that open up when you click on the View button on the Orders page. This visualizer is very similar to our EarthPlatform Ui and has many common components needed to interact with teh Mosaic product similar to our other products
+
+
+![Visualizer](../Images/EarthMosaics%20UI/Visualizer.png)
 
 
 
