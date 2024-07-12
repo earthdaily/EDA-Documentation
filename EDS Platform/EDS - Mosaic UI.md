@@ -3,6 +3,7 @@
 * [Getting started with Mosaics](#getting-started-with-mosaics)
 * [Mosaic Preview Order](#mosaic-preview-order)
 * [Mosaic Full resolution Order](#mosaic-full-resolution-order)
+* [Managing Mosaics Order](#managing-mosaics-orders)
 
 ## Introduction
 [**EarthMosaics**](https://earthplatform.eds.earthdaily.com/ecommerce) delivers cloud-free, temporally coherent mosaics with ​the highest possible geolocation, radiometric ​quality, enabling users to examine true signals, minimize false positives in change detection, and easily contextualize with other geospatial datasets. From analysing a regional forest to monitoring a mining site, predicting water reservoir levels to measuring melting permafrost, EarthMosaics (now in beta) offers application-specific and customized insights fulfilling unique needs of each use case.
@@ -68,37 +69,6 @@ Now, after you confirm all settings, submit the order
 
 ![Submit](../Images/EarthMosaics%20UI/Submit.png)
 
-Once you submit your order, you will see that your order is in Processing state. There is a button on top right of the panel if you want to View all of your Mosaic Orders
-<br></br>
-
-![Processing](../Images/EarthMosaics%20UI/Processing.png)
-
-Mosaic "All Oders" page below
-<br></br>
-
-![AllOrders](../Images/EarthMosaics%20UI/All%20Orders.png)
-
-The orderId you see in this page can be found as a LineItemId in your AccountInformation page under "MyOrders"
-
-![MyOrders](../Images/EarthMosaics%20UI/MyOrders.png)
-
-Once the order is processed successfully, you will see the state changed to "Processed" and some other options enabled for the order
-![OrdersMgmt](../Images/EarthMosaics%20UI/OrdersMgmt.png)
-
-
-| S.No        | Label     | Description       |
-|--------------|-----------|-------------------|
-| <span style="background-color:orange"> " 8 "  </span> | Copy | This option allows you to copy the order in case you want to use the same settings or have a minor modification to place another order     |
-| <span style="background-color:orange"> " 9 "  </span> | Download | This is where you can download your product - preview or full |
-| <span style="background-color:orange"> "10"  </span> | View | This option allows you to view the product in the Visualizer which is very similar to the Catalog Ui and allows  |
-
-<br></br>
-Below is the Visualizer that open up when you click on the View button on the Orders page. This visualizer is very similar to our EarthPlatform Ui and has many common components needed to interact with teh Mosaic product similar to our other products
-
-
-![Visualizer](../Images/EarthMosaics%20UI/Visualizer.png)
-
-
 ## Mosaic Full resolution Order
 
 Mosaics Full Resolution Order is very similar to the preview except that it has an additional step for payment.
@@ -120,13 +90,40 @@ Please confirm the order settings in order to checkout
 
 The checkout screen below shows you the order price. If you are ready to pay, go ahead and chekout to get to the payment page below.
 
-![CouponandPay](../Images/EarthMosaics%20UI/Couponand%20Pay.png)
+![Pay](../Images/EarthMosaics%20UI/Pay.png)
 
-If you have any coupons from earthdaily to redeem, you can enter the coupon code in order to get the eligible discount. Once you are ok with total amount and have entered relevant payment details, please proceed to pay
+If you have any coupons to redeem, you can enter the coupon code in order to get the eligible discount. Once you are ok with total amount and have entered relevant payment details, please proceed to pay
 
-You will be redirected to your Orders page where yopu can see all your orders.
+## Managing Mosaics Orders
+
+Once you have placed the Mosaic order (either Preview or Full), you will be redirected to your Dashboard where you can see all your orders.
+
 ![All Orders-Full](../Images/EarthMosaics%20UI/All%20Orders-Full.png)
 
-This is the same page as mentioned for the preview orders and works the same way if you want to copy your order, download or view your Mosaic.
+Upon submission, you will see that your order is in Processing state. There is a button on top right of the panel if you want to View all of your Mosaic Orders
+
+
+![AllOrders](../Images/EarthMosaics%20UI/All%20Orders.png)
+
+The orderId you see in this page can be found as a LineItemId in your AccountInformation page under "MyOrders"
+
+![MyOrders](../Images/EarthMosaics%20UI/MyOrders.png)
+
+Once the order is processed successfully, you will see the state changed to "Processed" and some other options enabled for the order
+
+![OrdersMgmt](../Images/EarthMosaics%20UI/OrdersMgmt.png)
+
+
+| S.No        | Label     | Description       |
+|--------------|-----------|-------------------|
+| <span style="background-color:orange"> " 8 "  </span> | Copy | This option allows you to copy the order in case you want to use the same settings or have a minor modification to place another order     |
+| <span style="background-color:orange"> " 9 "  </span> | Download | This is where you can download your product - preview or full |
+| <span style="background-color:orange"> "10"  </span> | View | This option allows you to view the product in the Visualizer which is very similar to the Catalog Ui and allows  |
+
+<br></br>
+Below is the Visualizer that open up when you click on the View button on the Orders page. This visualizer is very similar to our EarthPlatform Ui and has many common components needed to interact with teh Mosaic product similar to our other products
+
+
+![Visualizer](../Images/EarthMosaics%20UI/Visualizer.png)
 
 That is it !! Happy Mosaicking !! :smile:

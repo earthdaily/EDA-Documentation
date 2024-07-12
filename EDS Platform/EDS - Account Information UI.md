@@ -47,36 +47,4 @@ It lists all the orders being placed under the customer account you belong to. T
 
 <br></br>
 
-## My Subscriptions
-
-Shows you a list of subscriptions that you created
-
-| S. No | Label | Description |
-|-------|-------|-------------|
-| <span style="background-color:orange"> " 14 "  </span> | Results Criteria |  Various parameters for the search results |
-| <span style="background-color:orange"> " 15 "  </span> | List View | Allows to show the results in the list view as seen below |
-| <span style="background-color:orange"> " 16 "  </span> | Map View | Allows to show the subscriptions in the map for better clarity |
-| <span style="background-color:orange"> " 17 "  </span> | View AoI on Map | To view the selected AoI in Map View |
-| <span style="background-color:orange"> " 18 "  </span> | Display all metadata | Clicking this button will bring up a form with subscription details |
-<br></br>
-
-![My Subscriptions](../Images/Account%20UI/My%20Subscriptions.png)
-
-Clicking the metadata button in the list view shows the subscription details as below
-
-
-![My Subscription MetaData](../Images/Account%20UI/My%20Subscription%20Metadata.png)
- 
-<br></br>
-Below is the Map view of the all the subscriptions on the map. You can click the center mass of the subscription area to see the metadata as shown below.
-
-![My Subscription Map](../Images/Account%20UI/My%20Subscription%20Map.png)
-
-
-## My Subscription Areas
-
-Shows you a list of subscription areas that you created. The screen for Subscription areas is very similar to the subscription in the way you interact with the data as seen below.
-<br></br>
-
-![My Subscription Areas](../Images/Account%20UI/My%20Subscription%20Areas.png)
 

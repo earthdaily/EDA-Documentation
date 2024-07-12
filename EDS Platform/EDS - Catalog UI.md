@@ -57,8 +57,8 @@ Street and satellite View
      <td>Satellite View</td>
   </tr>
   <tr>
-    <td><img src="../Images/Catalog UI/Catalog UI - Street View.png" width=100% height=500></td>
-    <td><img src="../Images/Catalog UI/Catalog UI - Satellite View.png" width=100% height=500></td>
+    <td><img src="../Images/Catalog UI/Catalog UI - Street View.png" ></td>
+    <td><img src="../Images/Catalog UI/Catalog UI - Satellite View.png"></td>
   </tr>
  </table>
 
@@ -118,8 +118,8 @@ Here is the example of tagging an item as favorite and then toggle the View favo
      <td>View Only Favourites</td>
   </tr>
   <tr>
-    <td><img src="../Images/Catalog UI/Catalog UI - Favorites.png" width=100% height=500></td>
-    <td><img src="../Images/Catalog UI/Catalog UI - View Favourites.png" width=100% height=500></td>
+    <td><img src="../Images/Catalog UI/Catalog UI - Favorites.png" ></td>
+    <td><img src="../Images/Catalog UI/Catalog UI - View Favourites.png" ></td>
   </tr>
  </table>
 
@@ -162,8 +162,8 @@ Below is the example where two images are selected and viewed on the map. Auto v
      <td>Cart Options</td>
   </tr>
   <tr>
-    <td><img src="../Images/Catalog UI/Catalog UI - Download and Order.png" width=100% height=500></td>
-    <td><img src="../Images/Catalog UI/Catalog UI - Cart.png" width=100% height=500></td>
+    <td><img src="../Images/Catalog UI/Catalog UI - Download and Order.png" ></td>
+    <td><img src="../Images/Catalog UI/Catalog UI - Cart.png"></td>
   </tr>
  </table>
 
@@ -220,9 +220,9 @@ Below you can see the opacity for the image at 100%, 50% and 0
     <td>Image Opacity - 0%</td>
   </tr>
   <tr>
-    <td><img src="../Images/Catalog UI/Catalog UI - Image Opacity 100.png" width=100% height=500></td>
-    <td><img src="../Images/Catalog UI/Catalog UI - Image Opacity 50.png" width=100% height=500></td>
-    <td><img src="../Images/Catalog UI/Catalog UI - Image Opacity 0.png" width=100% height=500></td>
+    <td><img src="../Images/Catalog UI/Catalog UI - Image Opacity 100.png" ></td>
+    <td><img src="../Images/Catalog UI/Catalog UI - Image Opacity 50.png" ></td>
+    <td><img src="../Images/Catalog UI/Catalog UI - Image Opacity 0.png" ></td>
   </tr>
  </table>
 
@@ -235,8 +235,8 @@ Here is an example of the Footprint opacity
     <td>Footprint Opacity - Low</td>
   </tr>
   <tr>
-    <td><img src="../Images/Catalog UI/Catalog UI - Footprint Opacity High.png" width=100% height=500></td>
-    <td><img src="../Images/Catalog UI/Catalog UI - Footprint Opacity Low.png" width=100% height=500></td>
+    <td><img src="../Images/Catalog UI/Catalog UI - Footprint Opacity High.png" ></td>
+    <td><img src="../Images/Catalog UI/Catalog UI - Footprint Opacity Low.png" ></td>
   </tr>
  </table>
 
@@ -249,8 +249,8 @@ Now, lets see when wetland prediction is enabled for images, how does the opacit
     <td>Wetland Opacity - Low</td>
   </tr>
   <tr>
-    <td><img src="../Images/Catalog UI/Catalog UI - Wetland Opacity High.png" width=100% height=500></td>
-    <td><img src="../Images/Catalog UI/Catalog UI - Wetland Opacity Low.png" width=100% height=500></td>
+    <td><img src="../Images/Catalog UI/Catalog UI - Wetland Opacity High.png" ></td>
+    <td><img src="../Images/Catalog UI/Catalog UI - Wetland Opacity Low.png"></td>
   </tr>
  </table>
 
