@@ -1,12 +1,22 @@
 # Table of Contents
 * [Introduction](#introduction)
+* [General Information](#general-information)
 * [My Account](#my-account)
 * [My Orders](#my-orders)
-* [My Subscriptions](#my-subscriptions)
-* [My Subscription Areas](#my-subscription-areas)
+* [Order State](#order-state)
 
 ## Introduction
-The Account Information page is the landing page for each user of the customer account when they login to the [Account Information](https://earthplatform.eds.earthdaily.com/am) It allows the user to check his own account details, his orders , his subscriptions etc. It also has the link to the other applications like Catalog UI, Mosaic etc
+The Account Information page is the landing page for each user of the customer account when they login to the [Account Information](https://earthplatform.eds.earthdaily.com/am) It allows the user to check his own account details, his orders etc. It also has the link to the other applications like Catalog UI, Mosaic etc
+
+## General Information
+  
+On the upper right hand side of the window, you will see three small icons as below
+
+|   Icon    |   Description     |
+|------------|------------------|
+| ![About](../Images/Account%20UI/About.png) | About page that shows the EarthDaily version |
+| ![AppSwitcher](../Images/Account%20UI/App%20Switcher.png) | It will show you a list of hosted applications from EarthDaily and you can use it to switch between different applications |
+| ![UserInfo](../Images/Account%20UI/User%20Info.png) | Quick information about the signedin user along with his/her account and an option to sign out |
 
 <br></br>
 
@@ -48,3 +58,14 @@ It lists all the orders being placed under the customer account you belong to. T
 <br></br>
 
 
+## Order state
+
+When you place an order, it can go through varous states. Below is a table defining various states and what they mean.
+
+|   Order State         |              Description              |
+|-----------------------|-----------------------------------------------------------------------------------------------| 
+|   PENDING             |   Order submitted but pending payment and/or approval (eg. mosaic)       |
+|   CANCELLED             |   Order cancelled before proceeding (eg. payment failed, etc). Will only be used for orders which could have the “pending” state for now       |
+|   IN_PROGRESS             |   Order submitted and under processing       |
+|   COMPLETED             |   Order completed with product(s) published to skyfox and ready to use       |
+|   PRODUCTION_ERROR             |   Processing failed somewhere along the pipeline, or incase of multiple prodicuts, one or more products were not published successfully to skyfox       |

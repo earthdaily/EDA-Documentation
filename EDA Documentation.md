@@ -11,18 +11,18 @@
 <br></br>
 
 
-# Documentation
+# EDS Documentation
 ## Getting Started
 * ### [Welcome Email](./Getting%20Started/WelcomeEmail.md)
 * ### [Authentication](./Getting%20Started/API%20Authentication.md)
 * ### [Quick Start](./Getting%20Started/QuickStart.md)
 
-## EDS Console
+## Console
 * ### [Account Information](./EDS%20Platform/EDS%20-%20Account%20Information%20UI.md)
 * ### [EarthPlatform](./EDS%20Platform/EDS%20-%20Catalog%20UI.md)
 * ### [EarthMosaic](./EDS%20Platform/EDS%20-%20Mosaic%20UI.md)
 
-## EDS API
+## API
   * ### [Spatial Temporal Asset Catalog](./EDS%20API/API%20Design/Spatial%20Temporal%20Asset%20Catalogs.md)
     * #### [EDA STAC Extensions](./EDS%20API/Extensions/EDA%20STAC%20extension.md)
   * ### [API Usage](./EDS%20API/API%20Usage/API%20endpoints.md)
@@ -32,12 +32,12 @@
   * ### [API Usage Design and Limits](./EDS%20API/API%20Design/API%20Details%20and%20Limits.md)
 
 
-## EDS Collections
+## Collections
 * ### [Collections](EDS%20Collections/Collections.md)
 * ### [EDA Mosaics](EDS%20Collections/EDA%20Mosaics.md)
 * ### [EDA Cloud Masks](EDS%20Collections/EDA%20Cloud%20Masks.md)
 
-## EDS Capability Examples
+## Capability Examples
 * ### [Notebooks](EDS%20Compatibility%20Examples/Notebook%20Examples.md)
 * ### [Plugins](EDS%20Compatibility%20Examples/Integrations%20and%20Plugins.md)
 

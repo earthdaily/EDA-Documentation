@@ -237,7 +237,7 @@ For private and requester pays S3 assets, and Azure Blob assets, we offer presig
 
 >Use a `X-Signed-Asset-Urls` boolean header to override default behaviour. Be aware a high `limit` parameter on the search endpoint combined with a high asset count collection can result in high response latency.
 
-Presigned URLs are available for EDA buckets for all customer accounts. Presigned URLs for 3rd party buckets (example `s3://sentinel-s2-l1c`) are available depending on your account setup.
+Presigned URLs are available for EDA buckets for all customer accounts. Presigned URLs for 3rd party buckets (example `s3://sentinel-s2-l1c`) are available depending on your account setup. Please note that these presigned URLs are valid for 12 hours after which they expire.
 
 Example : [Command Line](Command%20Line.md#downloading-assets) | [Postman](Postman.md#downloading-assets) 
  
