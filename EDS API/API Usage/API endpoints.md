@@ -36,7 +36,6 @@ This end point takes the collection id as parameter. Below are some examples
 |------------------------------|--------------------------------------------------------------------|
 | Sentinel-2 L1C | https://api.eds.earthdaily.com/archive/v1/stac/v1/collections/sentinel-2-l1c |
 | Landsat Collection 2 L1 | https://api.eds.earthdaily.com/archive/v1/stac/v1/collections/landsat-c2l1 |
-| CBERS-4 Mux L1C   | https://api.eds.earthdaily.com/archive/v1/stac/v1/collections/cbers4-mux |
 
 Example : [Command Line](Command%20Line.md#collection) | [Postman](Postman.md#collection) | [Python](./Python.md#get-a-specific-collection)
 
@@ -53,7 +52,6 @@ This end point takes the collection id as parameter. Below are some examples
 |----------------------|-------------------|
 | Sentinel-2 | https://api.eds.earthdaily.com/archive/v1/stac/v1/collections/sentinel-2-l1c/items |
 | Landsat Collection 2 L1 | https://api.eds.earthdaily.com/archive/v1/stac/v1/collections/landsat-c2l1/items |
-| CBERS-4 | https://api.eds.earthdaily.com/archive/v1/stac/v1/collections/cbers4-mux/items |
 
 The response also contains a link to the next set of items 
 

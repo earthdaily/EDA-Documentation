@@ -1,13 +1,14 @@
 
-<br/>
 
-<br/>
+<br></br>
+
+<br></br>
 
 ## <img width="50%" alt="Azure Machine Learning.jpg" src="https://raw.githubusercontent.com/earthdaily/Images/main/Corporate/EarthDaily.png" style="border-radius: 15%">
 
 
-<br/>
-<br/>
+<br></br>
+<br></br>
 
 
 # Documentation
@@ -32,7 +33,7 @@
 
 
 ## EDS Collections
-* ### [Open Collections](EDS%20Collections/Open%20Collections.md)
+* ### [Collections](EDS%20Collections/Collections.md)
 * ### [EDA Mosaics](EDS%20Collections/EDA%20Mosaics.md)
 * ### [EDA Cloud Masks](EDS%20Collections/EDA%20Cloud%20Masks.md)
 
