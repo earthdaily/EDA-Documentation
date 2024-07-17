@@ -1,3 +1,10 @@
+---
+layout: minimal
+title: EDA Cloud Masks
+parent: EDS Collections
+nav_order: 3
+---
+
 # Temporally Consistent AI-Ready Mosaics
 
 Powering ML applications with a seamless cloud-free image 

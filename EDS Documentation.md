@@ -1,13 +1,23 @@
+---
+layout: default
+title: EDS Documentation
+nav_order: 1
+has_children: true
+permalink: /
+redirect_from:
+  - /EDS Documentation
+---
+<!-- Redirect is used to set the page you want to have homepage -->
 
-<br/>
+<br></br>
 
-<br/>
+<br></br>
 
 ## <img width="50%" alt="Azure Machine Learning.jpg" src="https://raw.githubusercontent.com/earthdaily/Images/main/Corporate/EarthDaily.png" style="border-radius: 15%">
 
 
-<br/>
-<br/>
+<br></br>
+<br></br>
 
 
 # Documentation

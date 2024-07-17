@@ -1,3 +1,10 @@
+---
+layout: minimal
+title: Python Samples
+parent: API endpoints
+nav_order: 3
+---
+
 ## Python
 For Python environments, we recommend using [PySTAC Client](https://pystac-client.readthedocs.io/en/stable/#). Complete examples of using PySTAC Client with EarthPlatform STAC API are included: 
 

@@ -1,3 +1,10 @@
+---
+layout: minimal
+title: API Details and Limits
+parent: EDS API
+nav_order: 3
+---
+
 # Performant Query Best Practices
 
 ## Specify collections

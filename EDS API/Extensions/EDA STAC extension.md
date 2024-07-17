@@ -1,3 +1,10 @@
+---
+layout: minimal
+title: EDA STAC Extension
+parent: STAC Specification
+nav_order: 1
+---
+
 # View EDA Extension Specification
 * Title: EDA Extension
 * Identifier: [https://earthdaily-stac-extensions.s3.amazonaws.com/eda/v0.1.0/schema.json](https://earthdaily-stac-extensions.s3.amazonaws.com/eda/v0.1.0/schema.json) 

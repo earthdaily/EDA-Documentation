@@ -1,3 +1,10 @@
+---
+layout: minimal
+title: EDA Mosaics
+parent: EDS Collections
+nav_order: 2
+---
+
 # AI Ready Mosaic Creation Parameters
 
 EDA's AI-Ready Mosaics (ARMs) are produced using proprietary algorithms to create cloud free, temporally coherent images ready for machine learning algorithms or mapping activities. The customization of sources, location, time, and method allow for a mosaic suited for specific analysis purpose being conducted. 

@@ -1,3 +1,10 @@
+---
+layout: minimal
+title: Account Information
+parent: EDS Console
+nav_order: 1
+---
+
 # Table of Contents
 * [Introduction](#introduction)
 * [My Account](#my-account)

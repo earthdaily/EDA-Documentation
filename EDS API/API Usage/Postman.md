@@ -1,3 +1,10 @@
+---
+layout: minimal
+title: Postman Samples
+parent: API endpoints
+nav_order: 2
+---
+
 ## Postman Examples
 Before you try out the various endpoints, you need to set up the authentication for the Postman. [Authentication Page](../../Getting%20Started/API%20Authentication.md#postman) describes how it is done.
 

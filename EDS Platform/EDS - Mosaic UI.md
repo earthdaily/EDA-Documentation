@@ -1,3 +1,10 @@
+---
+layout: minimal
+title: EarthMosaic
+parent: EDS Console
+nav_order: 3
+---
+
 # Table of Contents
 * [Introduction](#introduction)
 * [Getting started with Mosaics](#getting-started-with-mosaics)

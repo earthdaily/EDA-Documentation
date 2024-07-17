@@ -1,3 +1,11 @@
+---
+layout: minimal
+title: API endpoints
+parent: EDS API
+nav_order: 2
+has_children: true
+---
+
 # STAC Endpoints
 
 The base URL of the STAC catalog is https://api.eds.earthdaily.com/archive/v1/stac/v1 and below are various endpoints

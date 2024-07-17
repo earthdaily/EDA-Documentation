@@ -1,3 +1,10 @@
+---
+layout: minimal
+title: Commandline Samples
+parent: API endpoints
+nav_order: 1
+---
+
 ## Command Line examples
 The sections below include examples using [curl](https://curl.se/) commands. If a GUI is preferred, these commands can be [imported](https://learning.postman.com/docs/getting-started/importing-and-exporting-data/#importing-with-curl-commands) into [Postman](https://www.postman.com/).
 

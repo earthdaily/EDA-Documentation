@@ -1,3 +1,10 @@
+---
+layout: minimal
+title: EarthPlatform
+parent: EDS Console
+nav_order: 2
+---
+
 # Table of Contents
 * [Introduction](#introduction)
 * [Search](#search)

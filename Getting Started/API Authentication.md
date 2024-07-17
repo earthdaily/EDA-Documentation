@@ -1,3 +1,11 @@
+---
+layout: minimal
+title: API Authentication
+parent: Getting Started
+nav_order: 2
+---
+
+
 # Table of contents
 * [Authentication](#authentication)
 * [Examples](#examples)

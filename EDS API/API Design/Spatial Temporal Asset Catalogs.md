@@ -1,3 +1,11 @@
+---
+layout: minimal
+title: STAC Specification
+parent: EDS API
+nav_order: 1
+has_children: true
+---
+
 # The STAC Specification
 
 STAC is the most commonly used standard across various GeoSpatial platforms for exchange and search of GeoTemporal data. 
