@@ -43,7 +43,7 @@ Defines the geographic extent used to build the mosaic and is a key component fo
 
 ## Time of Interest (TOI)
 
-The time of interest will dictate the amount of available data the mosaic system can draw from. Limiting the TOI can deliver poor results if there is no cloud-free data within the specific AOI and TOI. Using longer TOI's will result in the data selection algorithm intelligently downselecting all available datasets.
+The time of interest will dictate the amount of available data the mosaic system can draw from. Limiting the TOI can deliver poor results if there is no cloud-free data within the specific AOI and TOI. 
 
 ## Mosaic Settings
 
