@@ -35,12 +35,16 @@ Below is the list of **public** fields available via API
  | eda:water_cover| Number      | Estimate of water cover, in %
  | eda:derived_from_item_id| String      | L2 item that was used for the creation of the L2 derived products             |
  | eda:derived_from_collection_id     | String | L2 collection that was used for the creation of the L2 derived products                                              |
- | eda:ag_cloud_mask_available| Boolean      | Specifies whether cloud mask is available or not                                  |
- | eda:ag_cloud_mask_item_id| String      | ag Cloud Mask item id available for this item                                  |
- | eda:ag_cloud_mask_collection_id| String      | ag Cloud Mask collection id available for this item                                   |
+ | eda:ag_cloud_mask_available| Boolean      | Specifies whether EDAgro cloud mask is available or not                                  |
+ | eda:ag_cloud_mask_item_id| String      | EDAgro Cloud Mask item id available for this item                                  |
+ | eda:ag_cloud_mask_collection_id| String      | EDAgro Cloud Mask collection id available for this item                                   |
+ | eda:cloud_mask_available | Boolean      | Specifies whether EDA cloud mask is available or not                                  |
+ | eda:cloud_mask_item_id | String      | EDA Cloud Mask item id available for this item                                  |
+ | eda:cloud_mask_collection_id | String      | EDA Cloud Mask collection id available for this item  |
  | eda:area_km2     | Number |   Mosaic - the approximate area in km^2 of the valid region of the mosaic                                           |
  | eda:radiometric_scaling| Number      |   Obsolete                                |
  | eda:orbit_number| String      |    The satellite orbit                               |
+ | eda:pixel_composite_method| String      |    Pixel Composite Method used for Mosaics                               |
 
  Below are some of the **private** fields being available
  
@@ -76,8 +80,4 @@ Below is the list of **public** fields available via API
  | eda:basemap| String      |  The geometric reference used for any geometric corrections applied to the imagery  (Mosaic)                                |
  | eda:download_bundle_status| Number      |   Whether the download bundle asset is available or in progress. If this tag is absent, then the download bundle asset is not available for that item.|
  | eda:aocs_mode| String      |   AOCS Mode - One of “Nadir”, “DEM”, “Side Slither”.  Only provided for the Catalogue                                |
-
-
- 
- 
-
+ | eda:cloud_detect_method| String | Algorithm used in cloud detection |

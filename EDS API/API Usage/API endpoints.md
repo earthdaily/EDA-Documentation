@@ -36,6 +36,7 @@ This end point takes the collection id as parameter. Below are some examples
 |------------------------------|--------------------------------------------------------------------|
 | Sentinel-2 L1C | https://api.eds.earthdaily.com/archive/v1/stac/v1/collections/sentinel-2-l1c |
 | Landsat Collection 2 L1 | https://api.eds.earthdaily.com/archive/v1/stac/v1/collections/landsat-c2l1 |
+| Venus L2A | https://api.eds.earthdaily.com/archive/v1/stac/v1/collections/venus-l2a |
 
 Example : [Command Line](Command%20Line.md#collection) | [Postman](Postman.md#collection) | [Python](./Python.md#get-a-specific-collection)
 
@@ -52,6 +53,8 @@ This end point takes the collection id as parameter. Below are some examples
 |----------------------|-------------------|
 | Sentinel-2 | https://api.eds.earthdaily.com/archive/v1/stac/v1/collections/sentinel-2-l1c/items |
 | Landsat Collection 2 L1 | https://api.eds.earthdaily.com/archive/v1/stac/v1/collections/landsat-c2l1/items |
+| Venus L2A | https://api.eds.earthdaily.com/archive/v1/stac/v1/collections/venus-l2a/items |
+
 
 The response also contains a link to the next set of items 
 
@@ -181,9 +184,6 @@ Each property and each operation is treated as an `AND` cause
 So the above would result in a query of `view:sun_elevation > 40 AND view:sun_elevation < 60 AND eo:cloud_cover < 10`
 
 Example : [Command Line](Command%20Line.md#query-extension-via-post-method) | [Postman](Postman.md#query-extension-via-post-method) | | [Python](./Python.md#search)
-
-
-????? **Supported Operators** do we need the table?
 
 ### [Fields Extension](https://github.com/stac-api-extensions/fields)
 The Fields Extension allows you to specify which fields are returned from the API, reducing data transfer size. 

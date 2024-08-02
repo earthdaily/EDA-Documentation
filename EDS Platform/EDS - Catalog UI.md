@@ -16,14 +16,14 @@ Once you login with your credentials, the landing page for EarthPlatform is show
 
 | S. No     | Label     | Description       |
 |-----------|-----------|-------------------|
-| <span style="background-color:orange"> " 1 "  </span> | Search box | Enter any geographic area like “Vancouver”, “Chile” etc to find and focus. |
-| <span style="background-color:orange"> " 2 "  </span> | Polygon tool | It allows you to select a given area on the map quite precisely by allowing you to create a vertex as and when you do a left click. Make sure you click the first vertex of the polygon to complete it. |
-| <span style="background-color:orange"> " 3 "  </span> | Rectangle Polygon | Select two vertices of the diagonal on the map to form a rectangular area. |
-| <span style="background-color:orange"> " 4 "  </span> | Input GeoJSON | Click this button if you have a GeoJson you wish to enter for the given area to define it. |
-| <span style="background-color:orange"> " 5 "  </span> | Layers | Select the layers you wish to see on the map. Options include satellite, streets or both. |
-| <span style="background-color:orange"> " 6 "  </span> | Ruler | This one allows you to select the endpoints to draw a line and gives you the distance of each line as you keep drawing around. |
-| <span style="background-color:orange"> " 7 "  </span> | Results panel | This is the area where you would see the thumbnails of the search results for your images. |
-| <span style="background-color:orange"> " 8 "  </span> | Filter panel | Allows you to enter various search criteria. Initially it has selection for Collections and time range. As soon as you select the collection, it expands and you can enter additional search parameters. |
+| ![One](../Images/NumberLabels/One.png) | Search box | Enter any geographic area like “Vancouver”, “Chile” etc to find and focus. |
+| ![Two](../Images/NumberLabels/Two.png) | Polygon tool | It allows you to select a given area on the map quite precisely by allowing you to create a vertex as and when you do a left click. Make sure you click the first vertex of the polygon to complete it. |
+| ![Three](../Images/NumberLabels/Three.png)  | Rectangle Polygon | Select two vertices of the diagonal on the map to form a rectangular area. |
+| ![Four](../Images/NumberLabels/Four.png) | Input GeoJSON | Click this button if you have a GeoJson you wish to enter for the given area to define it. |
+| ![Five](../Images/NumberLabels/Five.png) | Layers | Select the layers you wish to see on the map. Options include satellite, streets or both. |
+| ![Six](../Images/NumberLabels/Six.png) | Ruler | This one allows you to select the endpoints to draw a line and gives you the distance of each line as you keep drawing around. |
+| ![Seven](../Images/NumberLabels/Seven.png) | Results panel | This is the area where you would see the thumbnails of the search results for your images. |
+| ![Eight](../Images/NumberLabels/Eight.png)| Filter panel | Allows you to enter various search criteria. Initially it has selection for Collections and time range. As soon as you select the collection, it expands and you can enter additional search parameters. |
 
 <br></br>
 
@@ -75,14 +75,14 @@ Now lets see once you have the search results, what all can you do with those im
 
 | S. No.    |  Label    | Description       |
 |-----------|-----------|-------------------|
-| <span style="background-color:orange"> " 9 "  </span>  | Show/Hide Filter | This button toggles the filter panel. For this image I have hidden the filter panel as you see below. |
-| <span style="background-color:orange"> " 10 "  </span>  | Show Item Properties | It shows the Item Properties on the right hand side panel |
-| <span style="background-color:orange"> " 11 "  </span>  | Favorite Item | Tag the image as favorite. Once you tag even one image as favorite, a toggle button will appear at the top (as shown in the right side image) to show only the items tagged as favorites. |
-| <span style="background-color:orange"> " 12 "  </span>  | View on Map | This enables the images to be rendered to appear as tiles on the map instead of just the center mass. |
-| <span style="background-color:orange"> " 13 "  </span>  | View Visualization | Toggles the visualization panel where you can adjust the min and max of the available color bands and also the gamma values. You can also update the min and max based on the current image. |
-| <span style="background-color:orange"> " 14 "  </span>  | Auto adjust Visualization | Auto adjust the image by applying the settings in the visualization panel for bands, gamma and the min and max percentiles. If the values in visualization panel have not been set then it applies the default values. |
-| <span style="background-color:orange"> " 15 "  </span>  | View all on Map | This is a toggle which you should be really careful to use. It will render all the images on the map and because each rendering takes some time, doing it on a large no. of images can take some time and you might need to be patient for it to complete rendering everything. | 
-| <span style="background-color:orange"> " 16 "  </span>  | View Favorites Only | This toggle button will show all the images that the user has tagged as favorite (star button next to the thumbnail) |
+| ![Nine](../Images/NumberLabels/Nine.png)  | Show/Hide Filter | This button toggles the filter panel. For this image I have hidden the filter panel as you see below. |
+| ![Ten](../Images/NumberLabels/Ten.png)  | Show Item Properties | It shows the Item Properties on the right hand side panel |
+| ![Eleven](../Images/NumberLabels/Eleven.png)  | Favorite Item | Tag the image as favorite. Once you tag even one image as favorite, a toggle button will appear at the top (as shown in the right side image) to show only the items tagged as favorites. |
+| ![Twelve](../Images/NumberLabels/Twelve.png)  | View on Map | This enables the images to be rendered to appear as tiles on the map instead of just the center mass. |
+| ![Thirteen](../Images/NumberLabels/Thirteen.png)  | View Visualization | Toggles the visualization panel where you can adjust the min and max of the available color bands and also the gamma values. You can also update the min and max based on the current image. |
+| ![Fourteen](../Images/NumberLabels/Fourteen.png)  | Auto adjust Visualization | Auto adjust the image by applying the settings in the visualization panel for bands, gamma and the min and max percentiles. If the values in visualization panel have not been set then it applies the default values. |
+| ![Fifteen](../Images/NumberLabels/Fifteen.png)  | View all on Map | This is a toggle which you should be really careful to use. It will render all the images on the map and because each rendering takes some time, doing it on a large no. of images can take some time and you might need to be patient for it to complete rendering everything. | 
+| ![Sixteen](../Images/NumberLabels/Sixteen.png)  | View Favorites Only | This toggle button will show all the images that the user has tagged as favorite (star button next to the thumbnail) |
 
 ![EarthPlatform Interaction](../Images/Catalog%20UI/Catalog%20UI%20-%20Catalog%20Interaction.png)
 
@@ -141,7 +141,7 @@ Below is the example where two images are selected and viewed on the map. Auto v
 <br></br>
 | S. No.    | Label | Description |
 |-----------|-------|-------------|
-| <span style="background-color:orange"> " 17 "  </span>  | Fly to Bounds | When you click at the center of this button, it zooms into the map to this thumbnail for a focussed view. | 
+| ![Seventeen](../Images/NumberLabels/Seventeen.png)  </span>  | Fly to Bounds | When you click at the center of this button, it zooms into the map to this thumbnail for a focussed view. | 
 
 ![EarthPlatform Fly To Bounds](../Images/Catalog%20UI/Catalog%20UI%20-%20Fly%20To%20Bounds.png)
 
@@ -150,11 +150,11 @@ Below is the example where two images are selected and viewed on the map. Auto v
 
 | S. No.    | Label     | Description       |
 |-----------|-----------|-------------------|
-| <span style="background-color:orange"> " 18 "  </span>  | Download | Download button that lets you download the catalog / product based on the tier you belong to and the collection you are allowed. Some tiers and collections cannot download the images. |
-| <span style="background-color:orange"> " 19 "  </span>  | Add to Cart | This option appears for the low resolution images from a catalog. You can eyeball the search images and can add the item to the cart if you wish EDA to process it as high resolution ARD product or a visual product. You can view the shopping cart by clicking the cart button on the top right. |
-| <span style="background-color:orange"> " 20 "  </span>  | Latency Tier | In the shopping cart, you will see all the items aded. You can choose the further options of standard vs expedited processing of your order. |
-| <span style="background-color:orange"> " 21 "  </span>  | Product Type | Once in the shopping cart, you also have the option to choose the derivative product you can order based on the image you have selected. In the example below, since the item in the cart is EDC catalog, you can choose to order ortho, AI and ARD products |
-| <span style="background-color:orange"> " 22 "  </span>  | Checkout | Checkout for placing the order successfully. You will get the confirmation and the order no. which you can further track in your account information page |
+| ![Eighteen](../Images/NumberLabels/Eighteen.png)  | Download | Download button that lets you download the catalog / product based on the tier you belong to and the collection you are allowed. Some tiers and collections cannot download the images. |
+| ![Nineteen](../Images/NumberLabels/Nineteen.png) | Add to Cart | This option appears for the low resolution images from a catalog. You can eyeball the search images and can add the item to the cart if you wish EDA to process it as high resolution ARD product or a visual product. You can view the shopping cart by clicking the cart button on the top right. |
+| ![Twenty](../Images/NumberLabels/Twenty.png) | Latency Tier | In the shopping cart, you will see all the items aded. You can choose the further options of standard vs expedited processing of your order. |
+| ![TwentyOne](../Images/NumberLabels/TwentyOne.png) | Product Type | Once in the shopping cart, you also have the option to choose the derivative product you can order based on the image you have selected. In the example below, since the item in the cart is EDC catalog, you can choose to order ortho, AI and ARD products |
+| ![TwentyTwo](../Images/NumberLabels/TwentyTwo.png) | Checkout | Checkout for placing the order successfully. You will get the confirmation and the order no. which you can further track in your account information page |
 
 <table>
   <tr>
@@ -176,10 +176,10 @@ Below there are two images chosen over the same area but with different dates �
 
 | S. No.    | Label     | Description       |
 |-----------|-----------|-------------------|
-| <span style="background-color:orange"> " 23 "  </span>  | Show/ Hide Map Slider | This is the toggle for Map Slider. It gives you a capability to slide the area from left to right. Specially useful when you have two images, one on the left and one on the right. As you slide you will be able to see the landscape changes given the images are of different dates. |
-| <span style="background-color:orange"> " 24 "  </span>  | Move Image Left | Click this L button to select the image to be seen on the left of the image | 
-| <span style="background-color:orange"> " 25 "  </span>  | Move Image Right | Click this R button to select the image to be seen on the right of the image | 
-| <span style="background-color:orange"> " 26 "  </span>  | Slider | The slider  |
+| ![TwentyThree](../Images/NumberLabels/TwentyThree.png)  | Show/ Hide Map Slider | This is the toggle for Map Slider. It gives you a capability to slide the area from left to right. Specially useful when you have two images, one on the left and one on the right. As you slide you will be able to see the landscape changes given the images are of different dates. |
+| ![TwentyFour](../Images/NumberLabels/TwentyFour.png) | Move Image Left | Click this L button to select the image to be seen on the left of the image | 
+| ![TwentyFive](../Images/NumberLabels/TwentyFive.png) | Move Image Right | Click this R button to select the image to be seen on the right of the image | 
+| ![TwentySix](../Images/NumberLabels/TwentySix.png) | Slider | The slider  |
 
 <br></br>
 
@@ -201,10 +201,10 @@ Now, there are some slider options to help you see the relative difference or si
 <br></br>
 | S. No.    | Label     | Description       |
 |-----------|-----------|-------------------|
-| <span style="background-color:orange"> " 27 "  </span>  | Image Opacity | Image Opacity is used if you want to check location or any other attribute relative to the basemap. |
-| <span style="background-color:orange"> " 28 "  </span>  | Image Footprint Opacity | As a query result, the more footprints you have the darker the footprints get until you can't see the ground. So Image Footprint Opacity helps to make the image footprint transparent and then you can find your location. |
-| <span style="background-color:orange"> " 29 "  </span>  | Wetland Prediction Opacity | This is useful when you have a landcover raster rendered for wetland prediction. Once you have rendered the landcover classification, you can use this transparency level to compare with the image background and avoid rendering every time. |
-| <span style="background-color:orange"> " 30 "  </span>  | Wetland Prediction | It renders render the landcover classification for the image. It shows dark green for forest, yellow for crops, cyan for wetland and blue for water. One thing to note is that you need to have the Image Opacity at 0% for the wetland classification to be visible. |
+| ![TwentySeven](../Images/NumberLabels/TwentySeven.png)  | Image Opacity | Image Opacity is used if you want to check location or any other attribute relative to the basemap. |
+| ![TwentyEight](../Images/NumberLabels/TwentyEight.png)  | Image Footprint Opacity | As a query result, the more footprints you have the darker the footprints get until you can't see the ground. So Image Footprint Opacity helps to make the image footprint transparent and then you can find your location. |
+| ![TwentyNine](../Images/NumberLabels/TwentyNine.png) | Wetland Prediction Opacity | This is useful when you have a landcover raster rendered for wetland prediction. Once you have rendered the landcover classification, you can use this transparency level to compare with the image background and avoid rendering every time. |
+| ![Thirty](../Images/NumberLabels/Thirty.png) | Wetland Prediction | It renders render the landcover classification for the image. It shows dark green for forest, yellow for crops, cyan for wetland and blue for water. One thing to note is that you need to have the Image Opacity at 0% for the wetland classification to be visible. |
 
 <br></br>
 
@@ -256,5 +256,7 @@ Now, lets see when wetland prediction is enabled for images, how does the opacit
 
 
 
+<!-- 
 ## Interacting with the product
 ## Placing an order and receiving it
+-->

@@ -26,10 +26,10 @@ Pressing the `GetStarted` will take you to a NewOrders page. Lets see what all o
 
 | S. No     | Label     | Description       |
 |-----------|-----------|-------------------|
-| ![](https://img.shields.io/static/v1?label=&message=1&color=orange)  | Area of Interest | You can start drawing a polygon for your mosaics order. The limit currently is < 100,000 km<sup>2</sup>   |
-| <span style="background-color:orange"> " 2 "  </span> | GeoJSON | Instead of drawing a polygon, if you have an existing GeoJSON, you have an option to enter it here. The restriction of < 100,000 km<sup>2</sup> applies to this too |
-| <span style="background-color:orange"> " 3 "  </span> | Time of Interest | Specify the time of interest for your Mosaics order |
-| <span style="background-color:orange"> " 4 "  </span> | Settings | This one gives you multiple choices to place your order as per your needs|
+| ![One](../Images/NumberLabels/One.png)  | Area of Interest | You can start drawing a polygon for your mosaics order. The limit currently is < 100,000 km<sup>2</sup>   |
+| ![Two](../Images/NumberLabels/Two.png) | Instead of drawing a polygon, if you have an existing GeoJSON, you have an option to enter it here. The restriction of < 100,000 km<sup>2</sup> applies to this too |
+|![Three](../Images/NumberLabels/Three.png) | Time of Interest | Specify the time of interest for your Mosaics order |
+| ![Four](../Images/NumberLabels/Four.png) | Settings | This one gives you multiple choices to place your order as per your needs|
 
 <br></br>
 The area of interest (AOI) defines the geographic extent used to build the mosaic. You can either draw the AOI on the map or provide the AOI's GeoJSON below. To draw, start by left-clicking on the map. After adjusting the extent of your AOI, complete the AOI by left-clicking. Once drawn, you can select your AOI to reshape its boundaries.
@@ -41,9 +41,9 @@ The area of interest (AOI) defines the geographic extent used to build the mosai
 Once you draw a polygon, you will see the area calculator diaplays the total area selected by you. You will see three options appear 
 | S. No     | Label     | Description       |
 |-----------|-----------|-------------------|
-| <span style="background-color:orange"> " 5 "   </span> | Fit Bounds | This option allows you to bring back the focus on the area drawn and fits it to the viewport    |
-| <span style="background-color:orange"> " 6 "  </span> | GeoJSON | Instead of drawing a polygon, if you have an existing GeoJSON, you have an option to enter it here. The restriction of < 100,000 km<sup>2</sup> applies to this too |
-| <span style="background-color:orange"> " 7 "  </span> | Delete | Delete the existing AoI |
+| ![Five](../Images/NumberLabels/Five.png) | Fit Bounds | This option allows you to bring back the focus on the area drawn and fits it to the viewport    |
+| ![Six](../Images/NumberLabels/Six.png) | GeoJSON | Instead of drawing a polygon, if you have an existing GeoJSON, you have an option to enter it here. The restriction of < 100,000 km<sup>2</sup> applies to this too |
+| ![Seven](../Images/NumberLabels/Seven.png) | Delete | Delete the existing AoI |
 
 <br></br>
 ![GeoJSON](../Images/EarthMosaics%20UI/GeoJSON.png)
@@ -116,9 +116,9 @@ Once the order is processed successfully, you will see the state changed to "Pro
 
 | S.No        | Label     | Description       |
 |--------------|-----------|-------------------|
-| <span style="background-color:orange"> " 8 "  </span> | Copy | This option allows you to copy the order in case you want to use the same settings or have a minor modification to place another order     |
-| <span style="background-color:orange"> " 9 "  </span> | Download | This is where you can download your product - preview or full |
-| <span style="background-color:orange"> "10"  </span> | View | This option allows you to view the product in the Visualizer which is very similar to the Catalog Ui and allows  |
+| ![Eight](../Images/NumberLabels/Eight.png) | Copy | This option allows you to copy the order in case you want to use the same settings or have a minor modification to place another order     |
+| ![Nine](../Images/NumberLabels/Nine.png) | Download | This is where you can download your product - preview or full |
+| ![Ten](../Images/NumberLabels/Ten.png) | View | This option allows you to view the product in the Visualizer which is very similar to the Catalog Ui and allows  |
 
 <br></br>
 Below is the Visualizer that open up when you click on the View button on the Orders page. This visualizer is very similar to our EarthPlatform Ui and has many common components needed to interact with teh Mosaic product similar to our other products

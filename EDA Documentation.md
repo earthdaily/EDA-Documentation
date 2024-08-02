@@ -37,9 +37,10 @@
 * ### [EDA Mosaics](EDS%20Collections/EDA%20Mosaics.md)
 * ### [EDA Cloud Masks](EDS%20Collections/EDA%20Cloud%20Masks.md)
 
-## Capability Examples
+<!--
+ ## Capability Examples 
 * ### [Notebooks](EDS%20Compatibility%20Examples/Notebook%20Examples.md)
 * ### [Plugins](EDS%20Compatibility%20Examples/Integrations%20and%20Plugins.md)
-
+-->
 ## [Help & FAQ](Help%20and%20FAQ.md) 
 

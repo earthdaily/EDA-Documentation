@@ -187,6 +187,15 @@
                 "eda:ag_cloud_mask_collection_id": {
                     "type": "string"  
                 },
+                "eda:cloud_mask_available": {
+                    "type": "boolean"  
+                },
+                "eda:cloud_mask_item_id": {
+                    "type": "string"  
+                },
+                "eda:cloud_mask_collection_id": {
+                    "type": "string"  
+                },
                 "eda:altitude": {
                     "type": "number"
                 },
@@ -245,6 +254,12 @@
                         "DEM",
                         "Side Slither"
                     ]
+                },
+                "eda:cloud_detect_method": {
+                    "type": "string"
+                },
+                "eda:pixel_composite_method": {
+                    "type": "string"
                 }
             },
             "patternProperties": {
