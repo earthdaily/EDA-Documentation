@@ -1,6 +1,20 @@
+
 plugins:
   - jekyll-relative-links
   - jekyll-seo-tag
+  - jekyll-github-metadata
+  - jekyll-include-cache
+  - jekyll-redirect-from
+
+# Set the homepage https://stackoverflow.com/questions/31166747/jekyll-default-page
+
+permalink: pretty
+
+url: "https://github.com/earthdaily/EDA-Documentation" # the base hostname & protocol for your site, e.g. http://example.com
+
+# For copy button on code
+enable_copy_code_button: true
+
 relative_links:
   enabled: true
   collections: true
@@ -13,6 +27,7 @@ include:
   - CONTRIBUTING.md
   - ISSUE_TEMPLATE.md
   - PULL_REQUEST_TEMPLATE.md
+
 remote_theme: just-the-docs/just-the-docs
 logo: "https://earthdaily.com/wp-content/themes/earthdaily-2023/src/assets/images/logo-1.svg"
 heading_anchors: true
@@ -20,25 +35,59 @@ footer_content: "© 2024 EarthDaily Analytics Corp | All Rights Reserved. Distri
 search_enabled: true
 
 # Set a path/url to a favicon that will be displayed by the browser
-favicon_ico: "https://raw.githubusercontent.com/earthdaily/Images/1fbde00d6ea7afdfa4f5a342caddb4a16fa66d9f/Corporate/favicon.svg"
+favicon_ico: "https://raw.githubusercontent.com/earthdaily/Images/main/Corporate/favicon/favicon.ico"
 
 # Footer last edited timestamp
 last_edit_timestamp: true # show or hide edit time - page must have `last_modified_date` defined in the frontmatter
 last_edit_time_format: "%b %e %Y at %I:%M %p" # uses ruby's time format: https://ruby-doc.org/stdlib-2.7.0/libdoc/time/rdoc/Time.html
 
+# Color scheme currently only supports "dark", "light"/nil (default), or a custom scheme that you define
+color_scheme: dark
+
+callouts_level: quiet # or loud
+callouts:
+  highlight:
+    color: yellow
+  important:
+    title: Important
+    color: blue
+  new:
+    title: New
+    color: green
+  note:
+    title: Note
+    color: purple
+  warning:
+    title: Warning
+    color: red
+
+# Enable or disable heading anchors
+heading_anchors: true
+
+# Aux links for the upper right navigation
+aux_links:
+  "EDS Documentation on GitHub":
+    - "https://github.com/earthdaily/EDA-Documentation"
+
+# Makes Aux links open in a new tab. Default is false
+aux_links_new_tab: false
+
+# Enable or disable the side/mobile menu globally
+# Nav menu can also be selectively enabled or disabled using page variables or the minimal layout
+nav_enabled: true
+
+
 # Footer "Edit this page on GitHub" link text
 gh_edit_link: true # show or hide edit this page link
-gh_edit_link_text: "Edit this page on GitHub."
+gh_edit_link_text: "Edit this page on GitHub"
 gh_edit_repository: "https://github.com/earthdaily/EDA-Documentation" # the github URL for your repo
-gh_edit_branch: "gh-pages" # the branch that your docs is served from
+gh_edit_branch: "main" # the branch that your docs is served from
+# gh_edit_source: docs # the source that your files originate from
+gh_edit_view_mode: "tree" # "tree" or "edit" if you want the user to jump into the editor immediately
 
 # Back to top link
 back_to_top: true
 back_to_top_text: "Back to top"
-
-plugins:
-  - jekyll-seo-tag
-  - jekyll-swagger-ui
 
 # Enable or disable the site search
 # Supports true (default) or false
