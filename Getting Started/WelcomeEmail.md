@@ -1,6 +1,7 @@
 ---
 layout: minimal
 title: Welcome
+permalink: WelcomeEmail
 parent: Getting Started
 nav_order: 1
 ---

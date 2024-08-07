@@ -1,6 +1,7 @@
 ---
 layout: minimal
 title: API Authentication
+permalink: API Authentication
 parent: Getting Started
 nav_order: 2
 ---
