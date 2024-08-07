@@ -8,5 +8,5 @@ has_children: true
 
 ## Getting Started
 * ### [Welcome Email](./WelcomeEmail.md)
-* ### [Authentication](./API%20Authentication.md)
+* ### [Authentication](./APIAuthentication.md)
 * ### [Quick Start](./QuickStart.md)

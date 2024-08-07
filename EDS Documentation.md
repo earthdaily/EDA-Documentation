@@ -9,14 +9,8 @@ redirect_from:
 ---
 <!-- Redirect is used to set the page you want to have homepage -->
 
-<br></br>
-<br></br>
 
 ## <img width="50%" alt="Azure Machine Learning.jpg" src="https://raw.githubusercontent.com/earthdaily/Images/main/Corporate/EarthDaily.png" style="border-radius: 15%">
-
-
-<br></br>
-<br></br>
 
 
 # EDS Documentation

@@ -1,7 +1,7 @@
 ---
 layout: minimal
 title: Welcome
-permalink: WelcomeEmail
+permalink: /Getting Started/WelcomeEmail
 parent: Getting Started
 nav_order: 1
 ---
@@ -12,6 +12,6 @@ The EarthPlatform [EarthPlatform](https://console.earthdaily.com/platform/signin
 
 To get started, login to [Account Management](https://console.earthdaily.com/account/signin) using your EarthPlatform credentials. These would have been provided in an email when your user account was created and it looks like this: 
 
-![Welcome Email](../Images/STAC%20API/Welcome%20Email.png) 
+![Welcome Email](../Images/WelcomeEmail.png) 
 
 You will need to change your password at the first login.
