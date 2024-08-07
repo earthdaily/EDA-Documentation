@@ -9,15 +9,21 @@ redirect_from:
 ---
 <!-- Redirect is used to set the page you want to have homepage -->
 
+<br></br>
+<br></br>
+
 ## <img width="50%" alt="Azure Machine Learning.jpg" src="https://raw.githubusercontent.com/earthdaily/Images/main/Corporate/EarthDaily.png" style="border-radius: 15%">
+
+
+<br></br>
+<br></br>
 
 
 # EDS Documentation
 ## Getting Started
-* ### [Welcome Email](./Getting%20Started/WelcomeEmail)
-* ### [Authentication](./Getting%20Started/API%20Authentication)
+* ### [Welcome Email](./Getting%20Started/WelcomeEmail.md)
+* ### [Authentication](./Getting%20Started/API%20Authentication.md)
 * ### [Quick Start](./Getting%20Started/QuickStart.md)
-* ### [Quick Start]({{ page.path }}{% link QuickStart.md %})
 
 ## Console
 * ### [Account Information](./EDS%20Platform/EDS%20-%20Account%20Information%20UI.md)
