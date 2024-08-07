@@ -12,7 +12,7 @@ The sections below include examples using [curl](https://curl.se/) commands. If 
 Return list of all Collections 
 
 ```
-curl --location https://api.eds.earthdaily.com/archive/v1/stac/v1/collections --header 'Authorization: Bearer <ACCESS_TOKEN HERE>'
+curl --location https://api.earthdaily.com/platform/v1/stac/v1/collections --header 'Authorization: Bearer <ACCESS_TOKEN HERE>'
 ```
 
 
@@ -24,7 +24,7 @@ Example curl request using access token generated in section above:
 
 ```
 
-curl --location https://api.eds.earthdaily.com/archive/v1/stac/v1/collections/sentinel-2-l1c --header 'Authorization: Bearer <ACCESS_TOKEN HERE>'
+curl --location https://api.earthdaily.com/platform/v1/stac/v1/collections/sentinel-2-l1c --header 'Authorization: Bearer <ACCESS_TOKEN HERE>'
 
 ```
 
@@ -33,7 +33,7 @@ Return paged Items ordered by datetime descending (It doesn’t support search p
 
 ```
 
-curl --location https://api.eds.earthdaily.com/archive/v1/stac/v1/collections/sentinel-2-l1c/items --header 'Authorization: Bearer <ACCESS_TOKEN HERE>'
+curl --location https://api.earthdaily.com/platform/v1/stac/v1/collections/sentinel-2-l1c/items --header 'Authorization: Bearer <ACCESS_TOKEN HERE>'
 
 ```
 
@@ -42,7 +42,7 @@ curl --location https://api.eds.earthdaily.com/archive/v1/stac/v1/collections/se
 Returns a single Item for a given Collection and Item ID
 
 ```
-curl --location https://api.eds.earthdaily.com/archive/v1/stac/v1/collections/sentinel-2-l1c/items/S2B_MSIL1C_20240422T190009_N0510_R027_T08JNQ_20240422T221641 --header 'Authorization: Bearer <ACCESS_TOKEN HERE>'
+curl --location https://api.earthdaily.com/platform/v1/stac/v1/collections/sentinel-2-l1c/items/S2B_MSIL1C_20240422T190009_N0510_R027_T08JNQ_20240422T221641 --header 'Authorization: Bearer <ACCESS_TOKEN HERE>'
 ```
 
 ## Queryables 
@@ -50,7 +50,7 @@ Returns the queryable names for the STAC API Item Search using Query Extension
 Below are the two ways to query the “queryable items“ for a given collection
 
 ```
-curl --location https://api.eds.earthdaily.com/archive/v1/stac/v1/collections/landsat-c2l1/queryables --header 'Authorization: Bearer <ACCESS_TOKEN HERE>'
+curl --location https://api.earthdaily.com/platform/v1/stac/v1/collections/landsat-c2l1/queryables --header 'Authorization: Bearer <ACCESS_TOKEN HERE>'
 ```
 
 ## Search  
@@ -58,7 +58,7 @@ curl --location https://api.eds.earthdaily.com/archive/v1/stac/v1/collections/la
 Implements STAC basic Item search functionality  + extensions 
 
 ```
-curl --location 'https://api.eds.earthdaily.com/archive/v1/stac/v1/search' \
+curl --location 'https://api.earthdaily.com/platform/v1/stac/v1/search' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer <ACCESS_TOKEN HERE>' \
 --data '{
@@ -100,7 +100,7 @@ curl --location 'https://api.eds.earthdaily.com/archive/v1/stac/v1/search' \
 Advanced searching can be performed using a `query` object. This allows searching over supported properties on STAC items using various operators.
 
 ```
-curl --location 'https://api.eds.earthdaily.com/archive/v1/stac/v1/search' \
+curl --location 'https://api.earthdaily.com/platform/v1/stac/v1/search' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer eyJraWQiOiJwdWlZR3BtalVETHFvdGVLR1wvbDM4SkJzMlVrdWVUb2VPS21EN1B4d1o0OD0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI0dmowNHBwMnM0OWdsaGlnNnAxZ2VkZDNmbSIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYWNjb3VudElkOnVzZXJJZFwvTTliTVlLYmlXRk4yZldBWnBlenhzdDozYTI1MmIzYjI2ZWQ0Y2FmYTI5ODA5ZWM3ZWExYzU2OCIsImF1dGhfdGltZSI6MTcxOTI1MTg5OCwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLnVzLWVhc3QtMS5hbWF6b25hd3MuY29tXC91cy1lYXN0LTFfeGN3T3dseWlmIiwiZXhwIjoxNzE5MjU1NDk4LCJpYXQiOjE3MTkyNTE4OTgsInZlcnNpb24iOjIsImp0aSI6IjhkY2Y1NmY5LWU2Y2ItNDVmYS1hODY5LTMzZmY2OThlY2ExYiIsImNsaWVudF9pZCI6IjR2ajA0cHAyczQ5Z2xoaWc2cDFnZWRkM2ZtIn0.E41hOMFyESoS393u4GRCvySP6-aDvbyeBp6kdSPZ7tFQrxqthiByXy6NBN8plLmEFO1vqQHpu5gA6Gy3L0v7_ACZXa74LJk5MvbtTCmoMh9QlFrCkaTpjGmpzEIjDwn_KRumrhf5d_omE6GpeE6vrz4I9-jQ0_P9LO3IQH3CcVX61oRvd44MT-1jxgu4bM3mEinjGOMYfszOgaj4O5PZ1kwund-05yfAiUnM81D5tCRiPSXbiOMMhSy2g-E-75t6AXZhLJg_EmWtERZ2Kf3UT5YU5-MI34-yx2RkqgDYlhanbyUy-W2K0OLILJucKX-I5cpTzt24WCOnUc0aFS2r6w' \
 --data '{
@@ -124,7 +124,7 @@ curl --location 'https://api.eds.earthdaily.com/archive/v1/stac/v1/search' \
 The Fields Extension allows you to specify which fields are returned from the API, reducing data transfer size. 
 
 ```
-curl --location 'https://api.eds.earthdaily.com/archive/v1/stac/v1/search' \
+curl --location 'https://api.earthdaily.com/platform/v1/stac/v1/search' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer <ACCESS_TOKEN HERE>' \
 --data '{
@@ -137,7 +137,7 @@ curl --location 'https://api.eds.earthdaily.com/archive/v1/stac/v1/search' \
 Exclude 
 
 ```
-curl --location 'https://api.eds.earthdaily.com/archive/v1/stac/v1/search' \
+curl --location 'https://api.earthdaily.com/platform/v1/stac/v1/search' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer <ACCESS_TOKEN HERE>' \
 --data '{
@@ -153,7 +153,7 @@ By default, Items are returned by `datetime` descending. Then by `id` ascending.
 Sorting by property `eo:cloud_cover` is also supported on the `/search` endpoint:
 
 ```
-curl --location 'https://api.eds.earthdaily.com/archive/v1/stac/v1/search' \
+curl --location 'https://api.earthdaily.com/platform/v1/stac/v1/search' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer <ACCESS_TOKEN HERE>' \
 --data '{
@@ -169,7 +169,7 @@ curl --location 'https://api.eds.earthdaily.com/archive/v1/stac/v1/search' \
 ## Downloading Assets
 
 ```
-curl --location 'https://api.eds.earthdaily.com/archive/v1/stac/v1/search' \
+curl --location 'https://api.earthdaily.com/platform/v1/stac/v1/search' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer <ACCESS_TOKEN HERE>' \
 --header 'X-Signed-Asset-Urls: true' \
@@ -200,7 +200,7 @@ Example response
 ## Cloud Masks
 
 ```
-curl --location 'https://api.eds.earthdaily.com/archive/v1/stac/v1/search' \
+curl --location 'https://api.earthdaily.com/platform/v1/stac/v1/search' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer <ACCESS_TOKEN HERE>' \
 --data '{

@@ -8,7 +8,7 @@ has_children: true
 
 # STAC Endpoints
 
-The base URL of the STAC catalog is https://api.eds.earthdaily.com/archive/v1/stac/v1 and below are various endpoints
+The base URL of the STAC catalog is https://api.earthdaily.com/platform/v1/stac/v1 and below are various endpoints
 
 * [Collections](#collections)
 * [Collection](#collection) 
@@ -27,7 +27,7 @@ The base URL of the STAC catalog is https://api.eds.earthdaily.com/archive/v1/st
 ## Collections 
 Return list of all Collections
 ```
-GET https://api.eds.earthdaily.com/archive/v1/stac/v1/collections
+GET https://api.earthdaily.com/platform/v1/stac/v1/collections
 ```
 **Example** : [Command Line](Command%20Line.md#collections) | [Postman](Postman.md#collections) | | [Python](./Python.md#get-collections)
 
@@ -35,16 +35,16 @@ GET https://api.eds.earthdaily.com/archive/v1/stac/v1/collections
 Return specific Collection
 
 ```
-GET https://api.eds.earthdaily.com/archive/v1/stac/v1/collections/<COLLECTION_ID>
+GET https://api.earthdaily.com/platform/v1/stac/v1/collections/<COLLECTION_ID>
 ```
 
 This end point takes the collection id as parameter. Below are some examples
 
 | Collection | URL |
 |------------------------------|--------------------------------------------------------------------|
-| Sentinel-2 L1C | https://api.eds.earthdaily.com/archive/v1/stac/v1/collections/sentinel-2-l1c |
-| Landsat Collection 2 L1 | https://api.eds.earthdaily.com/archive/v1/stac/v1/collections/landsat-c2l1 |
-| CBERS-4 Mux L1C   | https://api.eds.earthdaily.com/archive/v1/stac/v1/collections/cbers4-mux |
+| Sentinel-2 L1C | https://api.earthdaily.com/platform/v1/stac/v1/collections/sentinel-2-l1c |
+| Landsat Collection 2 L1 | https://api.earthdaily.com/platform/v1/stac/v1/collections/landsat-c2l1 |
+| Venus L2A | https://api.earthdaily.com/platform/v1/stac/v1/collections/venus-l2a |
 
 Example : [Command Line](Command%20Line.md#collection) | [Postman](Postman.md#collection) | [Python](./Python.md#get-a-specific-collection)
 
@@ -52,16 +52,17 @@ Example : [Command Line](Command%20Line.md#collection) | [Postman](Postman.md#co
 ## Items 
 Return paged Items ordered by datetime descending (It doesn’t support search parameters, so often /stac/v1/search is preferred instead)
 ```
-GET https://api.eds.earthdaily.com/archive/v1/stac/v1/collections/<COLLECTION_ID>/items
+GET https://api.earthdaily.com/platform/v1/stac/v1/collections/<COLLECTION_ID>/items
 ```
 
 This end point takes the collection id as parameter. Below are some examples
 
 |  Collection |  URL | 
 |----------------------|-------------------|
-| Sentinel-2 | https://api.eds.earthdaily.com/archive/v1/stac/v1/collections/sentinel-2-l1c/items |
-| Landsat Collection 2 L1 | https://api.eds.earthdaily.com/archive/v1/stac/v1/collections/landsat-c2l1/items |
-| CBERS-4 | https://api.eds.earthdaily.com/archive/v1/stac/v1/collections/cbers4-mux/items |
+| Sentinel-2 | https://api.earthdaily.com/platform/v1/stac/v1/collections/sentinel-2-l1c/items |
+| Landsat Collection 2 L1 | https://api.earthdaily.com/platform/v1/stac/v1/collections/landsat-c2l1/items |
+| Venus L2A | https://api.earthdaily.com/platform/v1/stac/v1/collections/venus-l2a/items |
+
 
 The response also contains a link to the next set of items 
 
@@ -73,7 +74,7 @@ Example : [Command Line](Command%20Line.md#items) | [Postman](Postman.md#items)
 ## Item 
 Returns a single Item for a given Collection and Item ID
 ```
-GET https://api.eds.earthdaily.com/archive/v1/stac/v1/collections/<COLLECTION_ID>/items/<ITEM_ID>
+GET https://api.earthdaily.com/platform/v1/stac/v1/collections/<COLLECTION_ID>/items/<ITEM_ID>
 ```
 Example : [Command Line](Command%20Line.md#item) | [Postman](Postman.md#item) | [Python](./Python.md#specific-item)
 
@@ -84,11 +85,11 @@ Below are the two ways to query the “queryable items“ for a given collection
 
 ```
 
-GET https://api.eds.earthdaily.com/archive/v1/stac/v1/queryables?collections=<COLLECTION_ID>
+GET https://api.earthdaily.com/platform/v1/stac/v1/queryables?collections=<COLLECTION_ID>
 ```
 or
 ```
-GET https://api.eds.earthdaily.com/archive/v1/stac/v1/collections/{collection_id}/queryables
+GET https://api.earthdaily.com/platform/v1/stac/v1/collections/{collection_id}/queryables
 ```
 
 Parameters:
@@ -99,13 +100,13 @@ The queryables endpoint  includes the datatype that must be used.
 The queryables endpoint currently doesn’t provide information on supported operations for a given property/datatype. Supplying an unsupported field-value-operation combination will result in an error 400 (Bad Request) being returned. Example: a `contains` operation is not supported on a `string` queryable.
 
 * Get queryable properties that apply to all collections: 
-`https://api.eds.earthdaily.com/archive/v1/stac/v1/queryables`  
+`https://api.earthdaily.com/platform/v1/stac/v1/queryables`  
 
 * Get queryable fields that apply to collection sentinel-2-l2a:
-`https://api.eds.earthdaily.com/archive/v1/stac/v1/queryables?collections=sentinel-2-l2a`  
+`https://api.earthdaily.com/platform/v1/stac/v1/queryables?collections=sentinel-2-l2a`  
 
 * Get queryable fields that apply to both collections sentinel-2-l1c and sentinel-2-l2a:
-`https://api.eds.earthdaily.com/archive/v1/stac/v1/queryables?collections=sentinel-2-l1c,sentinel-2-l2a`
+`https://api.earthdaily.com/platform/v1/stac/v1/queryables?collections=sentinel-2-l1c,sentinel-2-l2a`
 
 </br>
 Example : [Command Line](Command%20Line.md#queryables) | [Postman](Postman.md#queryables) 
@@ -135,7 +136,7 @@ Implements STAC basic Item search functionality  + extensions
 Shows use of datetime, collections and bbox
 
 ```
-https://api.eds.earthdaily.com/archive/v1/stac/v1/search?datetime=2023-01-01T18:50:42.000000Z/2023-02-01T18:50:42.000000Z&bbox=-1.757813,51.971346,-0.065918,52.589701&collections=sentinel-2-l1c,sentinel-2-l2a
+https://api.earthdaily.com/platform/v1/stac/v1/search?datetime=2023-01-01T18:50:42.000000Z/2023-02-01T18:50:42.000000Z&bbox=-1.757813,51.971346,-0.065918,52.589701&collections=sentinel-2-l1c,sentinel-2-l2a
 ```
 ### **Basic Search via POST Method**
 
@@ -192,9 +193,6 @@ So the above would result in a query of `view:sun_elevation > 40 AND view:sun_el
 
 Example : [Command Line](Command%20Line.md#query-extension-via-post-method) | [Postman](Postman.md#query-extension-via-post-method) | | [Python](./Python.md#search)
 
-
-????? **Supported Operators** do we need the table?
-
 ### [Fields Extension](https://github.com/stac-api-extensions/fields)
 The Fields Extension allows you to specify which fields are returned from the API, reducing data transfer size. 
 
@@ -203,14 +201,14 @@ The Fields Extension allows you to specify which fields are returned from the AP
 Example - only return `id`, `properties.datetime` and `assets.aot`
 
 ```
-GET https://api.eds.earthdaily.com/archive/v1/stac/v1/search?fields=id,properties.datetime,assets.aot
+GET https://api.earthdaily.com/platform/v1/stac/v1/search?fields=id,properties.datetime,assets.aot
 ```
 POST example
 
 Example - exclude `links` and `geometry`
 
 ```
-GET https://api.eds.earthdaily.com/archive/v1/stac/v1/search?fields=-links,-geometry
+GET https://api.earthdaily.com/platform/v1/stac/v1/search?fields=-links,-geometry
 ```
 POST example
 
@@ -225,10 +223,10 @@ GET examples:
 
 Sortby `eo:cloud_cover` ascending:
 
-GET https://api.eds.earthdaily.com/stac/v1/search?sortby=eo:cloud_cover
+GET https://api.earthdaily.com/platform/v1/stac/v1/search?sortby=eo:cloud_cover
 
 Sortby `eo:cloud_cover` descending:
-GET https://api.eds.earthdaily.com/stac/v1/search?sortby=-eo:cloud_cover
+GET https://api.earthdaily.com/platform/v1/stac/v1/search?sortby=-eo:cloud_cover
 
 > When sorting by `eo:cloud_cover`, only items with non-null `eo:cloud_cover` property values will be returned.
 
@@ -247,7 +245,7 @@ For private and requester pays S3 assets, and Azure Blob assets, we offer presig
 
 >Use a `X-Signed-Asset-Urls` boolean header to override default behaviour. Be aware a high `limit` parameter on the search endpoint combined with a high asset count collection can result in high response latency.
 
-Presigned URLs are available for EDA buckets for all customer accounts. Presigned URLs for 3rd party buckets (example `s3://sentinel-s2-l1c`) are available depending on your account setup.
+Presigned URLs are available for EDA buckets for all customer accounts. Presigned URLs for 3rd party buckets (example `s3://sentinel-s2-l1c`) are available depending on your account setup. Please note that these presigned URLs are valid for 12 hours after which they expire.
 
 Example : [Command Line](Command%20Line.md#downloading-assets) | [Postman](Postman.md#downloading-assets) 
  
