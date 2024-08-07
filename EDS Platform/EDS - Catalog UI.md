@@ -6,7 +6,7 @@
 * [Placing an order and receiving it](#placing-an-order-and-receiving-it)
 
 ## Introduction
-Customers can get access to our image catalog and products through EarthPlatform. It is a portal where the user can browse through our minimally processed catalog items. In addition to provide useful metadata and details about the listed images, it provides capabilities to interact with the scene content and order a high resolution product for selected catalog items. You can access the [EarthPlatform](https://earthplatform.eds.earthdaily.com/catalog) by appending the endpoint /catalog to the base URL.
+Customers can get access to our image catalog and products through EarthPlatform. It is a portal where the user can browse through our minimally processed catalog items. In addition to provide useful metadata and details about the listed images, it provides capabilities to interact with the scene content and order a high resolution product for selected catalog items. You can access the [EarthPlatform](https://console.earthdaily.com/platform) by appending the endpoint /catalog to the base URL.
 
 
 ## Search

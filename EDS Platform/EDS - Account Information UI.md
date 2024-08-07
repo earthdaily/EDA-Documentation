@@ -6,7 +6,7 @@
 * [Order State](#order-state)
 
 ## Introduction
-The Account Information page is the landing page for each user of the customer account when they login to the [Account Information](https://earthplatform.eds.earthdaily.com/am) It allows the user to check his own account details, his orders etc. It also has the link to the other applications like Catalog UI, Mosaic etc
+The Account Information page is the landing page for each user of the customer account when they login to the [Account Information](https://console.earthdaily.com/account) It allows the user to check his own account details, his orders etc. It also has the link to the other applications like Catalog UI, Mosaic etc
 
 ## General Information
   
