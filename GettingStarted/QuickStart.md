@@ -62,12 +62,12 @@ This will output a list of assets for all available collections to you in the pl
 ## Other Examples
 
 
-1) [Common Band Names](https://github.com/earthdaily/earthdaily-python-client/blob/main/examples/common_band_names.py)
-2) [Compare Scale with Sentinel-2](https://github.com/earthdaily/earthdaily-python-client/blob/main/examples/compare_scale_s2.py)
-3) [EarthDaily Simulated Datasets](https://github.com/earthdaily/earthdaily-python-client/blob/main/examples/earthdaily_simulated_dataset.py)
-4) [Field Evolution](https://github.com/earthdaily/earthdaily-python-client/blob/main/examples/field_evolution.py)
-5) [Create a Data Cube](https://github.com/earthdaily/earthdaily-python-client/blob/main/examples/first_steps_create_datacube.py)
-6) [Create a Multisensor Cube](https://github.com/earthdaily/earthdaily-python-client/blob/main/examples/multisensors_cube.py)
-7) [Stack Summary](https://github.com/earthdaily/earthdaily-python-client/blob/main/examples/summary_stack.py)
+1. [Common Band Names](https://github.com/earthdaily/earthdaily-python-client/blob/main/examples/common_band_names.py)
+2. [Compare Scale with Sentinel-2](https://github.com/earthdaily/earthdaily-python-client/blob/main/examples/compare_scale_s2.py)
+3. [EarthDaily Simulated Datasets](https://github.com/earthdaily/earthdaily-python-client/blob/main/examples/earthdaily_simulated_dataset.py)
+4. [Field Evolution](https://github.com/earthdaily/earthdaily-python-client/blob/main/examples/field_evolution.py)
+5. [Create a Data Cube](https://github.com/earthdaily/earthdaily-python-client/blob/main/examples/first_steps_create_datacube.py)
+6. [Create a Multisensor Cube](https://github.com/earthdaily/earthdaily-python-client/blob/main/examples/multisensors_cube.py)
+7. [Stack Summary](https://github.com/earthdaily/earthdaily-python-client/blob/main/examples/summary_stack.py)
 
 The fastest way to get up and running is to use EDA's [Python Client Repository](https://github.com/earthdaily/earthdaily-python-client). 

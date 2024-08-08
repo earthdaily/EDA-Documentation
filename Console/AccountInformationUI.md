@@ -21,11 +21,9 @@ On the upper right hand side of the window, you will see three small icons as be
 
 |   Icon    |   Description     |
 |------------|------------------|
-| ![About](../Images/Account%20UI/About.png) | About page that shows the EarthDaily version |
-| ![AppSwitcher](../Images/Account%20UI/App%20Switcher.png) | It will show you a list of hosted applications from EarthDaily and you can use it to switch between different applications |
-| ![UserInfo](../Images/Account%20UI/User%20Info.png) | Quick information about the signedin user along with his/her account and an option to sign out |
-
-<br></br>
+| ![About](../Images/AccountUI/About.png) | About page that shows the EarthDaily version |
+| ![AppSwitcher](../Images/AccountUI/AppSwitcher.png) | It will show you a list of hosted applications from EarthDaily and you can use it to switch between different applications |
+| ![UserInfo](../Images/AccountUI/UserInfo.png) | Quick information about the signedin user along with his/her account and an option to sign out |
 
 ## My Account
 | S. No | Label | Description |
@@ -35,10 +33,7 @@ On the upper right hand side of the window, you will see three small icons as be
 | ![Three](../Images/NumberLabels/Three.png)   | API Credentials |  Token URL to generate “Bearer Token” for API authentication. |
 | ![Four](../Images/NumberLabels/Four.png)  | Hosted Apps     | Use this to switch between various apps available. |
 
-<br></br>
-
-
-![My Account](../Images/Account%20UI/Account%20Information.png)
+![My Account](../Images/AccountUI/AccountInformation.png)
 
 ## My Orders
 
@@ -57,13 +52,8 @@ It lists all the orders being placed under the customer account you belong to. T
 | ![Twelve](../Images/NumberLabels/Twelve.png) | Filter | This is the detailed filter for every attribute of the order and allows you to select from the values in all the orders. |
 | ![Thirteen](../Images/NumberLabels/Thirteen.png) | Refresh | Refreshes the page as per current criteria. |
 
- <br></br>
-
-
-![My Orders](../Images/Account%20UI/My%20Orders.png)
-
-<br></br>
-
+ 
+![My Orders](../Images/AccountUI/MyOrders.png)
 
 ## Order state
 

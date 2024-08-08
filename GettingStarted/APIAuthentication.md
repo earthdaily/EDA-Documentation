@@ -14,10 +14,7 @@ nav_order: 2
     * [Python](#python)
     * [Postman](#postman)
 
-</br>
-
 ## Authentication
-
 
 EarthPlatform STAC API is protected by bearer authentication.
 A bearer token must be generated using [OAuth Client Credentials Flow](https://www.oauth.com/oauth2-servers/access-tokens/client-credentials/). The required client_id, client_secret and access_token_url values can be found on [Account Management](https://console.earthdaily.com/account) page. These API credentials are specific to your user account on EarthPlatform and should be kept confidential.
@@ -29,8 +26,6 @@ A bearer token must be generated using [OAuth Client Credentials Flow](https://w
 * The generated access_token will have a 1 hour expiry. 
 * The access token should be cached locally and included in each STAC API request as a bearer authorization header.  
 * When the access token has expired, an error 401 (Unauthorized) will be returned from STAC API requests. 
-
-</br>
 
 ## Examples
 
@@ -50,7 +45,6 @@ Example curl response
 ```
 {"access_token":"eyJraWQiO.......","expires_in":3600,"token_type":"Bearer"}
 ```
-</br>
 
 ## Python
 
@@ -101,7 +95,6 @@ def _get_token(config=None):
 print(_get_token())
 }
 ```
-</br>
 
 ## Postman
 
@@ -112,9 +105,6 @@ Below is the screenshot showing the **Authorization tab** in Postman and follow 
 3. Enter the access token URL from the account information page above :point_up_2:
 4. Enter the Client ID from the account information page above :point_up_2:
 5. Enter the Client Secret from the account information page above :point_up_2:
-
-</br>
-</br>
 
 
 ![Postman](../Images/STACAPI/PostmanConfiguration.png)

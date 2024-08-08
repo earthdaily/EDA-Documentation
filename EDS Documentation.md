@@ -20,9 +20,9 @@ redirect_from:
 * ### [Quick Start](./GettingStarted/QuickStart.md)
 
 ## Console
-* ### [Account Information](./EDS%20Platform/EDS%20-%20Account%20Information%20UI.md)
-* ### [EarthPlatform](./EDS%20Platform/EDS%20-%20Catalog%20UI.md)
-* ### [EarthMosaic](./EDS%20Platform/EDS%20-%20Mosaic%20UI.md)
+* ### [Account Information](./Console/AccountInformationUI.md)
+* ### [EarthPlatform](./Console/CatalogUI.md)
+* ### [EarthMosaic](./Console/MosaicUI.md)
 
 ## API
   * ### [Spatial Temporal Asset Catalog](./EDS%20API/API%20Design/Spatial%20Temporal%20Asset%20Catalogs.md)
