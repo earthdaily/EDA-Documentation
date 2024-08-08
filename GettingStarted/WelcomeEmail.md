@@ -12,6 +12,6 @@ The EarthPlatform [EarthPlatform](https://console.earthdaily.com/platform/signin
 
 To get started, login to [Account Management](https://console.earthdaily.com/account/signin) using your EarthPlatform credentials. These would have been provided in an email when your user account was created and it looks like this: 
 
-![Welcome Email](../Images/STAC%20API/WelcomeEmail.png) 
+![Welcome Email](../Images/STACAPI/WelcomeEmail.png) 
 
 You will need to change your password at the first login.

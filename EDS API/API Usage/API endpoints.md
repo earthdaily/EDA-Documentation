@@ -66,7 +66,7 @@ This end point takes the collection id as parameter. Below are some examples
 
 The response also contains a link to the next set of items 
 
-![NextItems](../../Images/STAC%20API/Postman%20Examples/LinksToNextItem.png)
+![NextItems](../../Images/STACAPI/PostmanExamples/LinksToNextItem.png)
 
 Example : [Command Line](Command%20Line.md#items) | [Postman](Postman.md#items) 
 

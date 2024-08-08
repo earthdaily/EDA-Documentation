@@ -10,8 +10,8 @@ nav_order: 3
 
 The required client_id, client_secret and access_token_url values can be found on [Account Management](https://console.earthdaily.com/account) page. These API credentials are specific to your user account on EarthPlatform and should be kept confidential.
 
-![Client Credentials](../Images/STAC%20API//Account%20Information.png)
-For more see: [Authentication](./Getting%20Started/API%20Authentication.md)
+![Client Credentials](../Images/STACAPI//AccountInformation.png)
+For more see: [Authentication](../GettingStarted/APIAuthentication.md)
 
 ## EarthDaily Python Client
 
@@ -57,7 +57,7 @@ for collection, assets in asset_mapper._asset_mapper_config.items():
 
 This will output a list of assets for all available collections to you in the platform.
 
-![Python Example Band Names](../Images/STAC%20API/python%20example%20bandnames.png)
+![Python Example Band Names](../Images/STACAPI/pythonexamplebandnames.png)
 
 ## Other Examples
 

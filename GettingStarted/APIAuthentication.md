@@ -22,7 +22,7 @@ nav_order: 2
 EarthPlatform STAC API is protected by bearer authentication.
 A bearer token must be generated using [OAuth Client Credentials Flow](https://www.oauth.com/oauth2-servers/access-tokens/client-credentials/). The required client_id, client_secret and access_token_url values can be found on [Account Management](https://console.earthdaily.com/account) page. These API credentials are specific to your user account on EarthPlatform and should be kept confidential.
 
-![Client Credentials](../Images/STAC%20API//Account%20Information.png)
+![Client Credentials](../Images/STACAPI//AccountInformation.png)
 
 ### Point to Note
 
@@ -117,4 +117,4 @@ Below is the screenshot showing the **Authorization tab** in Postman and follow 
 </br>
 
 
-![Postman](../Images/STAC%20API/Postman%20Configuration.png)
+![Postman](../Images/STACAPI/PostmanConfiguration.png)
