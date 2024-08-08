@@ -35,14 +35,14 @@ redirect_from:
 
 
 ## Collections
-* ### [Collections](EDS%20Collections/Collections.md)
-* ### [EDA Mosaics](EDS%20Collections/EDA%20Mosaics.md)
-* ### [EDA Cloud Masks](EDS%20Collections/EDA%20Cloud%20Masks.md)
+* ### [Available Collections](Collections/AvailableCollections.md)
+* ### [EDA Mosaics](Collections/EDAMosaics.md)
+* ### [EDA Cloud Masks](Collections/EDACloudMasks.md)
 
 <!--
  ## Capability Examples 
 * ### [Notebooks](EDS%20Compatibility%20Examples/Notebook%20Examples.md)
 * ### [Plugins](EDS%20Compatibility%20Examples/Integrations%20and%20Plugins.md)
 -->
-## [Help & FAQ](Help%20and%20FAQ.md) 
+## [Help & FAQ](HelpandFAQ.md) 
 

@@ -136,7 +136,7 @@ Below is the example where two images are selected and viewed on the map. Auto v
 
 | S. No.    | Label | Description |
 |-----------|-------|-------------|
-| ![Seventeen](../Images/NumberLabels/Seventeen.png)  </span>  | Fly to Bounds | When you click at the center of this button, it zooms into the map to this thumbnail for a focussed view. | 
+| ![Seventeen](../Images/NumberLabels/Seventeen.png)   | Fly to Bounds | When you click at the center of this button, it zooms into the map to this thumbnail for a focussed view. | 
 
 ![EarthPlatform Fly To Bounds](../Images/CatalogUI/FlyToBounds.png)
 
