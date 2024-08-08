@@ -1,6 +1,6 @@
 ---
 layout: minimal
-title: API Authentication
+title: APIAuthentication
 permalink: APIAuthentication
 parent: Getting Started
 nav_order: 2

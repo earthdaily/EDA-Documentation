@@ -15,9 +15,9 @@ redirect_from:
 
 # EDS Documentation
 ## Getting Started
-* ### [Welcome Email](./Getting%20Started/WelcomeEmail.md)
-* ### [Authentication](./Getting%20Started/API%20Authentication.md)
-* ### [Quick Start](./Getting%20Started/QuickStart.md)
+* ### [Welcome Email](./GettingStarted/WelcomeEmail.md)
+* ### [Authentication](./GettingStarted/APIAuthentication.md)
+* ### [Quick Start](./GettingStarted/QuickStart.md)
 
 ## Console
 * ### [Account Information](./EDS%20Platform/EDS%20-%20Account%20Information%20UI.md)
