@@ -26,6 +26,7 @@ On the upper right hand side of the window, you will see three small icons as be
 | ![UserInfo](../Images/AccountUI/UserInfo.png) | Quick information about the signedin user along with his/her account and an option to sign out |
 
 ## My Account
+
 | S. No | Label | Description |
 |-------|-------|-------------|
 | ![One](../Images/NumberLabels/One.png)  | User   |  Logged in user details |
