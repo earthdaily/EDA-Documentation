@@ -39,6 +39,6 @@ STAC Resources
 Earthdaily has it's own EDA extension which is used for collections and items mainly
 
 *  [EDA extension schema](../Extensions/EDA%20STAC%20extension%20schema.json)
-*  [EDA extension details](../Extensions/EDA%20STAC%20extension.md) 
-*  [EDA Data Coverage extension schema](../Extensions/EDA%20Data%20Coverage%20STAC%20extension.md)
-*  [EDA Data Coverage extension details](../Extensions/EDA%20Data%20Coverage%20STAC%20extension%20schema.json)
+*  [EDA extension details](../Extensions/EDASTACextension.md) 
+*  [EDA Data Coverage extension schema](../Extensions/EDA%20Data%20Coverage%20STAC%20extension%20schema.json)
+*  [EDA Data Coverage extension details](../Extensions/EDADataCoverageSTACextension.md)

@@ -55,16 +55,9 @@ GeoJSON Viewer
 
 Street and satellite View
 
-<table>
-  <tr>
-    <td>Street View</td>
-     <td>Satellite View</td>
-  </tr>
-  <tr>
-    <td><img src="../Images/CatalogUI/StreetView.png" ></td>
-    <td><img src="../Images/CatalogUI/SatelliteView.png"></td>
-  </tr>
- </table>
+ | Street View  |   Satellite View  |
+ |--------------|-------------------|
+ |![StreetView](../Images/CatalogUI/StreetView.png)| ![SatelliteView](../Images/CatalogUI/SatelliteView.png) |
 
 
 Ruler

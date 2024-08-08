@@ -29,7 +29,7 @@ Return list of all Collections
 ```
 GET https://api.earthdaily.com/platform/v1/stac/v1/collections
 ```
-**Example** : [Command Line](CommandLine.md#collections) | [Postman](Postman.md#collections) | | [Python](Python.md#get-collections)
+**Example** : [Command Line](CommandLine.md#collections) | [Postman](Postman.md#collections) | [Python](Python.md#get-collections)
 
 ## Collection 
 Return specific Collection
@@ -45,6 +45,7 @@ This end point takes the collection id as parameter. Below are some examples
 | Sentinel-2 L1C | https://api.earthdaily.com/platform/v1/stac/v1/collections/sentinel-2-l1c |
 | Landsat Collection 2 L1 | https://api.earthdaily.com/platform/v1/stac/v1/collections/landsat-c2l1 |
 | Venus L2A | https://api.earthdaily.com/platform/v1/stac/v1/collections/venus-l2a |
+<br>
 **Example** : [Command Line](CommandLine.md#collection) | [Postman](Postman.md#collection) | [Python](Python.md#get-a-specific-collection)
 
 
@@ -66,7 +67,6 @@ This end point takes the collection id as parameter. Below are some examples
 The response also contains a link to the next set of items 
 
 ![NextItems](../../Images/STACAPI/PostmanExamples/LinksToNextItem.png)
-
 **Example** : [Command Line](CommandLine.md#items) | [Postman](Postman.md#items) 
 
 
@@ -105,7 +105,7 @@ The queryables endpoint currently doesn’t provide information on supported ope
 
 * Get queryable fields that apply to both collections sentinel-2-l1c and sentinel-2-l2a:
 `https://api.earthdaily.com/platform/v1/stac/v1/queryables?collections=sentinel-2-l1c,sentinel-2-l2a`
-
+<br>
 **Example** : [Command Line](CommandLine.md#queryables) | [Postman](Postman.md#queryables) 
 
 
