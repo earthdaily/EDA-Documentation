@@ -15,7 +15,6 @@ Return list of all Collections
 curl --location https://api.earthdaily.com/platform/v1/stac/v1/collections --header 'Authorization: Bearer <ACCESS_TOKEN HERE>'
 ```
 
-
 ## Collection
 
 Return specific Collection 
