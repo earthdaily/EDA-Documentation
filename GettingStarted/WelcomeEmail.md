@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Welcome
-parent: EDS Documentation
-nav_order: 12
+parent: Getting Started
+nav_order: 1
 ---
 
 # Welcome Email
