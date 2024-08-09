@@ -1,7 +1,7 @@
 ---
-layout: minimal
+layout: default
 title: Welcome
-permalink: /GettingStarted/WelcomeEmail
+grand_parent: EDS Documentation
 parent: Getting Started
 nav_order: 1
 ---

@@ -1,5 +1,5 @@
 ---
-layout: minimal
+layout: default
 title: APIAuthentication
 permalink: APIAuthentication
 parent: Getting Started
