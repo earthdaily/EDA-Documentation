@@ -44,5 +44,15 @@ redirect_from:
 * ### [Notebooks](EDS%20Compatibility%20Examples/Notebook%20Examples.md)
 * ### [Plugins](EDS%20Compatibility%20Examples/Integrations%20and%20Plugins.md)
 -->
+<!-- 
+Welcome to the EDS (Earth Data Store) documentation. EDS is an ecosystem by EDA (EarthDaily Analytics) that can connect to and integrate with other geospatial platforms. It offers a growing suite of services, such as EarthMosaics, that help remove the complexity in developing geospatial applications.
+This documentation aims to provide our users (having different needs) the guidance required to be able to use the EDS platform and get the best out of it.
+Arranged as following
+* Tips to help you get started
+* Details of our STAC endpoints for users who wish to use our data in their software applications
+* How to guidance for the effective navigation of our user interfaces
+* Collections made available through EDS which includes some samples of our platform's value add
+-->
+
 ## [Help & FAQ](HelpandFAQ.md) 
 

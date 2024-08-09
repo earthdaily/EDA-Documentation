@@ -190,8 +190,9 @@ Here is an example of the Footprint opacity
 Now, lets see when wetland prediction is enabled for images, how does the opacity slider work. Examples at 100% and 20%
 
  | Wetland Opacity High  |   Wetland Opacity Low  |  
- |--------------|-------------------|
+ |--------------|-------------------|  
  |![WetlandOpacityHigh](../Images/CatalogUI/WetlandOpacityHigh.png)| ![WetlandOpacityLow](../Images/CatalogUI/WetlandOpacityLow.png) |  
+
 That completes the list of our extensive operations that can be done with the Catalog images.
 
 <!-- 

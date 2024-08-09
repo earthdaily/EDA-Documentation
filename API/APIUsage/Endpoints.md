@@ -8,7 +8,7 @@ has_children: true
 
 # STAC Endpoints
 
-The base URL of the STAC catalog is https://api.earthdaily.com/platform/v1/stac/v1 and below are various endpoints
+The base URL of the STAC catalog is https://api.earthdaily.com/platform/v1/stac and below are various endpoints
 
 * [Collections](#collections)
 * [Collection](#collection) 
@@ -27,7 +27,7 @@ The base URL of the STAC catalog is https://api.earthdaily.com/platform/v1/stac/
 ## Collections 
 Return list of all Collections
 ```
-GET https://api.earthdaily.com/platform/v1/stac/v1/collections
+GET https://api.earthdaily.com/platform/v1/stac/collections
 ```
 **Example** : [Command Line](CommandLine.md#collections) | [Postman](Postman.md#collections) | [Python](Python.md#get-collections)
 
@@ -35,16 +35,16 @@ GET https://api.earthdaily.com/platform/v1/stac/v1/collections
 Return specific Collection
 
 ```
-GET https://api.earthdaily.com/platform/v1/stac/v1/collections/<COLLECTION_ID>
+GET https://api.earthdaily.com/platform/v1/stac/collections/<COLLECTION_ID>
 ```
 
 This end point takes the collection id as parameter. Below are some examples
 
 | Collection | URL |
 |------------------------------|--------------------------------------------------------------------|
-| Sentinel-2 L1C | https://api.earthdaily.com/platform/v1/stac/v1/collections/sentinel-2-l1c |
-| Landsat Collection 2 L1 | https://api.earthdaily.com/platform/v1/stac/v1/collections/landsat-c2l1 |
-| Venus L2A | https://api.earthdaily.com/platform/v1/stac/v1/collections/venus-l2a |
+| Sentinel-2 L1C | https://api.earthdaily.com/platform/v1/stac/collections/sentinel-2-l1c |
+| Landsat Collection 2 L1 | https://api.earthdaily.com/platform/v1/stac/collections/landsat-c2l1 |
+| Venus L2A | https://api.earthdaily.com/platform/v1/stac/collections/venus-l2a |
 ```
 Response of the above requests is metadat about the collection
 ```
@@ -54,16 +54,16 @@ Response of the above requests is metadat about the collection
 ## Items 
 Return paged Items ordered by datetime descending (It doesn’t support search parameters, so often /stac/v1/search is preferred instead)
 ```
-GET https://api.earthdaily.com/platform/v1/stac/v1/collections/<COLLECTION_ID>/items
+GET https://api.earthdaily.com/platform/v1/stac/collections/<COLLECTION_ID>/items
 ```
 
 This end point takes the collection id as parameter. Below are some examples
 
 |  Collection |  URL | 
 |----------------------|-------------------|
-| Sentinel-2 | https://api.earthdaily.com/platform/v1/stac/v1/collections/sentinel-2-l1c/items |
-| Landsat Collection 2 L1 | https://api.earthdaily.com/platform/v1/stac/v1/collections/landsat-c2l1/items |
-| Venus L2A | https://api.earthdaily.com/platform/v1/stac/v1/collections/venus-l2a/items |
+| Sentinel-2 | https://api.earthdaily.com/platform/v1/stac/collections/sentinel-2-l1c/items |
+| Landsat Collection 2 L1 | https://api.earthdaily.com/platform/v1/stac/collections/landsat-c2l1/items |
+| Venus L2A | https://api.earthdaily.com/platform/v1/stac/collections/venus-l2a/items |
 
 
 The response also contains a link to the next set of items 
@@ -76,7 +76,7 @@ The response also contains a link to the next set of items
 ## Item 
 Returns a single Item for a given Collection and Item ID
 ```
-GET https://api.earthdaily.com/platform/v1/stac/v1/collections/<COLLECTION_ID>/items/<ITEM_ID>
+GET https://api.earthdaily.com/platform/v1/stac/collections/<COLLECTION_ID>/items/<ITEM_ID>
 ```
 **Example** : [Command Line](CommandLine.md#item) | [Postman](Postman.md#item) | [Python](Python.md#specific-item)
 
@@ -86,11 +86,11 @@ Returns the queryable names for the STAC API Item Search using Query Extension. 
 Below are the two ways to query the “queryable items“ for a given collection
 
 ```
-GET https://api.earthdaily.com/platform/v1/stac/v1/queryables?collections=<COLLECTION_ID>
+GET https://api.earthdaily.com/platform/v1/stac/queryables?collections=<COLLECTION_ID>
 ```
 or
 ```
-GET https://api.earthdaily.com/platform/v1/stac/v1/collections/{collection_id}/queryables
+GET https://api.earthdaily.com/platform/v1/stac/collections/{collection_id}/queryables
 ```
 
 Parameters:
@@ -101,13 +101,13 @@ The queryables endpoint  includes the datatype that must be used.
 The queryables endpoint currently doesn’t provide information on supported operations for a given property/datatype. Supplying an unsupported field-value-operation combination will result in an error 400 (Bad Request) being returned. Example: a `contains` operation is not supported on a `string` queryable.
 
 * Get queryable properties that apply to all collections: 
-`https://api.earthdaily.com/platform/v1/stac/v1/queryables`  
+`https://api.earthdaily.com/platform/v1/stac/queryables`  
 
 * Get queryable fields that apply to collection sentinel-2-l2a:
-`https://api.earthdaily.com/platform/v1/stac/v1/queryables?collections=sentinel-2-l2a`  
+`https://api.earthdaily.com/platform/v1/stac/queryables?collections=sentinel-2-l2a`  
 
 * Get queryable fields that apply to both collections sentinel-2-l1c and sentinel-2-l2a:
-`https://api.earthdaily.com/platform/v1/stac/v1/queryables?collections=sentinel-2-l1c,sentinel-2-l2a`
+`https://api.earthdaily.com/platform/v1/stac/queryables?collections=sentinel-2-l1c,sentinel-2-l2a`
 <!-- Space for example -->
 **Example** : [Command Line](CommandLine.md#queryables) | [Postman](Postman.md#queryables) 
 
@@ -136,13 +136,13 @@ Implements STAC basic Item search functionality  + extensions
 Shows use of datetime, collections and bbox
 
 ```
-https://api.earthdaily.com/platform/v1/stac/v1/search?datetime=2023-01-01T18:50:42.000000Z/2023-02-01T18:50:42.000000Z&bbox=-1.757813,51.971346,-0.065918,52.589701&collections=sentinel-2-l1c,sentinel-2-l2a
+https://api.earthdaily.com/platform/v1/stac/search?datetime=2023-01-01T18:50:42.000000Z/2023-02-01T18:50:42.000000Z&bbox=-1.757813,51.971346,-0.065918,52.589701&collections=sentinel-2-l1c,sentinel-2-l2a
 ```
 ### **Basic Search via POST Method**
 
 Shows use of datetime, collections and intersects, query remains same as GET
 ```
-https://api.eds.earthdaily.com/archive/v1/stac/v1/search?datetime=2023-01-01T18:50:42.000000Z/2023-02-01T18:50:42.000000Z&bbox=-1.757813,51.971346,-0.065918,52.589701&collections=sentinel-2-l1c,sentinel-2-l2a
+https://api.eds.earthdaily.com/archive/v1/stac/search?datetime=2023-01-01T18:50:42.000000Z/2023-02-01T18:50:42.000000Z&bbox=-1.757813,51.971346,-0.065918,52.589701&collections=sentinel-2-l1c,sentinel-2-l2a
 ```
 **Example** : [Command Line](CommandLine.md#search) | [Postman](Postman.md#search) | [Python](Python.md#search)
 
@@ -205,14 +205,14 @@ The Fields Extension allows you to specify which fields are returned from the AP
 **Example** - only return `id`, `properties.datetime` and `assets.aot`
 
 ```
-GET https://api.earthdaily.com/platform/v1/stac/v1/search?fields=id,properties.datetime,assets.aot
+GET https://api.earthdaily.com/platform/v1/stac/search?fields=id,properties.datetime,assets.aot
 ```
 POST example
 
 Example - exclude `links` and `geometry`
 
 ```
-GET https://api.earthdaily.com/platform/v1/stac/v1/search?fields=-links,-geometry
+GET https://api.earthdaily.com/platform/v1/stac/search?fields=-links,-geometry
 ```
 **Example** : [Command Line](CommandLine.md#fields-extension) | [Postman](Postman.md#fields-extension) | [Python](Python.md#search)
 
@@ -227,11 +227,11 @@ GET examples:
 
 Sortby `eo:cloud_cover` ascending:
 ```
-GET https://api.earthdaily.com/platform/v1/stac/v1/search?sortby=eo:cloud_cover
+GET https://api.earthdaily.com/platform/v1/stac/search?sortby=eo:cloud_cover
 ```
 Sortby `eo:cloud_cover` descending:
 ```
-GET https://api.earthdaily.com/platform/v1/stac/v1/search?sortby=-eo:cloud_cover
+GET https://api.earthdaily.com/platform/v1/stac/search?sortby=-eo:cloud_cover
 ```
 **Example** : [Command Line](CommandLine.md#sortby-extension) | [Postman](Postman.md#sortby-extension) | [Python](Python.md#search)
 
