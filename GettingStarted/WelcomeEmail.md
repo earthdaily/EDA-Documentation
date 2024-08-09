@@ -1,5 +1,5 @@
 ---
-layout: minimal
+layout: default
 title: Welcome
 permalink: /GettingStarted/WelcomeEmail
 parent: Getting Started
