@@ -18,6 +18,7 @@ ARM mosaics are produced with 6 bands from the four possible input sources:
 All input data is level 2A meaning atmospherically corrected, surface reflectance products. 
 
 ### Single Source (Sentinel-2A/B) Mosaics
+
 |ARM Band Name|Sentinel-2 A/B Band|Approximate Center Wavelength (μm)|
 |--|--|--|
 |coastal|Band 1 - Coastal|0.443
@@ -35,6 +36,7 @@ All input data is level 2A meaning atmospherically corrected, surface reflectanc
 
 
 ### Dual Source (Sentinel-2A/B + Landsat8/9) Mosaics
+
 |ARM Band Name|Sentinel-2 A/B Band|Landsat 8/9 Band|Approximate Center Wavelength (μm)|
 |--|--|--| -- |
 |blue|Band 2 - Blue|Band 2 - Blue|0.490

@@ -103,16 +103,9 @@ Here is the image showing the JSON format of the item properties. This is very u
 
 Here is the example of tagging an item as favorite and then toggle the View favorite to see only the favorites list
 
-<table>
-  <tr>
-    <td>Favorite tag</td>
-     <td>View Only Favourites</td>
-  </tr>
-  <tr>
-    <td><img src="../Images/CatalogUI/Favorites.png" ></td>
-    <td><img src="../Images/CatalogUI/ViewFavourites.png" ></td>
-  </tr>
- </table>
+| Favorites  |   View Favourites  |
+ |--------------|-------------------|
+ |![Favorites](../Images/CatalogUI/Favorites.png)| ![ViewFavourites](../Images/CatalogUI/ViewFavourites.png) |
 
 Next is the example of View on Map button
 
@@ -142,16 +135,10 @@ Below is the example where two images are selected and viewed on the map. Auto v
 | ![TwentyOne](../Images/NumberLabels/TwentyOne.png) | Product Type | Once in the shopping cart, you also have the option to choose the derivative product you can order based on the image you have selected. In the example below, since the item in the cart is EDC catalog, you can choose to order ortho, AI and ARD products |
 | ![TwentyTwo](../Images/NumberLabels/TwentyTwo.png) | Checkout | Checkout for placing the order successfully. You will get the confirmation and the order no. which you can further track in your account information page |
 
-<table>
-  <tr>
-    <td>Download and Add To Cart</td>
-     <td>Cart Options</td>
-  </tr>
-  <tr>
-    <td><img src="../Images/CatalogUI/DownloadandOrder.png" ></td>
-    <td><img src="../Images/CatalogUI/Cart.png"></td>
-  </tr>
- </table>
+
+| Download And Order  |   Cart  |
+ |--------------|-------------------|
+ |![DownloadandOrder](../Images/CatalogUI/DownloadandOrder.png)| ![Cart](../Images/CatalogUI/Cart.png) |
 
 
 Next, we can see how we can compare two images over a period of time to see how the landscape is changing. We can do this by using Map Slider
@@ -190,46 +177,21 @@ Now, there are some slider options to help you see the relative difference or si
 
 Below you can see the opacity for the image at 100%, 50% and 0
 
-<table>
-  <tr>
-    <td>Image Opacity - 100%</td>
-    <td>Image Opacity - 50%</td>
-    <td>Image Opacity - 0%</td>
-  </tr>
-  <tr>
-    <td><img src="../Images/CatalogUI/ImageOpacity0.png" ></td>
-    <td><img src="../Images/CatalogUI/ImageOpacity50.png" ></td>
-    <td><img src="../Images/CatalogUI/ImageOpacity100.png" ></td>
-  </tr>
- </table>
+ | Image Opacity 0  |   Image Opacity 50  |   Image Opacity 100   | 
+ |--------------|-------------------|-------------------|
+ |![ImageOpacity0](../Images/CatalogUI/ImageOpacity0.png)| ![ImageOpacity50](../Images/CatalogUI/ImageOpacity50.png) |  ![ImageOpacity100](../Images/CatalogUI/ImageOpacity100.png) | 
 
 Here is an example of the Footprint opacity
 
-<table>
-  <tr>
-    <td>Footprint Opacity - High</td>
-    <td>Footprint Opacity - Low</td>
-  </tr>
-  <tr>
-    <td><img src="../Images/CatalogUI/FootprintOpacityHigh.png" ></td>
-    <td><img src="../Images/CatalogUI/FootprintOpacityLow.png" ></td>
-  </tr>
- </table>
-
+ | Footprint Opacity High  |   Footprint Opacity Low  |  
+ |--------------|-------------------|
+ |![FootprintOpacityHigh](../Images/CatalogUI/FootprintOpacityHigh.png)| ![FootprintOpacityLow](../Images/CatalogUI/FootprintOpacityLow.png) | 
 
 Now, lets see when wetland prediction is enabled for images, how does the opacity slider work. Examples at 100% and 20%
 
-<table>
-  <tr>
-    <td>Wetland Opacity - High</td>
-    <td>Wetland Opacity - Low</td>
-  </tr>
-  <tr>
-    <td><img src="../Images/CatalogUI/WetlandOpacityHigh.png" ></td>
-    <td><img src="../Images/CatalogUI/WetlandOpacityLow.png"></td>
-  </tr>
- </table>
-
+ | Wetland Opacity High  |   Wetland Opacity Low  |  
+ |--------------|-------------------|
+ |![WetlandOpacityHigh](../Images/CatalogUI/WetlandOpacityHigh.png)| ![WetlandOpacityLow](../Images/CatalogUI/WetlandOpacityLow.png) |  
 That completes the list of our extensive operations that can be done with the Catalog images.
 
 <!-- 

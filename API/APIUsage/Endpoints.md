@@ -45,7 +45,9 @@ This end point takes the collection id as parameter. Below are some examples
 | Sentinel-2 L1C | https://api.earthdaily.com/platform/v1/stac/v1/collections/sentinel-2-l1c |
 | Landsat Collection 2 L1 | https://api.earthdaily.com/platform/v1/stac/v1/collections/landsat-c2l1 |
 | Venus L2A | https://api.earthdaily.com/platform/v1/stac/v1/collections/venus-l2a |
-<br>
+```
+Response of the above requests is metadat about the collection
+```
 **Example** : [Command Line](CommandLine.md#collection) | [Postman](Postman.md#collection) | [Python](Python.md#get-a-specific-collection)
 
 
@@ -67,6 +69,7 @@ This end point takes the collection id as parameter. Below are some examples
 The response also contains a link to the next set of items 
 
 ![NextItems](../../Images/STACAPI/PostmanExamples/LinksToNextItem.png)
+<!--Space for examples -->
 **Example** : [Command Line](CommandLine.md#items) | [Postman](Postman.md#items) 
 
 
@@ -105,7 +108,7 @@ The queryables endpoint currently doesn’t provide information on supported ope
 
 * Get queryable fields that apply to both collections sentinel-2-l1c and sentinel-2-l2a:
 `https://api.earthdaily.com/platform/v1/stac/v1/queryables?collections=sentinel-2-l1c,sentinel-2-l2a`
-<br>
+<!-- Space for example -->
 **Example** : [Command Line](CommandLine.md#queryables) | [Postman](Postman.md#queryables) 
 
 
@@ -137,8 +140,10 @@ https://api.earthdaily.com/platform/v1/stac/v1/search?datetime=2023-01-01T18:50:
 ```
 ### **Basic Search via POST Method**
 
-Shows use of datetime, collections and intersects
-
+Shows use of datetime, collections and intersects, query remains same as GET
+```
+https://api.eds.earthdaily.com/archive/v1/stac/v1/search?datetime=2023-01-01T18:50:42.000000Z/2023-02-01T18:50:42.000000Z&bbox=-1.757813,51.971346,-0.065918,52.589701&collections=sentinel-2-l1c,sentinel-2-l2a
+```
 **Example** : [Command Line](CommandLine.md#search) | [Postman](Postman.md#search) | [Python](Python.md#search)
 
 
@@ -186,8 +191,10 @@ Query Extension example:
 ```
 Each property and each operation is treated as an `AND` cause
 
-So the above would result in a query of `view:sun_elevation > 40 AND view:sun_elevation < 60 AND eo:cloud_cover < 10`
-
+So the above would result in a query of 
+```
+view:sun_elevation > 40 AND view:sun_elevation < 60 AND eo:cloud_cover < 10
+``` 
 **Example** : [Command Line](CommandLine.md#query-extension-via-post-method) | [Postman](Postman.md#query-extension-via-post-method) | | [Python](Python.md#search)
 
 ### [Fields Extension](https://github.com/stac-api-extensions/fields)
@@ -207,8 +214,6 @@ Example - exclude `links` and `geometry`
 ```
 GET https://api.earthdaily.com/platform/v1/stac/v1/search?fields=-links,-geometry
 ```
-POST example
-
 **Example** : [Command Line](CommandLine.md#fields-extension) | [Postman](Postman.md#fields-extension) | [Python](Python.md#search)
 
 ### [Sortby Extension](https://github.com/stac-api-extensions/sort)
@@ -216,17 +221,18 @@ By default, Items are returned by `datetime` descending. Then by `id` ascending.
 
 Sorting by property `eo:cloud_cover` is also supported on the `/search` endpoint:
 
+> Note: When sorting by `eo:cloud_cover`, only items with non-null `eo:cloud_cover` property values will be returned.
+
 GET examples:
 
 Sortby `eo:cloud_cover` ascending:
-
+```
 GET https://api.earthdaily.com/platform/v1/stac/v1/search?sortby=eo:cloud_cover
-
+```
 Sortby `eo:cloud_cover` descending:
+```
 GET https://api.earthdaily.com/platform/v1/stac/v1/search?sortby=-eo:cloud_cover
-
-> When sorting by `eo:cloud_cover`, only items with non-null `eo:cloud_cover` property values will be returned.
-
+```
 **Example** : [Command Line](CommandLine.md#sortby-extension) | [Postman](Postman.md#sortby-extension) | [Python](Python.md#search)
 
 ## Downloading Assets
@@ -243,12 +249,12 @@ For private and requester pays S3 assets, and Azure Blob assets, we offer presig
 >Use a `X-Signed-Asset-Urls` boolean header to override default behaviour. Be aware a high `limit` parameter on the search endpoint combined with a high asset count collection can result in high response latency.
 
 Presigned URLs are available for EDA buckets for all customer accounts. Presigned URLs for 3rd party buckets (example `s3://sentinel-s2-l1c`) are available depending on your account setup. Please note that these presigned URLs are valid for 12 hours after which they expire.
-
+ <!-- space for wxamples -->
 **Example** : [Command Line](CommandLine.md#downloading-assets) | [Postman](Postman.md#downloading-assets) 
  
 
  ## Cloud Mask Query
 
  You can use the post Query method above to  get the earthdaily cloud masks as well.
- 
+ <!-- space for wxamples -->
 **Example** : [Command Line](CommandLine.md#cloud-masks) | [Postman](Postman.md#cloudmasks) | [Python](Python.md#cloud-masks)

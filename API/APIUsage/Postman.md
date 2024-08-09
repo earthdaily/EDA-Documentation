@@ -71,9 +71,9 @@ By default, Items are returned by `datetime` descending. Then by `id` ascending.
 
 Sorting by property `eo:cloud_cover` is also supported on the `/search` endpoint:
 
-| asc|asc|
+| Asc|Desc|
 |----|---|
-| ![Collections](../../Images/STACAPI/PostmanExamples/SortAsc.png| ![Collections](../../Images/STACAPI/PostmanExamples/SortDesc.png) |
+| ![Collections](../../Images/STACAPI/PostmanExamples/SortAsc.png) | ![Collections](../../Images/STACAPI/PostmanExamples/SortDesc.png) |
 
 
 ## Downloading Assets

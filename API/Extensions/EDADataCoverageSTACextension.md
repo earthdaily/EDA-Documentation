@@ -27,7 +27,7 @@ The fields in the table below can be used in these parts of STAC documents:
  | eda_data_coverage:region_version     | Number | If we update the existing regions, we maintain versions here  |
  | eda_data_coverage:month| Number      | Data Coverage Report Month                                 |
  | eda_data_coverage:week| Number      | Data Coverage Report Week                                   |
- ***
+ 
  
  
 
