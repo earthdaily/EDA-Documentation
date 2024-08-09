@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Welcome
+grand_parent: EDS Documentation
 parent: Getting Started
 nav_order: 1
 ---
