@@ -10,9 +10,13 @@ redirect_from:
 <!-- Redirect is used to set the page you want to have homepage -->
 
 
-## <img width="50%" alt="Azure Machine Learning.jpg" src="https://raw.githubusercontent.com/earthdaily/Images/main/Corporate/EarthDaily.png" style="border-radius: 15%">
+## <img width="25%" alt="Azure Machine Learning.jpg" src="https://raw.githubusercontent.com/earthdaily/Images/main/Corporate/EarthDaily.png" style="border-radius: 15%">
 
+**Welcome to the EDS (Earth Data Store) documentation** !!
 
+![EarthDailyEDS](./Images/EarthDailyEDS.png)
+
+<!--
 # EDS Documentation
 ## Getting Started
 * ### [Welcome Email](./GettingStarted/WelcomeEmail.md)
@@ -38,21 +42,26 @@ redirect_from:
 * ### [Available Collections](Collections/AvailableCollections.md)
 * ### [EDA Mosaics](Collections/EDAMosaics.md)
 * ### [EDA Cloud Masks](Collections/EDACloudMasks.md)
-
+-->
 <!--
  ## Capability Examples 
 * ### [Notebooks](EDS%20Compatibility%20Examples/Notebook%20Examples.md)
 * ### [Plugins](EDS%20Compatibility%20Examples/Integrations%20and%20Plugins.md)
+## [Help & FAQ](HelpandFAQ.md) 
 -->
-<!-- 
-Welcome to the EDS (Earth Data Store) documentation. EDS is an ecosystem by EDA (EarthDaily Analytics) that can connect to and integrate with other geospatial platforms. It offers a growing suite of services, such as EarthMosaics, that help remove the complexity in developing geospatial applications.
+
+ 
+EDS is an ecosystem by EDA (EarthDaily Analytics) that can connect to and integrate with other geospatial platforms. It offers a growing suite of services, such as EarthMosaics, that help remove the complexity in developing geospatial applications.
 This documentation aims to provide our users (having different needs) the guidance required to be able to use the EDS platform and get the best out of it.
 Arranged as following
 * Tips to help you get started
 * Details of our STAC endpoints for users who wish to use our data in their software applications
 * How to guidance for the effective navigation of our user interfaces
 * Collections made available through EDS which includes some samples of our platform's value add
--->
 
-## [Help & FAQ](HelpandFAQ.md) 
+
+
+
+
+
 

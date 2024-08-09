@@ -1,5 +1,5 @@
 ---
-layout: minimal
+layout: default
 title: FAQs
 parent: EDS Documentation
 nav_order: 6

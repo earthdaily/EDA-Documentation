@@ -1,7 +1,8 @@
 ---
-layout: minimal
+layout: default
 title: API Details and Limits
-parent: EDS API
+grand_parent: EDS Documentation
+parent: API
 nav_order: 3
 ---
 

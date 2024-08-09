@@ -1,5 +1,5 @@
 ---
-layout: minimal
+layout: default
 title: Postman Samples
 parent: API endpoints
 nav_order: 2

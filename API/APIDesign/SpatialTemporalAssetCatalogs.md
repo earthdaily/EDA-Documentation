@@ -1,9 +1,9 @@
 ---
-layout: minimal
+layout: default
 title: STAC Specification
-parent: EDS API
+grand_parent: EDS Documentation
+parent: API
 nav_order: 1
-has_children: true
 ---
 
 # The STAC Specification
@@ -38,7 +38,7 @@ STAC Resources
 
 Earthdaily has it's own EDA extension which is used for collections and items mainly
 
-*  [EDA extension schema](../Extensions/EDA%20STAC%20extension%20schema.json)
+*  [EDA extension schema](../Extensions/EDASTACExtensionSchema.json)
 *  [EDA extension details](../Extensions/EDASTACextension.md) 
-*  [EDA Data Coverage extension schema](../Extensions/EDA%20Data%20Coverage%20STAC%20extension%20schema.json)
+*  [EDA Data Coverage extension schema](../Extensions/EDADataCoverageSTACExtensionSchema.json)
 *  [EDA Data Coverage extension details](../Extensions/EDADataCoverageSTACextension.md)

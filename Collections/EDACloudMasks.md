@@ -1,7 +1,8 @@
 ---
-layout: minimal
+layout: default
 title: EDA Cloud Masks
-parent: EDS Collections
+grand_parent: EDS Documentation
+parent: Collections
 nav_order: 3
 ---
 

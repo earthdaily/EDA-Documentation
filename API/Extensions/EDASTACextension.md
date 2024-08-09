@@ -1,5 +1,5 @@
 ---
-layout: minimal
+layout: default
 title: EDA STAC Extension
 parent: STAC Specification
 nav_order: 1

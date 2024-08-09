@@ -1,7 +1,8 @@
 ---
-layout: minimal
+layout: default
 title: EarthPlatform
-parent: EDS Console
+grand_parent: EDS Documentation
+parent: Console
 nav_order: 2
 ---
 

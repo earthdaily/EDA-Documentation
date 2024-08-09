@@ -1,7 +1,7 @@
 ---
 layout: default
 title: APIAuthentication
-permalink: APIAuthentication
+grand_parent: EDS Documentation
 parent: Getting Started
 nav_order: 2
 ---

@@ -1,7 +1,8 @@
 ---
-layout: minimal
+layout: default
 title: EDA Mosaics
-parent: EDS Collections
+grand_parent: EDS Documentation
+parent: Collections
 nav_order: 2
 ---
 

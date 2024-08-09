@@ -1,7 +1,8 @@
 ---
-layout: minimal
+layout: default
 title: EarthMosaic
-parent: EDS Console
+grand_parent: EDS Documentation
+parent: Console
 nav_order: 3
 ---
 

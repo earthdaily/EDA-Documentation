@@ -1,5 +1,5 @@
 ---
-layout: minimal
+layout: default
 title: Python Samples
 parent: API endpoints
 nav_order: 3

@@ -1,5 +1,5 @@
 ---
-layout: minimal
+layout: default
 title: Commandline Samples
 parent: API endpoints
 nav_order: 1

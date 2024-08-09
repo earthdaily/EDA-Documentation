@@ -1,7 +1,8 @@
 ---
-layout: minimal
+layout: default
 title: API endpoints
-parent: EDS API
+grand_parent: EDS Documentation
+parent: API
 nav_order: 2
 has_children: true
 ---

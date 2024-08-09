@@ -1,3 +1,9 @@
+---
+layout: default
+title: EDA STAC Extension
+parent: STAC Specification
+nav_order: 1
+---
 # View EDA Data Coverage Specification
 * Title: EDA Data Coverage Extension
 * Identifier: [https://earthdaily-stac-extensions.s3.amazonaws.com/eda_data_coverage/v1.0.0/schema.json](https://earthdaily-stac-extensions.s3.amazonaws.com/eda_data_coverage/v1.0.0/schema.json) 
