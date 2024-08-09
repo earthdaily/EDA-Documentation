@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Welcome
-permalink: /GettingStarted/WelcomeEmail
 parent: Getting Started
 nav_order: 1
 ---
