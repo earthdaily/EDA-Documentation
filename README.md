@@ -1,7 +1,7 @@
 ---
 layout: default
-title: EDA STAC Extension
-nav_order: 1
+title: ReadMe
+parent: unknown
 ---
 # EDA-Documentation
 The structure of the repository is as below

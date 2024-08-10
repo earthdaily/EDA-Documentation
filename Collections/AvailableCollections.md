@@ -12,14 +12,14 @@ nav_order: 1
      * [Open Collections](#open-collections)
      * [EDA Collections](#eda-collections)
 
-# Accessing Available Collections 
+## Accessing Available Collections 
 
 Following this section is the list of collections available in our free tier to start with. You can search and interact with them using various ways outlined below
-* #### [EarthPlatform](../Console/CatalogUI.md)
+* [EarthPlatform](../Console/CatalogUI.md)
      This is the interactive UI available through EDS Platform  
-* #### [API](../API/APIUsage/Endpoints.md) 
+* [API](../API/APIUsage/Endpoints.md) 
     It has [Command line](../API/APIUsage/CommandLine.md) examples as well as [Postman](../API/APIUsage/Postman.md) examples for your reference. We also have [Example Python script](../API/APIUsage/Python.md) to get you started.
-* #### [EarthDaily Python Client](https://github.com/earthdaily/earthdaily-python-client)
+* [EarthDaily Python Client](https://github.com/earthdaily/earthdaily-python-client)
      This is the package made available to accelerate your access to our EarthDataStore. 
 
 ## List of available Collections

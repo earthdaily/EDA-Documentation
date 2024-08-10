@@ -42,7 +42,7 @@ EDA's Auto Clear Mask (ACM) improves the detection and the efficeny of clouds in
 
 | Mosaics Produced with ESA's Cloud Mask | Mosaics Produced with EDA's Cloud Masks |  
 |---|----|
-|<img src="../Images/ProductImages/BaseCloudMaskMosaic.png" width=100% height=500> | <img src="../Images/ProductImages/EDACloudMaskMosaic.png" width=100% height=500>|  
+|![BaseCloudMaskMosaic](../Images/ProductImages/BaseCloudMaskMosaic.png) | ![EDACloudMaskMosaic](../Images/ProductImages/EDACloudMaskMosaic.png)|  
 
 
 
