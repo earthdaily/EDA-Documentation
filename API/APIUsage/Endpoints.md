@@ -41,11 +41,12 @@ GET https://api.earthdaily.com/platform/v1/stac/collections/<COLLECTION_ID>
 
 This end point takes the collection id as parameter. Below are some examples
 
-| Collection | URL |
+| Collection | URL |  
 |------------------------------|--------------------------------------------------------------------|
 | Sentinel-2 L1C | https://api.earthdaily.com/platform/v1/stac/collections/sentinel-2-l1c |
 | Landsat Collection 2 L1 | https://api.earthdaily.com/platform/v1/stac/collections/landsat-c2l1 |
 | Venus L2A | https://api.earthdaily.com/platform/v1/stac/collections/venus-l2a |
+
 ```
 Response of the above requests is metadat about the collection
 ```
@@ -249,13 +250,13 @@ For private and requester pays S3 assets, and Azure Blob assets, we offer presig
 
 >Use a `X-Signed-Asset-Urls` boolean header to override default behaviour. Be aware a high `limit` parameter on the search endpoint combined with a high asset count collection can result in high response latency.
 
-Presigned URLs are available for EDA buckets for all customer accounts. Presigned URLs for 3rd party buckets (example `s3://sentinel-s2-l1c`) are available depending on your account setup. Please note that these presigned URLs are valid for 12 hours after which they expire.
- <!-- space for wxamples -->
+Presigned URLs are available for EDA buckets for all customer accounts. Presigned URLs for 3rd party buckets (example `s3://sentinel-s2-l1c`) are available depending on your account setup. Please note that these presigned URLs are valid for 12 hours after which they expire.  
+<!-- space for wxamples -->
 **Example** : [Command Line](CommandLine.md#downloading-assets) | [Postman](Postman.md#downloading-assets) 
  
 
- ## Cloud Mask Query
+## Cloud Mask Query  
 
- You can use the post Query method above to  get the earthdaily cloud masks as well.
- <!-- space for wxamples -->
+You can use the post Query method above to  get the earthdaily cloud masks as well.  
+<!-- space for wxamples -->
 **Example** : [Command Line](CommandLine.md#cloud-masks) | [Postman](Postman.md#cloudmasks) | [Python](Python.md#cloud-masks)

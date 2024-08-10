@@ -1,14 +1,20 @@
 ---
 layout: default
-title: Collections
+title: Available Collections
 grand_parent: EDS Documentation
 parent: Collections
 nav_order: 1
 ---
 
-# Available Collections 
+# Table of Contents
+* [Accessing Available Collections](#accessing-available-collections)
+* [List of available Collections](#list-of-available-collections)
+     * [Open Collections](#open-collections)
+     * [EDA Collections](#eda-collections)
 
-Below is the list of collections available in our free tier to start with. You can search and interact with them using various ways outlined below
+# Accessing Available Collections 
+
+Following this section is the list of collections available in our free tier to start with. You can search and interact with them using various ways outlined below
 * #### [EarthPlatform](../Console/CatalogUI.md)
      This is the interactive UI available through EDS Platform  
 * #### [API](../API/APIUsage/Endpoints.md) 

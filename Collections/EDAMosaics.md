@@ -5,8 +5,18 @@ grand_parent: EDS Documentation
 parent: Collections
 nav_order: 2
 ---
+# Table of Contents
+* [AI Ready Mosaic Creation Parameters](#ai-ready-mosaic-creation-parameters)
+    * [Single Source (Sentinel-2A/B) Mosaics](#single-source-sentinel-2ab-mosaics)
+    * [Dual Source (Sentinel-2A/B + Landsat8/9) Mosaics](#dual-source-sentinel-2ab--landsat89-mosaics)
+* [Area of Interest](#area-of-interest-aoi)
+* [Time of Interest](#time-of-interest-toi)
+* [Mosaic Settings](#mosaic-settings)
+* [Pixel Selection](#pixel-selection)
+* [Source](#source)
+* [Reference](#reference)
 
-# AI Ready Mosaic Creation Parameters
+## AI Ready Mosaic Creation Parameters
 
 EDA's AI-Ready Mosaics (ARMs) are produced using proprietary algorithms to create cloud free, temporally coherent images ready for machine learning algorithms or mapping activities. The customization of sources, location, time, and method allow for a mosaic suited for specific analysis purpose being conducted. 
 

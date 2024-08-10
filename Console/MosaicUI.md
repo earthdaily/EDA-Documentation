@@ -44,6 +44,7 @@ The area of interest (AOI) defines the geographic extent used to build the mosai
 ![AoI](../Images/EarthMosaicsUI/AoI.png)
 
 Once you draw a polygon, you will see the area calculator diaplays the total area selected by you. You will see three options appear 
+
 | S. No     | Label     | Description       |
 |-----------|-----------|-------------------|
 | ![Five](../Images/NumberLabels/Five.png) | Fit Bounds | This option allows you to bring back the focus on the area drawn and fits it to the viewport    |
@@ -126,4 +127,4 @@ Below is the Visualizer that open up when you click on the View button on the Or
 
 ![Visualizer](../Images/EarthMosaicsUI/Visualizer.png)
 
-That is it !! Happy Mosaicking !! :smile:
+That is it !! Happy Mosaicking !! 

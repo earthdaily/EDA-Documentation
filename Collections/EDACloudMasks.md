@@ -6,11 +6,18 @@ parent: Collections
 nav_order: 3
 ---
 
-# Temporally Consistent AI-Ready Mosaics
+# Table of Contents
+* [Temporally Consistent AI-Ready Mosaics](#temporally-consistent-ai-ready-mosaics)
+* [What Are AI-Ready Mosaics](#what-are-ai-ready-mosaics)
+* [STAC Item Structure](#stac-item-structure)
+* [Methods](#methods)
+    * [Cloud Masking](#cloud-masking)
+
+## Temporally Consistent AI-Ready Mosaics
 
 Powering ML applications with a seamless cloud-free image 
 
-# What Are AI-Ready Mosaics
+## What Are AI-Ready Mosaics
 AI-Ready mosaics leverage advanced processing 
 
 ## STAC Item Structure
@@ -33,7 +40,9 @@ ESA|0.97%|42.1%
 
 EDA's Auto Clear Mask (ACM) improves the detection and the efficeny of clouds in Senintel-2, Landsat 8, and Landsat 9.
 
-|<p style="text-align: center;">Mosaics Produced with ESA's Cloud Mask</p> | <p style="text-align: center;">Mosaics Produced with EDA's Cloud Masks</p>|
-|:---:|:----:|
-|<img src="../Images/ProductImages/BaseCloudMaskMosaic.png" width=100% height=500> | <img src="../Images/ProductImages/EDACloudMaskMosaic.png" width=100% height=500>|
+| Mosaics Produced with ESA's Cloud Mask | Mosaics Produced with EDA's Cloud Masks |  
+|---|----|
+|<img src="../Images/ProductImages/BaseCloudMaskMosaic.png" width=100% height=500> | <img src="../Images/ProductImages/EDACloudMaskMosaic.png" width=100% height=500>|  
+
+
 

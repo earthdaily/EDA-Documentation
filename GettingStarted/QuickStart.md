@@ -5,7 +5,10 @@ grand_parent: EDS Documentation
 parent: Getting Started
 nav_order: 3
 ---
-# Quickstart with EDS
+# Table of contents
+* [Authentication](#authentication)
+* [EarthDaily Python Client](#earthdaily-python-client)
+* [Other Examples](#other-examples)
 
 ## Authentication
 
