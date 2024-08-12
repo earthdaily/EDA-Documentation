@@ -21,7 +21,7 @@ Powering ML applications with a seamless cloud-free image
 AI-Ready mosaics leverage advanced processing 
 
 ## STAC Item Structure
-[TBW]
+ARM's conform to STAC structures and include a list of all the assets included with the mosaic, type of pixel selection method, and temporal selection critera. You can access this metadata in the browser for both preview and full resolution mosaics without downloading.
 
 ## Methods
 ### Cloud Masking
