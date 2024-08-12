@@ -60,8 +60,8 @@ The settings define how your mosaic will be generated.
 * Resolution determines the quality of your mosaic: Preview is free, whereas Full is paid. You are advised to first create a Preview Resolution mosaic, with your desired settings, to preview your order. 
 * Processing type determines the pixel selection process: 
     * Best Measurement uses pixel-by-pixel weighting 
-    * Peak NDVI uses Normalized Vegetation Index (NDVI)
-    * Peak Burn Severity uses Normalized Burn Ratio (NBR) and 
+    * Peak NDVI uses Normalized Vegetation Index (NDVI) (Coming Soon)
+    * Peak Burn Severity uses Normalized Burn Ratio (NBR) and (Coming Soon)
     * Percentile uses a common pixel approach. 
 * Source specifies if your mosaic will be made using only Sentinel-2A or the combination of Sentinel-2A and Landsat-8/9.
 

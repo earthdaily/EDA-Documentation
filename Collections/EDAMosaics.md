@@ -83,10 +83,10 @@ This is the setting to use for a full mosaic product. Note this will have a pric
 #### Best Measurement
 ARM's 'Best Measurment' extends work by [White et. al (2014)](#reference) and include pixel-by-pixel weighting for several factors such as: sensor platform, scene content (clear, cloud, cloud shadow, water, snow), spatial distancing from measurement contamination, and aerosol optical thickness. This algorithm can produce highly consistent results where the goal is to just choose the most representative sample for a given time period.
 
-#### Peak Normalized Difference Vegetation Index
+#### Peak Normalized Difference Vegetation Index (Coming Soon)
 ARM's 'Peak NDVI' seeks to maximize the vegetative signals from the mosaic process, targeting conditions with the most vigorous vegetation signal. 
 
-#### Peak Burn Severity
+#### Peak Burn Severity (Coming Soon)
 ARM's 'Peak Burn Severity' seeks to maximize the response from burned pixels in order to map fire extent and degree of burn over large vegetated regions. To achieve peak burn severity, the Normalized Burn Ratio (NBR) is used to inform the pixel selection process. This mode can be sensitive to date selection and should be informed by knowledge of the local fire conditions and timing. 
 
 #### Percentile
