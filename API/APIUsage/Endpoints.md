@@ -220,19 +220,6 @@ GET https://api.earthdaily.com/platform/v1/stac/search?fields=id,properties.date
 ```plaintext
 GET https://api.earthdaily.com/platform/v1/stac/search?fields=-links,-geometry
 ```
-
-You can also include or exclude fields using a `POST` request, which is useful for more complex queries:
-
-```bash
-curl --location 'https://api.earthdaily.com/platform/v1/stac/search' \
---header 'Content-Type: application/json' \
---data  '{
-  "fields": {
-    "include": ["id",  "properties.datetime",  "assets.aot"],
-    "exclude": ["links",  "geometry"]
-  }
-}'
-```
 **Example** : [Command Line](CommandLine.md#fields-extension) | [Postman](Postman.md#fields-extension) | [Python](Python.md#search)
 
 ### [Sortby Extension](https://github.com/stac-api-extensions/sort)
@@ -282,18 +269,6 @@ Please ensure to manage the generation of presigned URLs carefully to optimize p
 ## Cloud Mask Query  
 
 You can use the POST method to retrieve EarthDaily cloud masks as well.
-```bash
-curl --location 'https://api.earthdaily.com/platform/v1/stac/search' \
---header 'Content-Type: application/json' \
---header 'Authorization: Bearer <ACCESS_TOKEN HERE>' \
---data '{
-    "collections": ["sentinel-2-l2a"],
-    "query": {
-        "eda:ag_cloud_mask_available": {
-            "eq": true
-        }
-    }
-}'
-```
+
 <!-- space for examples -->
 **Example** : [Command Line](CommandLine.md#cloud-masks) | [Postman](Postman.md#cloudmasks) | [Python](Python.md#cloud-masks)
