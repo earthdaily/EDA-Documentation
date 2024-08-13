@@ -161,9 +161,8 @@ To discover which fields are queryable on each Collection, see Queryables.
 
 Query Extension syntax:
 
-```
+```json
 {
-    ... 
     "query": {
         "<QUERYABLE_PROPERTY_1>": {
             "OPERATOR_1": "VALUE",
@@ -175,10 +174,10 @@ Query Extension syntax:
     }
 }
 ```
-\
+
 Query Extension example: 
 
-```
+```json
 {
     "query": {
         "view:sun_elevation": {
@@ -204,17 +203,35 @@ The Fields Extension allows you to specify which fields are returned from the AP
 
 >Use of Fields Extension allows returning items in a potentially non-STAC compliant format. This can cause exceptions in PySTAC Client.
 
-**Example** - only return `id`, `properties.datetime` and `assets.aot`
+**Usage Examples**
 
-```
+ 1. Specifying fields to `include`
+
+    Retrieve only the `id`, `properties.datetime`, and `assets.aot` fields from the search endpoint:
+
+```plaintext
 GET https://api.earthdaily.com/platform/v1/stac/search?fields=id,properties.datetime,assets.aot
 ```
-POST example
 
-Example - exclude `links` and `geometry`
+ 2. Specifying fields to `exclude`
 
-```
+    Request data while excluding the `links` and `geometry` fields from the search endpoint:
+
+```plaintext
 GET https://api.earthdaily.com/platform/v1/stac/search?fields=-links,-geometry
+```
+
+You can also include or exclude fields using a `POST` request, which is useful for more complex queries:
+
+```bash
+curl --location 'https://api.earthdaily.com/platform/v1/stac/search' \
+--header 'Content-Type: application/json' \
+--data  '{
+  "fields": {
+    "include": ["id",  "properties.datetime",  "assets.aot"],
+    "exclude": ["links",  "geometry"]
+  }
+}'
 ```
 **Example** : [Command Line](CommandLine.md#fields-extension) | [Postman](Postman.md#fields-extension) | [Python](Python.md#search)
 
@@ -238,25 +255,45 @@ GET https://api.earthdaily.com/platform/v1/stac/search?sortby=-eo:cloud_cover
 **Example** : [Command Line](CommandLine.md#sortby-extension) | [Postman](Postman.md#sortby-extension) | [Python](Python.md#search)
 
 ## Downloading Assets
-The STAC `assets` property will contain `href`s to files on various hosts, depending on the original data provider. S3 hosted assets will have `s3://` protocol `href`s *
+STAC `assets` property provides `href`s that point to the files hosted on different platforms, depending on the data provider.
+Currently, these URLs may use either `https://` or `s3://` protocols.
 
-*we are currently in the process of migrating to this consistent main `href` format. At the moment a combination of `https://` and `s3://` are returned.
+* We are transitioning to a more consistent `href` format that predominantly uses `s3://`.
 
-An S3 `https://` version of the URL be be available as an [alternate asset](https://github.com/stac-extensions/alternate-assets) . With a key of `download_url`
+**Accessing Alternate URLs**
 
-For private and requester pays S3 assets, and Azure Blob assets, we offer presigned URLs.
+For assets hosted on `S3` but accessible via `HTTP`, you can find an `HTTPS` version listed as an [alternate asset](https://github.com/stac-extensions/alternate-assets) with the key `download_url`.
 
-> Presigned URLs are returned by default on the `/items/{item_id}` endpoint but are not returned by default on the `/search` and `/items` endpoints as there is a performance latency and response size cost.
+For private and requester-pays S3 assets, and Azure Blob assets, we offer presigned URLs, which ensure secure and temporary access:
 
->Use a `X-Signed-Asset-Urls` boolean header to override default behaviour. Be aware a high `limit` parameter on the search endpoint combined with a high asset count collection can result in high response latency.
+> **Default Behavior**: Presigned URLs are automatically included for single item requests (`/items/{item_id}`) but not for searches (`/search` or `/items`) due to performance considerations.
+> **Customization**: You can request presigned URLs in search responses by using the `X-Signed-Asset-Urls` header set to `true`. Note that using a high `limit` parameter during search queries along with a large number of assets might increase response times significantly.
 
-Presigned URLs are available for EDA buckets for all customer accounts. Presigned URLs for 3rd party buckets (example `s3://sentinel-s2-l1c`) are available depending on your account setup. Please note that these presigned URLs are valid for 12 hours after which they expire.  
-<!-- space for wxamples -->
+**Usage Notes**
+
+Presigned URLs are available for all assets in EDA buckets across all customer accounts. For third-party buckets, such as `s3://sentinel-s2-l1c`, the availability of presigned URLs depends on specific account setups. These URLs are valid for 12 hours, after which they expire.
+
+Please ensure to manage the generation of presigned URLs carefully to optimize performance and avoid excessive latency in your application.
+
+<!-- space for examples -->
 **Example** : [Command Line](CommandLine.md#downloading-assets) | [Postman](Postman.md#downloading-assets) 
  
 
 ## Cloud Mask Query  
 
-You can use the post Query method above to  get the earthdaily cloud masks as well.  
-<!-- space for wxamples -->
+You can use the POST method to retrieve EarthDaily cloud masks as well.
+```bash
+curl --location 'https://api.earthdaily.com/platform/v1/stac/search' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Bearer <ACCESS_TOKEN HERE>' \
+--data '{
+    "collections": ["sentinel-2-l2a"],
+    "query": {
+        "eda:ag_cloud_mask_available": {
+            "eq": true
+        }
+    }
+}'
+```
+<!-- space for examples -->
 **Example** : [Command Line](CommandLine.md#cloud-masks) | [Postman](Postman.md#cloudmasks) | [Python](Python.md#cloud-masks)
