@@ -18,7 +18,7 @@ nav_order: 3
 
 AI Ready Mosaics are complex, costly to produce, and designed to feed directly into ML applications​.
 
-[EarthMosaics](https://console.earthdaily.com/mosaics)  from EarthDaily Analytics provides you a way to explore and get a free preview and you can also place ordewrs for full resolution Mosaics. 
+[EarthMosaics](https://console.earthdaily.com/mosaics)  from EarthDaily Analytics provides you a way to explore and get a free preview and you can also place orders for full resolution Mosaics. 
 
 ## Getting started with Mosaics
 
@@ -28,13 +28,13 @@ Below is the landing page you see when you navigate to [EarthMosaics](https://co
 
 When you are the first time user, you get the Welcome dialog with an option to GetStarted
 
-Pressing the `GetStarted` will take you to a NewOrders page. Lets see what all options we have while placing the order as below
+Pressing the `GetStarted` will take you to a NewOrders page. Let's see what are all the options we have while placing the order:
 
 ![MosaicsOrderSetup](../Images/EarthMosaicsUI/MosaicOrderSetup.png)
 
 | S. No     | Label     | Description       |
 |-----------|-----------|-------------------|
-| ![One](../Images/NumberLabels/One.png)  | Area of Interest | You can start drawing a polygon for your mosaics order. The limit currently is < 100,000 km<sup>2</sup>   |
+| ![One](../Images/NumberLabels/One.png)  | Area of Interest (AOI) | You can start drawing a polygon for your Mosaics order. The limit currently is < 100,000 km<sup>2</sup>   |
 | ![Two](../Images/NumberLabels/Two.png) | Instead of drawing a polygon, if you have an existing GeoJSON, you have an option to enter it here. The restriction of < 100,000 km<sup>2</sup> applies to this too |
 |![Three](../Images/NumberLabels/Three.png) | Time of Interest | Specify the time of interest for your Mosaics order |
 | ![Four](../Images/NumberLabels/Four.png) | Settings | This one gives you multiple choices to place your order as per your needs|
@@ -49,7 +49,7 @@ Once you draw a polygon, you will see the area calculator diaplays the total are
 |-----------|-----------|-------------------|
 | ![Five](../Images/NumberLabels/Five.png) | Fit Bounds | This option allows you to bring back the focus on the area drawn and fits it to the viewport    |
 | ![Six](../Images/NumberLabels/Six.png) | GeoJSON | Instead of drawing a polygon, if you have an existing GeoJSON, you have an option to enter it here. The restriction of < 100,000 km<sup>2</sup> applies to this too |
-| ![Seven](../Images/NumberLabels/Seven.png) | Delete | Delete the existing AoI |
+| ![Seven](../Images/NumberLabels/Seven.png) | Delete | Delete the existing AOI |
 
 ![GeoJSON](../Images/EarthMosaicsUI/GeoJSON.png)
 
@@ -63,7 +63,7 @@ The settings define how your mosaic will be generated.
     * Peak NDVI uses Normalized Vegetation Index (NDVI) (Coming Soon)
     * Peak Burn Severity uses Normalized Burn Ratio (NBR) and (Coming Soon)
     * Percentile uses a common pixel approach. 
-* Source specifies if your mosaic will be made using only Sentinel-2A or the combination of Sentinel-2A and Landsat-8/9.
+* Source specifies if your mosaic will be made using only Sentinel-2 or the combination of Sentinel-2 and Landsat-8/9.
 
 ![Settings](../Images/EarthMosaicsUI/Settings.png)
 
@@ -107,7 +107,7 @@ Upon submission, you will see that your order is in Processing state. There is a
 
 ![AllOrders](../Images/EarthMosaicsUI/AllOrders.png)
 
-The orderId you see in this page can be found as a LineItemId in your AccountInformation page under "MyOrders"
+The orderId you see in this page can be found as a LineItemId in your Account Information page under "MyOrders"
 
 ![MyOrders](../Images/EarthMosaicsUI/MyOrders.png)
 
@@ -120,10 +120,10 @@ Once the order is processed successfully, you will see the state changed to "Pro
 |--------------|-----------|-------------------|
 | ![Eight](../Images/NumberLabels/Eight.png) | Copy | This option allows you to copy the order in case you want to use the same settings or have a minor modification to place another order     |
 | ![Nine](../Images/NumberLabels/Nine.png) | Download | This is where you can download your product - preview or full |
-| ![Ten](../Images/NumberLabels/Ten.png) | View | This option allows you to view the product in the Visualizer which is very similar to the Catalog Ui and allows  |
+| ![Ten](../Images/NumberLabels/Ten.png) | View | This option allows you to view the product in the Visualizer which is very similar to the EarthPlatform UI  |
 
 
-Below is the Visualizer that open up when you click on the View button on the Orders page. This visualizer is very similar to our EarthPlatform Ui and has many common components needed to interact with teh Mosaic product similar to our other products
+Below is the Visualizer that opens up when you click on the View button on the Orders page. This visualizer is very similar to our EarthPlatform UI and has many common components needed to interact with the Mosaic product similar to our other products
 
 ![Visualizer](../Images/EarthMosaicsUI/Visualizer.png)
 
