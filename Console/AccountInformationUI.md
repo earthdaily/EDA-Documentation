@@ -42,7 +42,7 @@ On the upper right hand side of the window, you will see three small icons as be
 It lists all the orders being placed under the customer account you belong to. The purpose of showing all the orders apart from the one you placed is mainly for optimization, to ensure that you don’t end up placing a duplicate order.
 
 
-|  S.No &nbsp     | Label | Description |
+| S.No | Label | Description |
 |---------|-------|-------------|
 | ![Five](../Images/NumberLabels/Five.png)  | My Orders | To go to your orders page. |
 | ![Six](../Images/NumberLabels/Six.png)  | Search by Id | If you know your Orders Id, you can use this to search your order. |
