@@ -16,7 +16,7 @@ nav_order: 3
 ## Introduction
 [**EarthMosaics**](https://console.earthdaily.com/mosaics) delivers cloud-free, temporally coherent mosaics with ​the highest possible geolocation, radiometric ​quality, enabling users to examine true signals, minimize false positives in change detection, and easily contextualize with other geospatial datasets. From analysing a regional forest to monitoring a mining site, predicting water reservoir levels to measuring melting permafrost, EarthMosaics (now in beta) offers application-specific and customized insights fulfilling unique needs of each use case.
 
-Analysis Ready Mosaics are complex, costly to produce, and designed to feed directly into ML applications​.
+AI Ready Mosaics are complex, costly to produce, and designed to feed directly into ML applications​.
 
 [EarthMosaics](https://console.earthdaily.com/mosaics)  from EarthDaily Analytics provides you a way to explore and get a free preview and you can also place ordewrs for full resolution Mosaics. 
 
