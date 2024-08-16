@@ -50,6 +50,7 @@ All input data is level 2A meaning atmospherically corrected, surface reflectanc
 
 |ARM Band Name|Sentinel-2 A/B Band|Landsat 8/9 Band|Approximate Center Wavelength (μm)|
 |--|--|--| -- |
+|coastal|Band 1 - Coastal|Band 1 - Coastal|0.443
 |blue|Band 2 - Blue|Band 2 - Blue|0.490
 |green|Band 3 - Green|Band 3 - Green|0.560
 |red|Band 4 - Red|Band 4 - Red|0.665
