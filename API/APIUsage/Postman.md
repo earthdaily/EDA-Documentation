@@ -59,7 +59,7 @@ Advanced searching can be performed using a `query` object. This allows searchin
 ### [Fields Extension](https://github.com/stac-api-extensions/fields)
 The Fields Extension allows you to specify which fields are returned from the API, reducing data transfer size. 
 
-![Collections](../../Images/STACAPI/PostmanExamples/FieldExtensionID.png)
+![Collections](../../Images/STACAPI/PostmanExamples/FieldExtensionInclude.png)
 
 Exclude 
 
