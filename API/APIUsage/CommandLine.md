@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Commandline Samples
+grand_parent: API
 parent: API endpoints
 nav_order: 1
 ---

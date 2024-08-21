@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Python Samples
+grand_parent: API
 parent: API endpoints
 nav_order: 3
 ---
