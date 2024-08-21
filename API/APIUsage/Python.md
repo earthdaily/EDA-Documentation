@@ -9,7 +9,7 @@ nav_order: 3
 ## Python
 For Python environments, we recommend using [PySTAC Client](https://pystac-client.readthedocs.io/en/stable/#). Complete examples of using PySTAC Client with EarthPlatform STAC API are included: 
 
-[earthplatform_stac_api_examples.py](./earthplatform_stac_api_examples.py)   
+[earthplatform_stac_api_example](https://github.com/earthdaily/EDA-Documentation/tree/gh-pages/API/APIUsage/earthplatform_stac_api_examples.py)   
 
 Below are the various sections of the script in reagrds to STAC endpoints
 
