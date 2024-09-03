@@ -21,6 +21,4 @@ torchgeo
 distributed
 odc.stac
 requests
-json
-dotenv
 
