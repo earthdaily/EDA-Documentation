@@ -19,7 +19,6 @@ scikit-learn
 rasterio
 torchgeo
 distributed
-PIL
 glob
 urllib
 odc.stac
