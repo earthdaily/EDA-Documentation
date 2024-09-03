@@ -3,7 +3,6 @@ geopandas
 shapely
 IPython
 numpy
-os
 io
 matplotlib
 xarray
