@@ -19,7 +19,6 @@ scikit-learn
 rasterio
 torchgeo
 distributed
-urllib
 odc.stac
 requests
 json
