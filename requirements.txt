@@ -3,6 +3,8 @@ geopandas
 shapely
 IPython
 numpy
+os
+io
 matplotlib
 xarray
 pillow
@@ -19,3 +21,11 @@ scikit-learn
 rasterio
 torchgeo
 distributed
+PIL
+glob
+urllib
+odc.stac
+requests
+json
+dotenv
+
