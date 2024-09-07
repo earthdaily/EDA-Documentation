@@ -14,4 +14,8 @@ Here are some examples of using odc stac to work with EDS data
 2. How to use the odc stac for basic building detection using building footprint 
 [Building detection](../EDS%20Compatibility%20Examples/venus-denver-with-building-model.ipynb)
 
+3. How to use odc to query the sentinel-2 and Venus datasets with same criteria and plot the NDVI comparison
+[Compare Sentinel-2 and Venus NDVI](../EDS%20Compatibility%20Examples/sentinel2_venus_corumba_odc2.ipynb)
+
+
 
