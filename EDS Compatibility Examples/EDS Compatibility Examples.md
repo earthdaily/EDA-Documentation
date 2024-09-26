@@ -15,14 +15,14 @@ Note: To run these notebooks, you need to set the environment variables as follo
 One way is to create a .env file and add the below lines with respective values
 
 EDS_AUTH_URL ="\<Token authorization URL>"\
-EDS_API_URL="https://api.eds.earthdaily.com/archive/v1/stac/v1"\
+EDS_API_URL="https://api.eds.earthdaily.com/archive/v1/stac/v1" \
 EDS_CLIENT_ID="\<Client_id>"\
 EDS_SECRET="\<Client Secret>"
 
 Another way is to uncomment the line "load_dotenv()" and instead add the below lines
 
 os.environ['EDS_AUTH_URL'] ="\<Token authorization URL>"\
-os.environ['EDS_API_URL']="https://api.eds.earthdaily.com/archive/v1/stac/v1"\
+os.environ['EDS_API_URL']="https://api.eds.earthdaily.com/archive/v1/stac/v1" \
 os.environ['EDS_CLIENT_ID']="\<Client_id>"\
 os.environ['EDS_SECRET']="\<Client Secret>"
 
