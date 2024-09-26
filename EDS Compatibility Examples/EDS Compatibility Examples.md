@@ -6,7 +6,27 @@ nav_order: 5
 has_children: true
 ---
 
+# Jupyter Notebooks
 Here are some examples of using odc-stac to work with EDS data
+
+### Set Up
+Note: To run these notebooks, you need to set the environment variables as follows
+
+One way is to create a .env file and add the below lines with respective values
+
+EDS_AUTH_URL ="\<Token authorization URL>"\
+EDS_API_URL="https://api.eds.earthdaily.com/archive/v1/stac/v1"\
+EDS_CLIENT_ID="\<Client_id>"\
+EDS_SECRET="\<Client Secret>"
+
+Another way is to uncomment the line "load_dotenv()" and instead add the below lines
+
+os.environ['EDS_AUTH_URL'] ="\<Token authorization URL>"\
+os.environ['EDS_API_URL']="https://api.eds.earthdaily.com/archive/v1/stac/v1"\
+os.environ['EDS_CLIENT_ID']="\<Client_id>"\
+os.environ['EDS_SECRET']="\<Client Secret>"
+
+### Examples
 
 1. How to use odc-stac to create RGB and GeoTiffs from the API stac items
 [RGB And GeoTiff](https://github.com/earthdaily/EDA-Documentation/blob/gh-pages/EDS%20Compatibility%20Examples/venus-git-over-LEFR3.ipynb)
