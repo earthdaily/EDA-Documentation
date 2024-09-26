@@ -5,7 +5,7 @@ import requests
 client_id = '<CLIENT_ID HERE>'
 client_secret = '<CLIENT_SECRET HERE>'
 auth_token_url = "<ACCESS_TOKEN_URL>"
-api_url = "https://api.earthdaily.com/platform/v1/stac/"
+api_url = "https://api.earthdaily.com/platform/v1/stac"
 
 # Generate auth token
 
