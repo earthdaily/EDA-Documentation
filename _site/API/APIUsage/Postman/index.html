@@ -1,0 +1,85 @@
+<h2 id="postman-examples">Postman Examples</h2>
+<p>Before you try out the various endpoints, you need to set up the authentication for the Postman. <a href="../../GettingStarted/APIAuthentication#postman">Authentication Page</a> describes how it is done.</p>
+
+<h2 id="collections">Collections</h2>
+<p>Return list of all Collections</p>
+
+<p><img src="/Images/STACAPI/PostmanExamples/Collections.png" alt="Collections" /></p>
+
+<h2 id="collection">Collection</h2>
+
+<p>Return specific Collection</p>
+
+<p><img src="/Images/STACAPI/PostmanExamples/Collection.png" alt="Collections" /></p>
+
+<h2 id="items">Items</h2>
+<p>Return paged Items ordered by datetime descending (It doesn’t support search parameters, so often /stac/v1/search is preferred instead)</p>
+
+<p><img src="/Images/STACAPI/PostmanExamples/Items.png" alt="Collections" /></p>
+
+<h2 id="item">Item</h2>
+<p>Returns a single Item for a given Collection and Item ID</p>
+
+<p><img src="/Images/STACAPI/PostmanExamples/ItemId.png" alt="Collections" /></p>
+
+<h2 id="queryables">Queryables</h2>
+<p>Returns the queryable names for the STAC API Item Search using Query Extension
+Below are the two ways to query the “queryable items“ for a given collection</p>
+
+<p><img src="/Images/STACAPI/PostmanExamples/Queryables.png" alt="Collections" /></p>
+
+<h2 id="search">Search</h2>
+
+<p>Implements STAC basic Item search functionality  + extensions</p>
+
+<p>Ensure the <strong>content-type</strong> header is <strong>application/json</strong></p>
+
+<p><img src="/Images/STACAPI/PostmanExamples/PostSearchWithData.png" alt="Collections" /></p>
+
+<h3 id="query-extension-via-post-method"><strong><a href="https://github.com/stac-api-extensions/query">Query Extension</a> via POST Method</strong></h3>
+
+<blockquote>
+  <p>EarthPlatform STAC API supports the <a href="https://github.com/stac-api-extensions/query">Query Extension</a>. It currently does not support the Filter Extension.</p>
+</blockquote>
+
+<p>Advanced searching can be performed using a <code class="language-plaintext highlighter-rouge">query</code> object. This allows searching over supported properties on STAC items using various operators.</p>
+
+<p><img src="/Images/STACAPI/PostmanExamples/QueryExtension.png" alt="Collections" /></p>
+
+<h3 id="fields-extension"><a href="https://github.com/stac-api-extensions/fields">Fields Extension</a></h3>
+<p>The Fields Extension allows you to specify which fields are returned from the API, reducing data transfer size.</p>
+
+<p><img src="/Images/STACAPI/PostmanExamples/FieldExtensionInclude.png" alt="Collections" /></p>
+
+<p>Exclude</p>
+
+<p><img src="/Images/STACAPI/PostmanExamples/FieldExtensionExclude.png" alt="Collections" /></p>
+
+<h3 id="sortby-extension"><a href="https://github.com/stac-api-extensions/sort">Sortby Extension</a></h3>
+<p>By default, Items are returned by <code class="language-plaintext highlighter-rouge">datetime</code> descending. Then by <code class="language-plaintext highlighter-rouge">id</code> ascending.</p>
+
+<p>Sorting by property <code class="language-plaintext highlighter-rouge">eo:cloud_cover</code> is also supported on the <code class="language-plaintext highlighter-rouge">/search</code> endpoint:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Asc</th>
+      <th>Desc</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="/Images/STACAPI/PostmanExamples/SortAsc.png" alt="Collections" /></td>
+      <td><img src="/Images/STACAPI/PostmanExamples/SortDesc.png" alt="Collections" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="downloading-assets">Downloading Assets</h2>
+
+<p><img src="/Images/STACAPI/PostmanExamples/DownloadingAssets.png" alt="Collections" /></p>
+
+<h2 id="cloudmasks">CloudMasks</h2>
+
+<p><img src="/Images/STACAPI/PostmanExamples/CloudMask.png" alt="Collections" /></p>
+

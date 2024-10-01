@@ -1,0 +1,44 @@
+<h1 id="performant-query-best-practices">Performant Query Best Practices</h1>
+<ul>
+  <li><a href="#specify-collections">Specify Collections</a></li>
+  <li><a href="#datetime-range">Datetime Range</a></li>
+  <li><a href="#use-fields-extension">Field Extensions</a></li>
+  <li><a href="#only-request-signed-urls-when-needed">Signed URLs</a></li>
+  <li><a href="#id-batching">ID Batching</a></li>
+  <li><a href="#api-throttling">API Throttling</a></li>
+</ul>
+
+<h2 id="specify-collections">Specify collections</h2>
+<p>Limit the query to only the collections you need. The STAC API uses a database architecture partitioned by collection_id. The more collections that are specified in the query, the more database tables will have to be scanned.</p>
+
+<p>In cases where you are querying multiple collections and paging through thousands of results, the database is often having to discard matches to fit in the paging limit.  It can often be more performant to run concurrent queries with individual collections.</p>
+
+<h2 id="datetime-range">Datetime Range</h2>
+<p>The narrower the datetime range specified in your query, the fewer the number of results will need to be scanned. This is especially true for the following marketing tier collections, which are sub-partitioned by year at the database level.</p>
+
+<ul>
+  <li>landsat-c2l1</li>
+  <li>landsat-c2l2-sr</li>
+  <li>landsat-c2l2-st</li>
+  <li>sentinel-1-grd</li>
+  <li>sentinel-1-rtc</li>
+  <li>sentinel-2-l1c</li>
+  <li>sentinel-2-l2a</li>
+  <li>venus-l2a</li>
+</ul>
+
+<h2 id="use-fields-extension">Use fields extension</h2>
+<p>Using the fields extension to only get the fields you need can result in dramatic reductions in database network traffic, and network traffic between you and the API.</p>
+
+<h2 id="only-request-signed-urls-when-needed">Only request Signed URLs when needed</h2>
+<p>Signing asset URLs has a performance impact. For collections with high numbers of assets, this additional latency can be multiple seconds. Its important to also note that Presigned URL expiry time is 12 hours.</p>
+
+<h2 id="id-batching">ID Batching</h2>
+<p>When trying to get multiple items by id, you can likely get better performance by batching requests with multiple values in ids</p>
+
+<p>Similarly, when searching for values by properties values. The in_ query support can be used.</p>
+
+<h2 id="api-throttling">API Throttling</h2>
+
+<p>By default, each EDS account is limited to 30 concurrent active HTTP requests to the STAC API. Requests which start to exceed this limit will be rejected with an HTTP 429 (Too Many Requests) status code</p>
+

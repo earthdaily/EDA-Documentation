@@ -1,0 +1,422 @@
+<h1 id="table-of-contents">Table of Contents</h1>
+<ul>
+  <li><a href="#introduction">Introduction</a></li>
+  <li><a href="#search">Search</a></li>
+  <li><a href="#interacting-with-the-catalog">Interacting with the catalog data</a></li>
+</ul>
+
+<!--
+* [Interacting with the product data](#interacting-with-the-product) 
+* [Placing an order and receiving it](#placing-an-order-and-receiving-it)
+-->
+
+<h2 id="introduction">Introduction</h2>
+<p>Customers can get access to our image catalog and products through EarthPlatform. It is a portal where the user can browse through our minimally processed catalog items. In addition to provide useful metadata and details about the listed images, it provides capabilities to interact with the scene content and order a high resolution product for selected catalog items. You can access the <a href="https://console.earthdaily.com/platform">EarthPlatform</a> by appending the endpoint /catalog to the base URL.</p>
+
+<h2 id="search">Search</h2>
+<p>EarthPlatform has search panel with various options to customize your search. Lets have a look at them.</p>
+
+<p>Once you login with your credentials, the landing page for EarthPlatform is shown below</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>S. No</th>
+      <th>Label</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="/Images/NumberLabels/One.png" alt="One" /></td>
+      <td>Search box</td>
+      <td>Enter any geographic area like “Vancouver”, “Chile” etc to find and focus.</td>
+    </tr>
+    <tr>
+      <td><img src="/Images/NumberLabels/Two.png" alt="Two" /></td>
+      <td>Polygon tool</td>
+      <td>It allows you to select a given area on the map quite precisely by allowing you to create a vertex as and when you do a left click. Make sure you click the first vertex of the polygon to complete it.</td>
+    </tr>
+    <tr>
+      <td><img src="/Images/NumberLabels/Three.png" alt="Three" /></td>
+      <td>Rectangle Polygon</td>
+      <td>Select two vertices of the diagonal on the map to form a rectangular area.</td>
+    </tr>
+    <tr>
+      <td><img src="/Images/NumberLabels/Four.png" alt="Four" /></td>
+      <td>Input GeoJSON</td>
+      <td>Click this button if you have a GeoJson you wish to enter for the given area to define it.</td>
+    </tr>
+    <tr>
+      <td><img src="/Images/NumberLabels/Five.png" alt="Five" /></td>
+      <td>Layers</td>
+      <td>Select the layers you wish to see on the map. Options include satellite, streets or both.</td>
+    </tr>
+    <tr>
+      <td><img src="/Images/NumberLabels/Six.png" alt="Six" /></td>
+      <td>Ruler</td>
+      <td>This one allows you to select the endpoints to draw a line and gives you the distance of each line as you keep drawing around.</td>
+    </tr>
+    <tr>
+      <td><img src="/Images/NumberLabels/Seven.png" alt="Seven" /></td>
+      <td>Results panel</td>
+      <td>This is the area where you would see the thumbnails of the search results for your images.</td>
+    </tr>
+    <tr>
+      <td><img src="/Images/NumberLabels/Eight.png" alt="Eight" /></td>
+      <td>Filter panel</td>
+      <td>Allows you to enter various search criteria. Initially it has selection for Collections and time range. As soon as you select the collection, it expands and you can enter additional search parameters.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><img src="/Images/CatalogUI/LandingPage.png" alt="EarthPlatform Landing Page" /></p>
+
+<p>NOTE : The filter panel expands with additional parameters based on the collection selected as shown below. You can also see the results panel populated with images and each thumbnail on the left that you hover over will show a center mass turned yellow on the map</p>
+
+<p><img src="/Images/CatalogUI/Filter.png" alt="EarthPlatform Filter Panel" /></p>
+
+<p>Below are some images that will give you an idea of how the various tools mentioned above work</p>
+
+<p><img src="/Images/CatalogUI/AreaCalculator.png" alt="EarthPlatform Polygon Area Calculator" /></p>
+
+<p><img src="/Images/CatalogUI/AreaCalculatorSqr.png" alt="EarthPlatform Rectangular Area Calculator" /></p>
+
+<p>GeoJSON Viewer</p>
+
+<p><img src="/Images/CatalogUI/JSONViewer.png" alt="EarthPlatform JSON Viewer" /></p>
+
+<p>Street and satellite View</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Street View</th>
+      <th>Satellite View</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="/Images/CatalogUI/StreetView.png" alt="StreetView" /></td>
+      <td><img src="/Images/CatalogUI/SatelliteView.png" alt="SatelliteView" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Ruler</p>
+
+<p><img src="/Images/CatalogUI/Ruler.png" alt="EarthPlatform Ruler" /></p>
+
+<h2 id="interacting-with-the-catalog">Interacting with the catalog</h2>
+
+<p>Now lets see once you have the search results, what all can you do with those images. As you can see below, you have a small checkbox to select one or more images for any actions you would like to perform.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>S. No.</th>
+      <th>Label</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="/Images/NumberLabels/Nine.png" alt="Nine" /></td>
+      <td>Show/Hide Filter</td>
+      <td>This button toggles the filter panel. For this image I have hidden the filter panel as you see below.</td>
+    </tr>
+    <tr>
+      <td><img src="/Images/NumberLabels/Ten.png" alt="Ten" /></td>
+      <td>Show Item Properties</td>
+      <td>It shows the Item Properties on the right hand side panel</td>
+    </tr>
+    <tr>
+      <td><img src="/Images/NumberLabels/Eleven.png" alt="Eleven" /></td>
+      <td>Favorite Item</td>
+      <td>Tag the image as favorite. Once you tag even one image as favorite, a toggle button will appear at the top (as shown in the right side image) to show only the items tagged as favorites.</td>
+    </tr>
+    <tr>
+      <td><img src="/Images/NumberLabels/Twelve.png" alt="Twelve" /></td>
+      <td>View on Map</td>
+      <td>This enables the images to be rendered to appear as tiles on the map instead of just the center mass.</td>
+    </tr>
+    <tr>
+      <td><img src="/Images/NumberLabels/Thirteen.png" alt="Thirteen" /></td>
+      <td>View Visualization</td>
+      <td>Toggles the visualization panel where you can adjust the min and max of the available color bands and also the gamma values. You can also update the min and max based on the current image.</td>
+    </tr>
+    <tr>
+      <td><img src="/Images/NumberLabels/Fourteen.png" alt="Fourteen" /></td>
+      <td>Auto adjust Visualization</td>
+      <td>Auto adjust the image by applying the settings in the visualization panel for bands, gamma and the min and max percentiles. If the values in visualization panel have not been set then it applies the default values.</td>
+    </tr>
+    <tr>
+      <td><img src="/Images/NumberLabels/Fifteen.png" alt="Fifteen" /></td>
+      <td>View all on Map</td>
+      <td>This is a toggle which you should be really careful to use. It will render all the images on the map and because each rendering takes some time, doing it on a large no. of images can take some time and you might need to be patient for it to complete rendering everything.</td>
+    </tr>
+    <tr>
+      <td><img src="/Images/NumberLabels/Sixteen.png" alt="Sixteen" /></td>
+      <td>View Favorites Only</td>
+      <td>This toggle button will show all the images that the user has tagged as favorite (star button next to the thumbnail)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><img src="/Images/CatalogUI/CatalogInteraction.png" alt="EarthPlatform Interaction" /></p>
+
+<p>Below is the example of the Item Properties as shown on the right</p>
+
+<p><img src="/Images/CatalogUI/ItemProperties.png" alt="EarthPlatform Item Properties" /></p>
+
+<p>Click on the “Show Full“ to pop up a form that will show the text and JSON format of the STAC item properties as below</p>
+
+<p><img src="/Images/CatalogUI/ShowFull.png" alt="EarthPlatform Show Full" /></p>
+
+<p>Display Mode : Text below. This comes really handy when you want to get the STAC details of the given image/item. You can also get the individual asset urls and download the images as shown below in the “href”</p>
+
+<p><img src="/Images/CatalogUI/ShowFulltext.png" alt="EarthPlatform Show Full Text" /></p>
+
+<p>Here is the image showing the JSON format of the item properties. This is very useful when you want to get the whole or part of JSON and use it in your own application for several purposes.</p>
+
+<p><img src="/Images/CatalogUI/ShowFulljson.png" alt="EarthPlatform Show Full JSON" /></p>
+
+<p>Here is the example of tagging an item as favorite and then toggle the View favorite to see only the favorites list</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Favorites</th>
+      <th>View Favourites</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="/Images/CatalogUI/Favorites.png" alt="Favorites" /></td>
+      <td><img src="/Images/CatalogUI/ViewFavourites.png" alt="ViewFavourites" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Next is the example of View on Map button</p>
+
+<p><img src="/Images/CatalogUI/MapView.png" alt="EarthPlatform View on Map" /></p>
+
+<p>Here is the example of what the visualization can do when you change the min and the max band ranges</p>
+
+<p><img src="/Images/CatalogUI/Visualization.png" alt="EarthPlatform Visualization" /></p>
+
+<p>Below is the example where two images are selected and viewed on the map. Auto visualization was enabled for the right hand side image and you can see the difference it makes.</p>
+
+<p><img src="/Images/CatalogUI/AutoVisualization.png" alt="EarthPlatform Auto Visualization" /></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>S. No.</th>
+      <th>Label</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="/Images/NumberLabels/Seventeen.png" alt="Seventeen" /></td>
+      <td>Fly to Bounds</td>
+      <td>When you click at the center of this button, it zooms into the map to this thumbnail for a focussed view.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><img src="/Images/CatalogUI/FlyToBounds.png" alt="EarthPlatform Fly To Bounds" /></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>S. No.</th>
+      <th>Label</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="/Images/NumberLabels/Eighteen.png" alt="Eighteen" /></td>
+      <td>Download</td>
+      <td>Download button that lets you download the catalog / product based on the tier you belong to and the collection you are allowed. Some tiers and collections cannot download the images.</td>
+    </tr>
+    <tr>
+      <td><img src="/Images/NumberLabels/Nineteen.png" alt="Nineteen" /></td>
+      <td>Add to Cart</td>
+      <td>This option appears for the low resolution images from a catalog. You can eyeball the search images and can add the item to the cart if you wish EDA to process it as high resolution ARD product or a visual product. You can view the shopping cart by clicking the cart button on the top right.</td>
+    </tr>
+    <tr>
+      <td><img src="/Images/NumberLabels/Twenty.png" alt="Twenty" /></td>
+      <td>Latency Tier</td>
+      <td>In the shopping cart, you will see all the items aded. You can choose the further options of standard vs expedited processing of your order.</td>
+    </tr>
+    <tr>
+      <td><img src="/Images/NumberLabels/TwentyOne.png" alt="TwentyOne" /></td>
+      <td>Product Type</td>
+      <td>Once in the shopping cart, you also have the option to choose the derivative product you can order based on the image you have selected. In the example below, since the item in the cart is EDC catalog, you can choose to order ortho, AI and ARD products</td>
+    </tr>
+    <tr>
+      <td><img src="/Images/NumberLabels/TwentyTwo.png" alt="TwentyTwo" /></td>
+      <td>Checkout</td>
+      <td>Checkout for placing the order successfully. You will get the confirmation and the order no. which you can further track in your account information page</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>Download And Order</th>
+      <th>Cart</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="/Images/CatalogUI/DownloadandOrder.png" alt="DownloadandOrder" /></td>
+      <td><img src="/Images/CatalogUI/Cart.png" alt="Cart" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Next, we can see how we can compare two images over a period of time to see how the landscape is changing. We can do this by using Map Slider</p>
+
+<p>Below there are two images chosen over the same area but with different dates “2022/03/15“ and “2022/03/23“. They have been tagged favorite (with view favorite list enabled) and View on Map enabled to be able to see the landscape details.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>S. No.</th>
+      <th>Label</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="/Images/NumberLabels/TwentyThree.png" alt="TwentyThree" /></td>
+      <td>Show/ Hide Map Slider</td>
+      <td>This is the toggle for Map Slider. It gives you a capability to slide the area from left to right. Specially useful when you have two images, one on the left and one on the right. As you slide you will be able to see the landscape changes given the images are of different dates.</td>
+    </tr>
+    <tr>
+      <td><img src="/Images/NumberLabels/TwentyFour.png" alt="TwentyFour" /></td>
+      <td>Move Image Left</td>
+      <td>Click this L button to select the image to be seen on the left of the image</td>
+    </tr>
+    <tr>
+      <td><img src="/Images/NumberLabels/TwentyFive.png" alt="TwentyFive" /></td>
+      <td>Move Image Right</td>
+      <td>Click this R button to select the image to be seen on the right of the image</td>
+    </tr>
+    <tr>
+      <td><img src="/Images/NumberLabels/TwentySix.png" alt="TwentySix" /></td>
+      <td>Slider</td>
+      <td>The slider</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><img src="/Images/CatalogUI/MapSlider.png" alt="EarthPlatform Map Slider" /></p>
+
+<p>Below are the differences over a particular area which shows the installation of the solar panels that happened within a few days (from 2022/03/15 to 2022/03/23)</p>
+
+<p><img src="/Images/CatalogUI/MapSliderLeft.png" alt="EarthPlatform Map Slider Left" /></p>
+
+<p><img src="/Images/CatalogUI/MapSliderRight.png" alt="EarthPlatform Map Slider Right" /></p>
+
+<p>Now, there are some slider options to help you see the relative difference or similarity between the image and the base-map.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>S. No.</th>
+      <th>Label</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="/Images/NumberLabels/TwentySeven.png" alt="TwentySeven" /></td>
+      <td>Image Opacity</td>
+      <td>Image Opacity is used if you want to check location or any other attribute relative to the basemap.</td>
+    </tr>
+    <tr>
+      <td><img src="/Images/NumberLabels/TwentyEight.png" alt="TwentyEight" /></td>
+      <td>Image Footprint Opacity</td>
+      <td>As a query result, the more footprints you have the darker the footprints get until you can’t see the ground. So Image Footprint Opacity helps to make the image footprint transparent and then you can find your location.</td>
+    </tr>
+    <tr>
+      <td><img src="/Images/NumberLabels/TwentyNine.png" alt="TwentyNine" /></td>
+      <td>Wetland Prediction Opacity</td>
+      <td>This is useful when you have a landcover raster rendered for wetland prediction. Once you have rendered the landcover classification, you can use this transparency level to compare with the image background and avoid rendering every time.</td>
+    </tr>
+    <tr>
+      <td><img src="/Images/NumberLabels/Thirty.png" alt="Thirty" /></td>
+      <td>Wetland Prediction</td>
+      <td>It renders render the landcover classification for the image. It shows dark green for forest, yellow for crops, cyan for wetland and blue for water. One thing to note is that you need to have the Image Opacity at 0% for the wetland classification to be visible.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><img src="/Images/CatalogUI/ImageSliders.png" alt="EarthPlatform Image Sliders" /></p>
+
+<p>Below you can see the opacity for the image at 100%, 50% and 0</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Image Opacity 0</th>
+      <th>Image Opacity 50</th>
+      <th>Image Opacity 100</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="/Images/CatalogUI/ImageOpacity0.png" alt="ImageOpacity0" /></td>
+      <td><img src="/Images/CatalogUI/ImageOpacity50.png" alt="ImageOpacity50" /></td>
+      <td><img src="/Images/CatalogUI/ImageOpacity100.png" alt="ImageOpacity100" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Here is an example of the Footprint opacity</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Footprint Opacity High</th>
+      <th>Footprint Opacity Low</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="/Images/CatalogUI/FootprintOpacityHigh.png" alt="FootprintOpacityHigh" /></td>
+      <td><img src="/Images/CatalogUI/FootprintOpacityLow.png" alt="FootprintOpacityLow" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Now, lets see when wetland prediction is enabled for images, how does the opacity slider work. Examples at 100% and 20%</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Wetland Opacity High</th>
+      <th>Wetland Opacity Low</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="/Images/CatalogUI/WetlandOpacityHigh.png" alt="WetlandOpacityHigh" /></td>
+      <td><img src="/Images/CatalogUI/WetlandOpacityLow.png" alt="WetlandOpacityLow" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>That completes the list of our extensive operations that can be done with the Catalog images.</p>
+
+<!-- 
+## Interacting with the product
+## Placing an order and receiving it
+-->

@@ -1,0 +1,62 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "id": "https://earthdaily-stac-extensions.s3.amazonaws.com/eda_data_coverage/v1.0.0/schema.json",
+    "title": "EDA Data Coverage Extension",
+    "description": "STAC Extension EDA data coverage properties.",
+    "oneOf": [
+        {
+            "$comment": "This is the schema for STAC Items. Remove this object if this extension only applies to Collections.",
+            "allOf": [
+                {
+                    "type": "object",
+                    "required": [
+                        "properties"
+                    ],
+                    "properties": {
+                        "type": {
+                            "const": "Feature"
+                        },
+                        "properties": {
+                            "allOf": [
+                                {
+                                    "$ref": "#/definitions/fields"
+                                }
+                            ]
+                        }
+                    }
+                }
+            ]
+        }
+    ],
+    "definitions": {
+      "fields": {
+        "$comment": "Add your new fields here. Don't require them here, do that above in the corresponding schema.",
+        "type": "object",
+        "properties": {
+          "eda_data_coverage:region_id": {
+            "type": "string"
+          },
+          "eda_data_coverage:item_count": {
+            "type": "integer"
+          },
+          "eda_data_coverage:report_type": {
+            "type": "string"
+          },
+          "eda_data_coverage:region_version": {
+            "type": "integer"
+          },
+          "eda_data_coverage:month": {
+            "type": "integer"
+          },
+          "eda_data_coverage:week": {
+            "type": "integer"
+          }
+        },
+        "patternProperties": {
+          "^(?!eda_data_coverage:)": {
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }

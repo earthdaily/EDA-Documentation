@@ -1,0 +1,82 @@
+<h1 id="cloud-masking">Cloud Masking</h1>
+
+<p><a href="https://earthdailyagro.com/spend-less-data-scientists-time-cleaning-data-high-quality-cloud-masks-for-sentinel2-landsat-and-others-available-today/">EDA’s Accurate Cloud Masking</a> have been shown to be more accurate then current open data standard processing which improves ML applications and the pixel compositing process for mosaics.</p>
+
+<p>The accuracy of the EarhDaily Agro cloud mask is higher than the cloud mask of other providers, allowing for a reduction in under-detection and keeping a high quality on cloud over-detection to not miss clear areas.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Cloud Mask Provider</th>
+      <th style="text-align: center">Over-Detection</th>
+      <th style="text-align: center">Under-Detection</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">EDA’s Cloud Masks</td>
+      <td style="text-align: center">1.65%</td>
+      <td style="text-align: center">3.85%</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Fmask 4 (Matlab)</td>
+      <td style="text-align: center">0.21%</td>
+      <td style="text-align: center">27.18%</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Fmask (Python)</td>
+      <td style="text-align: center">1.12%</td>
+      <td style="text-align: center">26.6%</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">ESA</td>
+      <td style="text-align: center">0.97%</td>
+      <td style="text-align: center">42.1%</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>EDA’s Auto Clear Mask (ACM) improves the detection and the efficeny of clouds in Senintel-2, Landsat 8, and Landsat 9.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Mosaics Produced with ESA’s Cloud Mask</th>
+      <th style="text-align: center">RGB Image of Cloud Area</th>
+      <th style="text-align: center">Mosaics Produced with EDA’s Cloud Masks</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><img src="/Images/ProductImages/ESA_Cloud_Mask.png" alt="ESA Cloud Mask" /></td>
+      <td style="text-align: center"><img src="/Images/ProductImages/RGB_Cloud_Mask.png" alt="RGB Data" /></td>
+      <td style="text-align: center"><img src="/Images/ProductImages/EDA_Cloud_Mask.png" alt="EDA Cloud Mask" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="why-do-cloud-masks-matter">Why do Cloud Masks Matter?</h2>
+<p>Under-Detected Cloud Masks lead to the inclusion of pixels that are not representative of the ground measurement a mosaic is eeking to construct. This can cause various artifacts within the mosaicing process which are avoided as much as possible, except where this is data extremely limited data.  In general the larger the Time Range of Interest, the more likely getting cloud-free measurements is.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Pixel Halo Affect from Poor Cloud Masks</th>
+      <th style="text-align: center">Challenged Pixel Balancing Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><img src="/Images/ProductImages/CloudHalos.png" alt="Cloud Halos" /></td>
+      <td style="text-align: center"><img src="/Images/ProductImages/PixelSelection.png" alt="Pixel Selection" /></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">For this example, mosaics have been produced with undetected cloud masks for mosaic construction.</td>
+      <td style="text-align: center">For this example, mosaics have been produced to demonstrate the inconsistency made worse with inadequate cloud masks.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="references">References</h2>
+<p>EDA’s cloud masking technology is built off of the <a href="https://cloudsen12.github.io/">CloudSEN12</a> datasources</p>
+

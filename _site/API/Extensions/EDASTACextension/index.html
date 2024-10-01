@@ -1,0 +1,309 @@
+<h1 id="view-eda-extension-specification">View EDA Extension Specification</h1>
+<ul>
+  <li>Title: EDA Extension</li>
+  <li>Identifier: <a href="https://earthdaily-stac-extensions.s3.amazonaws.com/eda/v0.1.0/schema.json">https://earthdaily-stac-extensions.s3.amazonaws.com/eda/v0.1.0/schema.json</a></li>
+  <li>Field Name Prefix: eda</li>
+  <li>Scope: Item, Collections</li>
+  <li>History: Prior to March 07, 2024</li>
+</ul>
+
+<p>This document explains the EDA Extension to the <a href="https://github.com/radiantearth/stac-spec">SpatioTemporal Asset Catalog (STAC)</a> specification.</p>
+
+<p>EDA Extension adds metadata related to EDA specific details like ImagerMode, Sensor Type, Water Cover, Radiometric Scaling, Geometric Accuracy RMSE etc  that affect the view of resulting data. It will often be combined with other extensions that describe the actual data, such as the eo, proj or sat extensions.</p>
+
+<h2 id="fields">Fields</h2>
+<hr />
+<p>The fields in the table below can be used in these parts of STAC documents:</p>
+
+<ul class="task-list">
+  <li>[] Catalogs</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Collections</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Items</li>
+  <li class="task-list-item">[] Assets (for both Collections and Items, incl. Item Asset Definitions in Collections)</li>
+  <li class="task-list-item">[] Links</li>
+</ul>
+
+<p>Below is the list of <strong>public</strong> fields available via API</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Field Name</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>eda:order_line_item_id</td>
+      <td>String</td>
+      <td>Specifies the order line item id within EarthPipeline</td>
+    </tr>
+    <tr>
+      <td>eda:source_l0_ids</td>
+      <td>List of Strings</td>
+      <td>Archive IDs of the source level-0 datasets</td>
+    </tr>
+    <tr>
+      <td>eda:source_l0_scene_ids</td>
+      <td>List of Strings</td>
+      <td>Scene IDs of the source Level-0 datasets</td>
+    </tr>
+    <tr>
+      <td>eda:segment_id</td>
+      <td>String</td>
+      <td>Dataset identifier for the acquisition used to generate the product &lt;Datetime&gt;_&lt;Sensor&gt;&lt;SID&gt;&lt;Cat&gt;</td>
+    </tr>
+    <tr>
+      <td>eda:imager_mode</td>
+      <td>String</td>
+      <td>Non-experimental modes are: “TDI_LAND”, “TDI_MARITIME”, “TDI_GLOBAL”, “PUSH_FRAME_GLOBAL” Only provided for the Catalogue products</td>
+    </tr>
+    <tr>
+      <td>eda:image_section_counter</td>
+      <td>Number</td>
+      <td>Image section counter. Only provided for the Catalogue products</td>
+    </tr>
+    <tr>
+      <td>eda:geometric_accuracy_rmse</td>
+      <td>Number</td>
+      <td>Radial RMSE, in meters. Only provided for the following products: L1C VNIR Land TOA, VNIR RGB Visually Enhanced, VNIR NRG Visually Enhanced, L1C SWIR Land TOA, L1C LWIR Brightness Temperature, L1C MWIR Brightness Temperature, L2A VNIR Basic Land BOA, L2A VNIR Advanced Land BOA, L2A SWIR Land BOA, L2A LWIR Land Surface Temperature</td>
+    </tr>
+    <tr>
+      <td>eda:sensor_type</td>
+      <td>String</td>
+      <td>The sensor type right now is “OPTICAL” but we might have different values depending on product type like Methane or thermal products</td>
+    </tr>
+    <tr>
+      <td>eda:product_type</td>
+      <td>String</td>
+      <td>Only available for the “GOES” collection</td>
+    </tr>
+    <tr>
+      <td>eda:water_cover</td>
+      <td>Number</td>
+      <td>Estimate of water cover, in %</td>
+    </tr>
+    <tr>
+      <td>eda:derived_from_item_id</td>
+      <td>String</td>
+      <td>L2 item that was used for the creation of the L2 derived products</td>
+    </tr>
+    <tr>
+      <td>eda:derived_from_collection_id</td>
+      <td>String</td>
+      <td>L2 collection that was used for the creation of the L2 derived products</td>
+    </tr>
+    <tr>
+      <td>eda:ag_cloud_mask_available</td>
+      <td>Boolean</td>
+      <td>Specifies whether EDAgro cloud mask is available or not</td>
+    </tr>
+    <tr>
+      <td>eda:ag_cloud_mask_item_id</td>
+      <td>String</td>
+      <td>EDAgro Cloud Mask item id available for this item</td>
+    </tr>
+    <tr>
+      <td>eda:ag_cloud_mask_collection_id</td>
+      <td>String</td>
+      <td>EDAgro Cloud Mask collection id available for this item</td>
+    </tr>
+    <tr>
+      <td>eda:cloud_mask_available</td>
+      <td>Boolean</td>
+      <td>Specifies whether EDA cloud mask is available or not</td>
+    </tr>
+    <tr>
+      <td>eda:cloud_mask_item_id</td>
+      <td>String</td>
+      <td>EDA Cloud Mask item id available for this item</td>
+    </tr>
+    <tr>
+      <td>eda:cloud_mask_collection_id</td>
+      <td>String</td>
+      <td>EDA Cloud Mask collection id available for this item</td>
+    </tr>
+    <tr>
+      <td>eda:area_km2</td>
+      <td>Number</td>
+      <td>Mosaic - the approximate area in km^2 of the valid region of the mosaic</td>
+    </tr>
+    <tr>
+      <td>eda:radiometric_scaling</td>
+      <td>Number</td>
+      <td>Obsolete</td>
+    </tr>
+    <tr>
+      <td>eda:orbit_number</td>
+      <td>String</td>
+      <td>The satellite orbit</td>
+    </tr>
+    <tr>
+      <td>eda:pixel_composite_method</td>
+      <td>String</td>
+      <td>Pixel Composite Method used for Mosaics</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Below are some of the <strong>private</strong> fields being available</p>
+
+<p><strong>Note</strong> The private fields are available to “Admin users” and “All Users of Customer account with Super Tier”</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Field Name</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>eda:status</td>
+      <td>String</td>
+      <td>Status of the product. Can take one of the following values - Created, Published,Unpublished</td>
+    </tr>
+    <tr>
+      <td>eda:geometry_tags</td>
+      <td>List of Strings</td>
+      <td>This field is populated when we modify the STAC items from third party data</td>
+    </tr>
+    <tr>
+      <td>eda:tags</td>
+      <td>List of Strings</td>
+      <td>General EDA tags</td>
+    </tr>
+    <tr>
+      <td>eda:original_geometry</td>
+      <td>Object</td>
+      <td>We preserve the original geometry when we modify the geometry tags of third party STAC items</td>
+    </tr>
+    <tr>
+      <td>eda:tracking_id</td>
+      <td>String</td>
+      <td>Used by Pastfinder for tracking all items related to an order</td>
+    </tr>
+    <tr>
+      <td>eda:account_id</td>
+      <td>String</td>
+      <td>User account id info (Customer Account Id) used for authorization and product delivery</td>
+    </tr>
+    <tr>
+      <td>eda:processor_version</td>
+      <td>String</td>
+      <td>Version of the processing system used to generate this product</td>
+    </tr>
+    <tr>
+      <td>eda:loose_validation_status</td>
+      <td>String</td>
+      <td>Validation status of third party stac items because even if its not valid, we would store it and display it as well (queryable)</td>
+    </tr>
+    <tr>
+      <td>eda:band_to_band_accuracy_rmse</td>
+      <td>List of Objects</td>
+      <td>The band-to-band accuracy, in pixels. Only provided for the following products: L1C VNIR Land TOA, VNIR RGB Visually Enhanced, VNIR NRG Visually Enhanced, L1C SWIR Land TOA, L1C LWIR Brightness Temperature, L2A VNIR Basic Land BOA, L2A VNIR Advanced Land BOA, L2A SWIR Land BOA, L2A LWIR Land Surface Temperature</td>
+    </tr>
+    <tr>
+      <td>eda:source_created</td>
+      <td>String</td>
+      <td>If we ingest third party item, we keep a track of when it was created in our system but we also maintain history of the actual item created. This is when third party created it</td>
+    </tr>
+    <tr>
+      <td>eda:source_updated</td>
+      <td>String</td>
+      <td>If we ingest third party item, we keep a track of when it was updated in our system but we also maintain history of the actual item updated. This is when third party updated it</td>
+    </tr>
+    <tr>
+      <td>eda:unusable_cover</td>
+      <td>Number</td>
+      <td>Estimate of unusable cover. Only for Land products. Unusable cover includes at least cloud and water.</td>
+    </tr>
+    <tr>
+      <td>eda:num_cols</td>
+      <td>String</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>eda:num_rows</td>
+      <td>String</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>eda:derived_from_l1c_item_id</td>
+      <td>String</td>
+      <td>Which L1c item was used for the creation of the L1 derived products</td>
+    </tr>
+    <tr>
+      <td>eda:derived_from_l1c_collection_id</td>
+      <td>String</td>
+      <td>Which L1c collection was used for the creation of the L1 derived collection</td>
+    </tr>
+    <tr>
+      <td>eda:altitude</td>
+      <td>Number</td>
+      <td>Altitude of the image capture location. Altitude at the center of the product</td>
+    </tr>
+    <tr>
+      <td>eda:bearing</td>
+      <td>Number</td>
+      <td>Satellite ground track bearing</td>
+    </tr>
+    <tr>
+      <td>eda:start_attitude</td>
+      <td>List of Numbers</td>
+      <td>Satellite attitude at the start of the acquisition (Degrees RPY )</td>
+    </tr>
+    <tr>
+      <td>eda:end_attitude</td>
+      <td>List of Numbers</td>
+      <td>Satellite attitude at the end of the acquisition (Degrees RPY )</td>
+    </tr>
+    <tr>
+      <td>eda:mean_attitude</td>
+      <td>List of Numbers</td>
+      <td>Mean satellite attitude (Degrees RPY )</td>
+    </tr>
+    <tr>
+      <td>eda:mtf_enhancement_applied</td>
+      <td>Boolean</td>
+      <td>Indicates whether MTF enhancement was applied</td>
+    </tr>
+    <tr>
+      <td>eda:product_status</td>
+      <td>Number</td>
+      <td>Mosaic Product Status - Pending Validation, Valid, Deprecated . Obsolete</td>
+    </tr>
+    <tr>
+      <td>eda:source</td>
+      <td>String</td>
+      <td>Obsolete</td>
+    </tr>
+    <tr>
+      <td>eda:auxiliary_atmospheric_sources</td>
+      <td>Object</td>
+      <td>Auxiliary atmospheric retrieval sources that were used for BOA generation (empty if none were used) Only applicable and included for L2A VNIR Basic Land BOA and L2A VNIR Advanced Land BOA products. e.g. <code class="language-plaintext highlighter-rouge">{ “aerosol”: “MODIS”, “water_vapour”: “ECMWF observation”}</code></td>
+    </tr>
+    <tr>
+      <td>eda:basemap</td>
+      <td>String</td>
+      <td>The geometric reference used for any geometric corrections applied to the imagery  (Mosaic)</td>
+    </tr>
+    <tr>
+      <td>eda:download_bundle_status</td>
+      <td>Number</td>
+      <td>Whether the download bundle asset is available or in progress. If this tag is absent, then the download bundle asset is not available for that item.</td>
+    </tr>
+    <tr>
+      <td>eda:aocs_mode</td>
+      <td>String</td>
+      <td>AOCS Mode - One of “Nadir”, “DEM”, “Side Slither”.  Only provided for the Catalogue</td>
+    </tr>
+    <tr>
+      <td>eda:cloud_detect_method</td>
+      <td>String</td>
+      <td>Algorithm used in cloud detection</td>
+    </tr>
+  </tbody>
+</table>
