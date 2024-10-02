@@ -1,10 +1,10 @@
----
-layout: default
-title: EDS Compatibility Examples
-parent: EDS Documentation
-nav_order: 5
-has_children: true
----
+#---
+#layout: default
+#title: EDS Compatibility Examples
+#parent: EDS Documentation
+#nav_order: 5
+#has_children: true
+#---
 
 # Jupyter Notebooks
 Here are some examples of using odc-stac to work with EDS data
