@@ -3,6 +3,7 @@ import os
 
 import requests
 from pystac_client import Client
+from dotenv import load_dotenv
 
 # Logger configuration
 logging.basicConfig(level=logging.INFO)
@@ -19,6 +20,8 @@ logger = logging.getLogger(__name__)
 # export AUTH_TOKEN_URL="your_auth_token_url"
 #
 # Alternatively, you can manage environment variables using a .env file and the python-dotenv package.
+
+load_dotenv()
 
 CLIENT_ID = os.getenv("CLIENT_ID")
 CLIENT_SECRET = os.getenv("CLIENT_SECRET")
@@ -40,7 +43,7 @@ def get_new_token(session):
         return tokens["access_token"]
     except requests.exceptions.RequestException as e:
         logger.error(f"Failed to obtain token: {e}")
-        exit(1)
+        raise e
 
 
 def initialize_stac_client(api_url, token):

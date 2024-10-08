@@ -44,26 +44,35 @@ PySTAC is a library for working with [SpatioTemporal Asset Catalogs (STAC)](http
 
 Here is a small snippet to give you an idea
 
-```
-# Generate auth token
+```python
+from dotenv import load_dotenv
 
-def get_new_token():
-    token_req_payload = {'grant_type': 'client_credentials'}
-    token_response = requests.post(auth_token_url,
-    data=token_req_payload, verify=False, allow_redirects=False,
-    auth=(client_id, client_secret))
-    token_response.raise_for_status()
+load_dotenv()  # take environment variables from .env.
 
-    tokens = json.loads(token_response.text)
-    return tokens['access_token']
+CLIENT_ID = os.getenv("CLIENT_ID")
+CLIENT_SECRET = os.getenv("CLIENT_SECRET")
+AUTH_TOKEN_URL = os.getenv("ACCESS_TOKEN_URL")
+API_URL = os.getenv("EDS_API_URL")
 
-token = get_new_token()
+session = requests.Session()
+session.auth = (CLIENT_ID, CLIENT_SECRET)
+
+
+def get_new_token(session):
+    """Obtain a new authentication token using client credentials."""
+    token_req_payload = {"grant_type": "client_credentials"}
+    try:
+        token_response = session.post(AUTH_TOKEN_URL, data=token_req_payload)
+        token_response.raise_for_status()
+        tokens = token_response.json()
+        return tokens["access_token"]
+    except requests.exceptions.RequestException as e:
+        print(f"Failed to obtain token: {e}")
+
+token = get_new_token(session)
 
 # Configure pystac client
-
-client = Client.open(api_url, headers={
-    "Authorization": f"Bearer {token}"
-})
+catalog = Client.open(API_URL, headers={"Authorization": f"bearer {token}"})
 
 # Get collections
 
@@ -78,7 +87,7 @@ You can find the detailed examples using [Python script](../API/APIUsage/Python.
 The fastest way to get up and running is to use EDA's [Python Client Repository](https://github.com/earthdaily/earthdaily-python-client). 
 
 Build a new Conda Environment:
-```
+```bash
 # Clone the repository and go inside
 git clone git@github.com:earthdaily/earthdaily-python-client.git
 cd earthdaily-python-client
@@ -96,8 +105,7 @@ copy-earthdaily-credentials-template --default
 
 
 Test the Available Collections:
-```
-"""
+```python
 from earthdaily.earthdatastore.cube_utils import asset_mapper
 from rich.table import Table
 from rich.console import Console
