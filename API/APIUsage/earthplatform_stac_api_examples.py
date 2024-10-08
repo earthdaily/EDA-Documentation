@@ -9,6 +9,17 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 # Loading secrets from environment variables
+
+# Ensure environment variables are set before running this script.
+# You can set them in your terminal session or add them permanently to your shell configuration
+# (e.g., .bash_profile, .bashrc) using the following format:
+#
+# export CLIENT_ID="your_client_id"
+# export CLIENT_SECRET="your_client_secret"
+# export AUTH_TOKEN_URL="your_auth_token_url"
+#
+# Alternatively, you can manage environment variables using a .env file and the python-dotenv package.
+
 CLIENT_ID = os.getenv("CLIENT_ID")
 CLIENT_SECRET = os.getenv("CLIENT_SECRET")
 AUTH_TOKEN_URL = os.getenv("ACCESS_TOKEN_URL")
@@ -44,15 +55,19 @@ def main():
     try:
         # Get all collections
         for collection in client.get_all_collections():
-            logger.info(collection)
+            logger.info(
+                f"Retrieved collection: {collection.id} - {collection.description}"
+            )
 
         # Get specific collection
         collection = client.get_collection("sentinel-2-l2a")
-        logger.info(collection)
+        logger.info(
+            f"Details of collection '{collection.id}': {collection.description}"
+        )
 
         # Perform a search
         items = client.search(
-            collections=["sentinel-2-l2a", "sentinel-1c"],
+            collections=["sentinel-2-l2a", "sentinel-2-l1c"],
             datetime="2022-07-01T00:00:00.000000Z/2023-08-01T00:00:00.000000Z",
             intersects={
                 "coordinates": [
@@ -73,7 +88,9 @@ def main():
         ).get_items()
 
         for index, item in enumerate(items):
-            logger.info(f"{index}, {item}")
+            logger.info(
+                f"Item {index}: ID={item.id}, Cloud Cover={item.properties['eo:cloud_cover']}"
+            )
 
         # Query for specific items
         items = client.search(
@@ -86,7 +103,7 @@ def main():
         ).get_items()
 
         for index, item in enumerate(items):
-            logger.info(f"{index}, {item}")
+            logger.info(f"Specific item {index}: ID={item.id}")
 
         # Query for cloud masks
         items = client.search(
@@ -96,12 +113,13 @@ def main():
         ).get_items()
 
         for index, item in enumerate(items):
-            logger.info(item)
             cloud_mask_item = client.get_collection(
                 item.properties["eda:ag_cloud_mask_collection_id"]
             ).get_item(item.properties["eda:ag_cloud_mask_item_id"])
 
-            logger.info(cloud_mask_item)
+            logger.info(
+                f"Cloud mask available for item ID={item.id}. Details: {cloud_mask_item.id}"
+            )
 
     except Exception as e:
         logger.error(f"An error occurred: {e}")
