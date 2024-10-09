@@ -88,7 +88,7 @@ def main():
             sortby=[{"field": "properties.eo:cloud_cover", "direction": "asc"}],
             limit=50,
             max_items=100,
-        ).get_items()
+        ).items()
 
         for index, item in enumerate(items):
             logger.info(
@@ -103,7 +103,7 @@ def main():
                 "S2B_39XVJ_20230615_0_L2A",
                 "S2B_27LZJ_20230615_0_L2A",
             ],
-        ).get_items()
+        ).items()
 
         for index, item in enumerate(items):
             logger.info(f"Specific item {index}: ID={item.id}")
@@ -113,7 +113,7 @@ def main():
             collections=["sentinel-2-l2a"],
             query={"eda:ag_cloud_mask_available": {"eq": True}},
             max_items=50,
-        ).get_items()
+        ).items()
 
         for index, item in enumerate(items):
             cloud_mask_item = client.get_collection(

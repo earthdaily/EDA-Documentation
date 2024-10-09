@@ -107,7 +107,7 @@ items = client.search(
     ],
     limit=50,  # This is the number of items to be returned per page
     max_items=100,  # This is number of items to page over
-).get_items()
+).items()
 
 for index, item in enumerate(items):
     print(f"{index}, {item}")
@@ -119,7 +119,7 @@ for index, item in enumerate(items):
 items = client.search(
     collections=["sentinel-2-l2a"],
     ids=["S2B_35XMG_20230615_1_L2A", "S2B_39XVJ_20230615_0_L2A", "S2B_27LZJ_20230615_0_L2A"]
-).get_items()
+).items()
 
 for index, item in enumerate(items):
     print(f"{index}, {item}")
@@ -138,7 +138,7 @@ items = client.search(
         }
     },
     max_items=50
-).get_items()
+).items()
 
 for index, item in enumerate(items):
     print(item)
