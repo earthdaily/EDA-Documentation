@@ -34,7 +34,7 @@ Pressing the `GetStarted` will take you to a NewOrders page. Let's see what all 
 
 | S. No     | Label     | Description       |
 |-----------|-----------|-------------------|
-| ![One](../Images/NumberLabels/One.png)  | Launch EarthDailyGPT | You can use EarthDailyGPT to assist you with generating a mosaic.   |
+| ![One](../Images/NumberLabels/One.png)  | Launch EarthDailyGPT | You can use EarthDailyGPT to assist you with generating a mosaic   |
 | ![Two](../Images/NumberLabels/Two.png)  | Area of Interest - draw on the map | You can start drawing a polygon for your mosaics order. The limit currently is < 200,000 km<sup>2</sup>   |
 | ![Three](../Images/NumberLabels/Three.png) | Area of Interest - use GeoJSON | Instead of drawing a polygon, if you have an existing GeoJSON, you have an option to enter it here. The restriction of < 200,000 km<sup>2</sup> applies to this too |
 |![Four](../Images/NumberLabels/Four.png) | Time of Interest | Specify the time of interest for your Mosaics order |
@@ -61,10 +61,10 @@ Once you draw a polygon, you will see the area calculator diaplays the total are
 The settings define how your mosaic will be generated. 
 * Resolution determines the quality of your mosaic: Preview is free, whereas Full is paid. You are advised to first create a Preview Resolution mosaic, with your desired settings, to preview your order. 
 * Processing type determines the pixel selection process: 
-    * Best Measurement uses pixel-by-pixel weighting 
-    * Peak NDVI uses Normalized Vegetation Index (NDVI) (Coming Soon)
-    * Peak Burn Severity uses Normalized Burn Ratio (NBR) and (Coming Soon)
-    * Percentile uses a common pixel approach. 
+    * Best Measurement: an algorithm that takes into account cloud, cloud shadow, distance to nearest occlusion, aerosol optical thickness, relative acquisition time, acquisition platform, and smoothness characteristics to select the most representative value for each individual pixel in the mosaic
+    * Min/Max NDVI (beta): augments the Best Measurement algorithm by including an additional weighting based on the per-pixel NDVI value, reducing artefacts in the imagery while still generating a representative maximum or minimum NDVI
+    * Min/Max NBR (beta): augments the Best Measurement algorithm by including an additional weighting based on the per-pixel NBR value, reducing artefacts in the imagery while still generating a representative maximum or minimum NBR
+
 * Source specifies if your mosaic will be made using only Sentinel-2A or the combination of Sentinel-2A and Landsat-8/9.
 
 ![Settings](../Images/EarthMosaicsUI/Settings.png)
