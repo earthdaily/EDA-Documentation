@@ -26,7 +26,7 @@ Below is the landing page you see when you navigate to [EarthMosaics](https://co
 
 ![WelcomeMosaics](../Images/EarthMosaicsUI/WelcometoMosaic.png)
 
-When you are the first time user, you get the Welcome dialog with an option to GetStarted
+When you are the first time user, you get the Welcome dialog with an option to GetStarted.
 
 Pressing the `GetStarted` will take you to a NewOrders page. Let's see what are all the options we have while placing the order:
 
@@ -34,12 +34,14 @@ Pressing the `GetStarted` will take you to a NewOrders page. Let's see what are 
 
 | S. No     | Label     | Description       |
 |-----------|-----------|-------------------|
-| ![One](../Images/NumberLabels/One.png)  | Area of Interest (AOI) | You can start drawing a polygon for your Mosaics order. The limit currently is < 100,000 km<sup>2</sup>   |
-| ![Two](../Images/NumberLabels/Two.png) | Instead of drawing a polygon, if you have an existing GeoJSON, you have an option to enter it here. The restriction of < 100,000 km<sup>2</sup> applies to this too |
-|![Three](../Images/NumberLabels/Three.png) | Time of Interest | Specify the time of interest for your Mosaics order |
-| ![Four](../Images/NumberLabels/Four.png) | Settings | This one gives you multiple choices to place your order as per your needs|
+| ![One](../Images/NumberLabels/One.png)  | Launch EarthDailyGPT | You can use EarthDailyGPT to assist you with generating a mosaic   |
+| ![Two](../Images/NumberLabels/Two.png)  | Area of Interest - draw on the map | You can start drawing a polygon for your mosaics order. The limit currently is < 200,000 km<sup>2</sup>   |
+| ![Three](../Images/NumberLabels/Three.png) | Area of Interest - use GeoJSON | Instead of drawing a polygon, if you have an existing GeoJSON, you have an option to enter it here. The restriction of < 200,000 km<sup>2</sup> applies to this too |
+|![Four](../Images/NumberLabels/Four.png) | Time of Interest | Specify the time of interest for your Mosaics order |
+| ![Five](../Images/NumberLabels/Five.png) | Settings | This one gives you multiple choices to place your order as per your needs|
+| ![Six](../Images/NumberLabels/Six.png) | Mosaic Name | Enter a name for your Mosaic order for easy identification|
 
-The area of interest (AOI) defines the geographic extent used to build the mosaic. You can either draw the AOI on the map or provide the AOI's GeoJSON below. To draw, start by left-clicking on the map. After adjusting the extent of your AOI, complete the AOI by left-clicking. Once drawn, you can select your AOI to reshape its boundaries.
+The area of interest (AOI) defines the geographic extent used to build the mosaic. You can either draw the AOI on the map or provide the AOI's GeoJSON below. To draw, start by choosing either the Rectangle option or the Polygon option, and then left-click on the map. After adjusting the extent of your AOI, complete the AOI by left-clicking. Once drawn, you can select your AOI to reshape its boundaries.
 
 ![AoI](../Images/EarthMosaicsUI/AoI.png)
 
@@ -47,9 +49,9 @@ Once you draw a polygon, you will see the area calculator diaplays the total are
 
 | S. No     | Label     | Description       |
 |-----------|-----------|-------------------|
-| ![Five](../Images/NumberLabels/Five.png) | Fit Bounds | This option allows you to bring back the focus on the area drawn and fits it to the viewport    |
-| ![Six](../Images/NumberLabels/Six.png) | GeoJSON | Instead of drawing a polygon, if you have an existing GeoJSON, you have an option to enter it here. The restriction of < 100,000 km<sup>2</sup> applies to this too |
-| ![Seven](../Images/NumberLabels/Seven.png) | Delete | Delete the existing AOI |
+| ![Seven](../Images/NumberLabels/Seven.png) | Fit Bounds | This option allows you to bring back the focus on the area drawn and fits it to the viewport    |
+| ![Eight](../Images/NumberLabels/Eight.png) | GeoJSON | Instead of drawing a polygon, if you have an existing GeoJSON, you have an option to enter it here. The restriction of < 200,000 km<sup>2</sup> applies to this too |
+| ![Nine](../Images/NumberLabels/Nine.png) | Delete | Delete the existing AoI |
 
 ![GeoJSON](../Images/EarthMosaicsUI/GeoJSON.png)
 
@@ -59,15 +61,15 @@ Once you draw a polygon, you will see the area calculator diaplays the total are
 The settings define how your mosaic will be generated. 
 * Resolution determines the quality of your mosaic: Preview is free, whereas Full is paid. You are advised to first create a Preview Resolution mosaic, with your desired settings, to preview your order. 
 * Processing type determines the pixel selection process: 
-    * Best Measurement uses pixel-by-pixel weighting 
-    * Peak NDVI uses Normalized Vegetation Index (NDVI) (Coming Soon)
-    * Peak Burn Severity uses Normalized Burn Ratio (NBR) and (Coming Soon)
-    * Percentile uses a common pixel approach. 
-* Source specifies if your mosaic will be made using only Sentinel-2 or the combination of Sentinel-2 and Landsat-8/9.
+    * Best Measurement: an algorithm that takes into account cloud, cloud shadow, distance to nearest occlusion, aerosol optical thickness, relative acquisition time, acquisition platform, and smoothness characteristics to select the most representative value for each individual pixel in the mosaic
+    * Min/Max NDVI (beta): augments the Best Measurement algorithm by including an additional weighting based on the per-pixel NDVI value, reducing artefacts in the imagery while still generating a representative maximum or minimum NDVI
+    * Min/Max NBR (beta): augments the Best Measurement algorithm by including an additional weighting based on the per-pixel NBR value, reducing artefacts in the imagery while still generating a representative maximum or minimum NBR
+
+* Source specifies if your mosaic will be made using only Sentinel-2A or the combination of Sentinel-2A and Landsat-8/9.
 
 ![Settings](../Images/EarthMosaicsUI/Settings.png)
 
-Now, after you confirm all settings, submit the order
+Now, after you confirm all settings and enter a name, submit the order
 
 ![Submit](../Images/EarthMosaicsUI/Submit.png)
 
@@ -118,10 +120,9 @@ Once the order is processed successfully, you will see the state changed to "Pro
 
 | S.No        | Label     | Description       |
 |--------------|-----------|-------------------|
-| ![Eight](../Images/NumberLabels/Eight.png) | Copy | This option allows you to copy the order in case you want to use the same settings or have a minor modification to place another order     |
-| ![Nine](../Images/NumberLabels/Nine.png) | Download | This is where you can download your product - preview or full |
-| ![Ten](../Images/NumberLabels/Ten.png) | View | This option allows you to view the product in the Visualizer which is very similar to the EarthPlatform UI  |
-
+| ![Ten](../Images/NumberLabels/Ten.png) | Copy | This option allows you to copy the order in case you want to use the same settings or have a minor modification to place another order     |
+| ![Eleven](../Images/NumberLabels/Eleven.png) | Download | This is where you can download your product - Preview or Full |
+| ![Twelve](../Images/NumberLabels/Twelve.png) | View | This option allows you to view the product in the Visualizer  |
 
 Below is the Visualizer that opens up when you click on the View button on the Orders page. This visualizer is very similar to our EarthPlatform UI and has many common components needed to interact with the Mosaic product similar to our other products
 
