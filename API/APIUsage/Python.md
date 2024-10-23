@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Python Samples
+grand_parent: API
 parent: API endpoints
 nav_order: 3
 ---
@@ -8,43 +9,52 @@ nav_order: 3
 ## Python
 For Python environments, we recommend using [PySTAC Client](https://pystac-client.readthedocs.io/en/stable/#). Complete examples of using PySTAC Client with EarthPlatform STAC API are included: 
 
-[earthplatform_stac_api_examples.py](./earthplatform_stac_api_examples.py)   
+[earthplatform_stac_api_example](https://github.com/earthdaily/EDA-Documentation/tree/gh-pages/API/APIUsage/earthplatform_stac_api_examples.py)   
 
 Below are the various sections of the script in reagrds to STAC endpoints
 
 ### Getting the authentication token for Pystac Client
 
-```
-# Generate auth token
+```python
+from dotenv import load_dotenv
 
-def get_new_token():
-    token_req_payload = {'grant_type': 'client_credentials'}
-    token_response = requests.post(auth_token_url,
-    data=token_req_payload, verify=False, allow_redirects=False,
-    auth=(client_id, client_secret))
-    token_response.raise_for_status()
+load_dotenv()  # take environment variables from .env.
 
-    tokens = json.loads(token_response.text)
-    return tokens['access_token']
+CLIENT_ID = os.getenv("CLIENT_ID")
+CLIENT_SECRET = os.getenv("CLIENT_SECRET")
+AUTH_TOKEN_URL = os.getenv("ACCESS_TOKEN_URL")
+API_URL = os.getenv("EDS_API_URL")
 
-token = get_new_token()
+# Setup requests session
+session = requests.Session()
+session.auth = (CLIENT_ID, CLIENT_SECRET)
 
-# Configure pystac client
 
-client = Client.open(api_url, headers={
-    "Authorization": f"Bearer {token}"
-})
+def get_new_token(session):
+    """Obtain a new authentication token using client credentials."""
+    token_req_payload = {"grant_type": "client_credentials"}
+    try:
+        token_response = session.post(AUTH_TOKEN_URL, data=token_req_payload)
+        token_response.raise_for_status()
+        tokens = token_response.json()
+        return tokens["access_token"]
+    except requests.exceptions.RequestException as e:
+        print(f"Failed to obtain token: {e}")
+
+token = get_new_token(session)
+
+catalog = Client.open(API_URL, headers={"Authorization": f"bearer {token}"})
 ```
 
 ### Get collections
 
-```
+```python
 for collection in client.get_all_collections():
     print(collection)
 ```
 
 ### Get a specific collection 
-```
+```python
 collection = client.get_collection("sentinel-2-l2a")
 print(collection)
 ```
@@ -52,7 +62,7 @@ print(collection)
 ### Search 
 
 Search a collection with different filter criteria, setting query with field conditions and sorting
-```
+```python
 items = client.search(
     collections=["sentinel-2-l2a", "sentinel-l1c"],
     datetime="2022-07-01T00:00:00.000000Z/2023-08-01T00:00:00.000000Z",
@@ -97,7 +107,7 @@ items = client.search(
     ],
     limit=50,  # This is the number of items to be returned per page
     max_items=100,  # This is number of items to page over
-).get_items()
+).items()
 
 for index, item in enumerate(items):
     print(f"{index}, {item}")
@@ -105,11 +115,11 @@ for index, item in enumerate(items):
 
 ### Specific Item
 
-```
+```python
 items = client.search(
     collections=["sentinel-2-l2a"],
     ids=["S2B_35XMG_20230615_1_L2A", "S2B_39XVJ_20230615_0_L2A", "S2B_27LZJ_20230615_0_L2A"]
-).get_items()
+).items()
 
 for index, item in enumerate(items):
     print(f"{index}, {item}")
@@ -117,7 +127,7 @@ for index, item in enumerate(items):
 
 ### Cloud Masks
 
-```
+```python
 # Query sentinel-2-l2a for ag cloud masks
 
 items = client.search(
@@ -128,7 +138,7 @@ items = client.search(
         }
     },
     max_items=50
-).get_items()
+).items()
 
 for index, item in enumerate(items):
     print(item)

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: EarthMosaic
+title: EarthMosaics
 grand_parent: EDS Documentation
 parent: Console
 nav_order: 3
@@ -16,9 +16,9 @@ nav_order: 3
 ## Introduction
 [**EarthMosaics**](https://console.earthdaily.com/mosaics) delivers cloud-free, temporally coherent mosaics with ​the highest possible geolocation, radiometric ​quality, enabling users to examine true signals, minimize false positives in change detection, and easily contextualize with other geospatial datasets. From analysing a regional forest to monitoring a mining site, predicting water reservoir levels to measuring melting permafrost, EarthMosaics (now in beta) offers application-specific and customized insights fulfilling unique needs of each use case.
 
-Analysis Ready Mosaics are complex, costly to produce, and designed to feed directly into ML applications​.
+AI Ready Mosaics are complex, costly to produce, and designed to feed directly into ML applications​.
 
-[EarthMosaics](https://console.earthdaily.com/mosaics)  from EarthDaily Analytics provides you a way to explore and get a free preview and you can also place ordewrs for full resolution Mosaics. 
+[EarthMosaics](https://console.earthdaily.com/mosaics)  from EarthDaily Analytics provides you a way to explore and get a free preview and you can also place orders for full resolution Mosaics. 
 
 ## Getting started with Mosaics
 
@@ -28,7 +28,7 @@ Below is the landing page you see when you navigate to [EarthMosaics](https://co
 
 When you are the first time user, you get the Welcome dialog with an option to GetStarted.
 
-Pressing the `GetStarted` will take you to a NewOrders page. Let's see what all options we have while placing the order as below:
+Pressing the `GetStarted` will take you to a NewOrders page. Let's see what are all the options we have while placing the order:
 
 ![MosaicsOrderSetup](../Images/EarthMosaicsUI/MosaicOrderSetup.png)
 
@@ -109,7 +109,7 @@ Upon submission, you will see that your order is in Processing state. There is a
 
 ![AllOrders](../Images/EarthMosaicsUI/AllOrders.png)
 
-The orderId you see in this page can be found as a LineItemId in your AccountInformation page under "MyOrders"
+The orderId you see in this page can be found as a LineItemId in your Account Information page under "MyOrders"
 
 ![MyOrders](../Images/EarthMosaicsUI/MyOrders.png)
 
@@ -123,7 +123,6 @@ Once the order is processed successfully, you will see the state changed to "Pro
 | ![Ten](../Images/NumberLabels/Ten.png) | Copy | This option allows you to copy the order in case you want to use the same settings or have a minor modification to place another order     |
 | ![Eleven](../Images/NumberLabels/Eleven.png) | Download | This is where you can download your product - Preview or Full |
 | ![Twelve](../Images/NumberLabels/Twelve.png) | View | This option allows you to view the product in the Visualizer  |
-
 
 Below is the Visualizer that opens up when you click on the View button on the Orders page. This visualizer is very similar to our EarthPlatform UI and has many common components needed to interact with the Mosaic product similar to our other products
 
