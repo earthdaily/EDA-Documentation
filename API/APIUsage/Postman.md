@@ -6,7 +6,7 @@ nav_order: 2
 ---
 
 ## Postman Examples
-Before you try out the various endpoints, you need to set up the authentication for the Postman. [Authentication Page](../../GettingStarted/APIAuthentication#postman) describes how it is done.
+Before you try out the various endpoints, you need to set up the authentication for the Postman. [Authentication Page](../../../GettingStarted/APIAuthentication#postman) describes how it is done.
 
 ## Collections 
 Return list of all Collections 
