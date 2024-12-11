@@ -1,12 +1,12 @@
 ---
 layout: default
-title: EDS Compatibility Examples
+title: EDS Examples
 parent: EDS Documentation
 nav_order: 5
 has_children: true
 ---
 
-# Jupyter Notebooks
+# Jupyter Notebooks test
 Here are some examples to work with EDS data
 
 ### Basic Examples
