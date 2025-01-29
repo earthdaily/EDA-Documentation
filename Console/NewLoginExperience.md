@@ -1,6 +1,6 @@
 ---
 layout: default
-title: (preview) New Login System
+title: New Login System Preview
 grand_parent: EDS Documentation
 parent: Console
 nav_order: 4
@@ -53,8 +53,8 @@ Your new API token can be used with existing scripts and tools that use the **OA
 - **EDS_CLIENT_ID** or **Client ID**: `EARTHDAILY_API_TOKEN`
 - **EDS_SECRET** or **Client Secret**: (Use your new API Token here)
 
-{: .highlight }
-Legacy API credentials will be deprecated when the old authentication system is retired. We strongly recommend testing and transitioning to the new API token system as soon as possible to ensure uninterrupted service.
+{: .highlight} 
+ Legacy API credentials will be deprecated when the old authentication system is retired. We strongly recommend testing and transitioning to the new API token system as soon as possible to ensure uninterrupted service.
 
 ## Need Help?
 
