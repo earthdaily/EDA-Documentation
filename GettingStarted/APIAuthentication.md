@@ -1,6 +1,6 @@
 ---
 layout: default
-title: APIAuthentication
+title: API Authentication
 grand_parent: EDS Documentation
 parent: Getting Started
 nav_order: 2
@@ -23,9 +23,9 @@ A bearer token must be generated using [OAuth Client Credentials Flow](https://w
 
 ### Point to Note
 
-* The generated access_token will have a 1 hour expiry. 
-* The access token should be cached locally and included in each STAC API request as a bearer authorization header.  
-* When the access token has expired, an error 401 (Unauthorized) will be returned from STAC API requests. 
+* The generated access_token will have a 1 hour expiry.
+* The access token should be cached locally and included in each STAC API request as a bearer authorization header.
+* When the access token has expired, an error 401 (Unauthorized) will be returned from STAC API requests.
 
 ## Examples
 
@@ -33,9 +33,9 @@ A bearer token must be generated using [OAuth Client Credentials Flow](https://w
 Example curl request to generate token
 
 ```
-curl --location '<ACCESS_TOKEN_URL HERE>'  
+curl --location '<ACCESS_TOKEN_URL HERE>'
 --header 'Content-Type: application/x-www-form-urlencoded' \
---data-urlencode 'client_id=<CLIENT_ID HERE>' \ 
+--data-urlencode 'client_id=<CLIENT_ID HERE>' \
 --data-urlencode 'client_secret=<CLIENT SECRET HERE>' \
 --data-urlencode 'grant_type=client_credentials'
 ```
@@ -70,14 +70,14 @@ def _get_token(config=None):
     Returns
     -------
     token : str
-    
+
     """
     if config is None:
         config = os.getenv
     auth_url = config("EDS_AUTH_URL")
     secret = config("EDS_SECRET")
     client_id = config("EDS_CLIENT_ID")
-    
+
     if auth_url is None or secret is None or client_id is None:
         raise AttributeError(
             "You need to have env : EDS_AUTH_URL, EDS_SECRET and EDS_CLIENT_ID"
