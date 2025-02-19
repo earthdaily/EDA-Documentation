@@ -49,51 +49,52 @@ Example curl response
 ## Python
 
 ```
-{
 import json
 import os
 import requests
+from dotenv import load_dotenv
 
-def _get_token(config=None):
-    """Get token for interacting with the Earth Data Store API.
+# Loading secrets from environment variables
 
-    By default, Earth Data Store will look for environment variables called
-    EDS_AUTH_URL, EDS_SECRET and EDS_CLIENT_ID.
+# By default, Earth Data Store will look for environment variables called
+#    EDS_AUTH_URL, EDS_SECRET and EDS_CLIENT_ID
+# Ensure environment variables are set before running this script.
 
-    Parameters
-    ----------
-    config : str | dict, optional
-        A JSON string or a dictionary with the credentials for the Earth Data Store.
-    presign_urls : bool, optional
-        Use presigned URLs, by default True
+# You can set them in your terminal session or add them permanently to your shell configuration
+# (e.g., .bash_profile, .bashrc) using the following format:
+#
+# export CLIENT_ID="your_client_id"
+# export CLIENT_SECRET="your_client_secret"
+# export AUTH_TOKEN_URL="your_auth_token_url"
+#
+# Alternatively, you can manage environment variables using a .env file and the python-dotenv package.
+# Our account Information page will allow you to download your EDS.env file
 
-    Returns
-    -------
-    token : str
+load_dotenv("EDS.env")
 
-    """
-    if config is None:
-        config = os.getenv
-    auth_url = config("EDS_AUTH_URL")
-    secret = config("EDS_SECRET")
-    client_id = config("EDS_CLIENT_ID")
+CLIENT_ID = os.getenv("EDS_CLIENT_ID")
+CLIENT_SECRET = os.getenv("EDS_SECRET")
+AUTH_TOKEN_URL = os.getenv("EDS_AUTH_URL")
+API_URL = os.getenv("EDS_API_URL")
 
-    if auth_url is None or secret is None or client_id is None:
-        raise AttributeError(
-            "You need to have env : EDS_AUTH_URL, EDS_SECRET and EDS_CLIENT_ID"
-        )
+# Setup requests session
+session = requests.Session()
+session.auth = (CLIENT_ID, CLIENT_SECRET)
 
-    token_response = requests.post(
-        auth_url,
-        data={"grant_type": "client_credentials"},
-        allow_redirects=False,
-        auth=(client_id, secret),
-    )
-    token_response.raise_for_status()
-    return json.loads(token_response.text)["access_token"]
 
-print(_get_token())
-}
+def get_new_token(session):
+    """Obtain a new authentication token using client credentials."""
+    token_req_payload = {"grant_type": "client_credentials"}
+    try:
+        token_response = session.post(AUTH_TOKEN_URL, data=token_req_payload)
+        token_response.raise_for_status()
+        tokens = token_response.json()
+        return tokens["access_token"]
+    except requests.exceptions.RequestException as e:
+        print(f"Failed to obtain token: {e}")
+        
+
+print(get_new_token(session))
 ```
 
 ## Postman
@@ -102,9 +103,9 @@ Below is the screenshot showing the **Authorization tab** in Postman and follow 
 
 1. Select the Type as <span style = "color: blue">OAuth 2.0</span>
 2. Select the Grant Type as <span style = "color: blue">Client Credentials</span>
-3. Enter the access token URL from the account information page above :point_up_2:
-4. Enter the Client ID from the account information page above :point_up_2:
-5. Enter the Client Secret from the account information page above :point_up_2:
+3. Enter the access token URL from the account information page above 
+4. Enter the Client ID from the account information page above 
+5. Enter the Client Secret from the account information page above 
 
 
 ![Postman](../Images/STACAPI/PostmanConfiguration.png)
