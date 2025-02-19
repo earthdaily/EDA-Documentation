@@ -8,10 +8,20 @@ has_children: true
 
 # Jupyter Notebooks test
 Here are some examples to work with EDS data
+# Products
 
-### Basic Examples
+# API Examples
 
-#### EarthMosaics
+## Basic API Usage
+* [Getting Started with EarthDaily]()
+
+
+## EarthMosaics
+
+* [Introduction to EDA EarthMosaics]()
+
+### Usage Examples
+
 
 * [EDA Mosaics - EarthMosaics vs Sentinel-2 NDVI.ipynb](https://github.com/earthdaily/Example-Notebooks/blob/main/EDA%20Mosaics%20-%20EarthMosaics%20vs%20Sentinel-2%20NDVI/EDA%20Mosaics%20-%20EarthMosaics%20vs%20Sentinel-2%20NDVI.ipynb)
 * [EDA Mosaics - Dixie Fire Burn Extent.ipynb](https://github.com/earthdaily/Example-Notebooks/blob/main/EDA%20Mosaics%20-%20Dixie%20Fire%20Burn%20Extent/EDA%20Mosaics%20-%20Dixie%20Fire%20Burn%20Extent.ipynb)
