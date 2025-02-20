@@ -15,17 +15,17 @@ logger = logging.getLogger(__name__)
 # You can set them in your terminal session or add them permanently to your shell configuration
 # (e.g., .bash_profile, .bashrc) using the following format:
 #
-# export CLIENT_ID="your_client_id"
-# export CLIENT_SECRET="your_client_secret"
-# export AUTH_TOKEN_URL="your_auth_token_url"
+# export EDS_CLIENT_ID="your_client_id"
+# export EDS_SECRET="your_client_secret"
+# export EDS_AUTH_URL="your_auth_url"
 #
 # Alternatively, you can manage environment variables using a .env file and the python-dotenv package.
 
 load_dotenv()
 
-CLIENT_ID = os.getenv("CLIENT_ID")
-CLIENT_SECRET = os.getenv("CLIENT_SECRET")
-AUTH_TOKEN_URL = os.getenv("ACCESS_TOKEN_URL")
+CLIENT_ID = os.getenv("EDS_CLIENT_ID")
+CLIENT_SECRET = os.getenv("EDS_SECRET")
+EDS_AUTH_URL = os.getenv("EDS_AUTH_URL")
 API_URL = "https://api.earthdaily.com/platform/v1/stac"
 
 # Setup requests session
@@ -37,7 +37,7 @@ def get_new_token(session):
     """Obtain a new authentication token using client credentials."""
     token_req_payload = {"grant_type": "client_credentials"}
     try:
-        token_response = session.post(AUTH_TOKEN_URL, data=token_req_payload)
+        token_response = session.post(EDS_AUTH_URL, data=token_req_payload)
         token_response.raise_for_status()
         tokens = token_response.json()
         return tokens["access_token"]

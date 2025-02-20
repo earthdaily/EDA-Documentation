@@ -33,10 +33,10 @@ A bearer token must be generated using [OAuth Client Credentials Flow](https://w
 Example curl request to generate token
 
 ```
-curl --location '<ACCESS_TOKEN_URL HERE>'
+curl --location '<EDS_AUTH_URL HERE>'
 --header 'Content-Type: application/x-www-form-urlencoded' \
---data-urlencode 'client_id=<CLIENT_ID HERE>' \
---data-urlencode 'client_secret=<CLIENT SECRET HERE>' \
+--data-urlencode 'client_id=<EDS_CLIENT_ID HERE>' \
+--data-urlencode 'client_secret=<EDS_SECRET HERE>' \
 --data-urlencode 'grant_type=client_credentials'
 ```
 
@@ -63,9 +63,9 @@ from dotenv import load_dotenv
 # You can set them in your terminal session or add them permanently to your shell configuration
 # (e.g., .bash_profile, .bashrc) using the following format:
 #
-# export CLIENT_ID="your_client_id"
-# export CLIENT_SECRET="your_client_secret"
-# export AUTH_TOKEN_URL="your_auth_token_url"
+# export EDS_CLIENT_ID="your_client_id"
+# export EDS_SECRET="your_client_secret"
+# export EDS_AUTH_URL="your_auth_url"
 #
 # Alternatively, you can manage environment variables using a .env file and the python-dotenv package.
 # Our account Information page will allow you to download your EDS.env file
@@ -74,7 +74,7 @@ load_dotenv("EDS.env")
 
 CLIENT_ID = os.getenv("EDS_CLIENT_ID")
 CLIENT_SECRET = os.getenv("EDS_SECRET")
-AUTH_TOKEN_URL = os.getenv("EDS_AUTH_URL")
+EDS_AUTH_URL = os.getenv("EDS_AUTH_URL")
 API_URL = os.getenv("EDS_API_URL")
 
 # Setup requests session
@@ -86,7 +86,7 @@ def get_new_token(session):
     """Obtain a new authentication token using client credentials."""
     token_req_payload = {"grant_type": "client_credentials"}
     try:
-        token_response = session.post(AUTH_TOKEN_URL, data=token_req_payload)
+        token_response = session.post(EDS_AUTH_URL, data=token_req_payload)
         token_response.raise_for_status()
         tokens = token_response.json()
         return tokens["access_token"]
