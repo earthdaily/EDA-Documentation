@@ -144,7 +144,7 @@ https://api.earthdaily.com/platform/v1/stac/search?datetime=2023-01-01T18:50:42.
 
 Shows use of datetime, collections and intersects, query remains same as GET
 ```
-https://api.eds.earthdaily.com/archive/v1/stac/search?datetime=2023-01-01T18:50:42.000000Z/2023-02-01T18:50:42.000000Z&bbox=-1.757813,51.971346,-0.065918,52.589701&collections=sentinel-2-l1c,sentinel-2-l2a
+https://api.earthdaily.com/platform/v1/stac/search?datetime=2023-01-01T18:50:42.000000Z/2023-02-01T18:50:42.000000Z&bbox=-1.757813,51.971346,-0.065918,52.589701&collections=sentinel-2-l1c,sentinel-2-l2a
 ```
 **Example** : [Command Line](CommandLine.md#search) | [Postman](Postman.md#search) | [Python](Python.md#search)
 

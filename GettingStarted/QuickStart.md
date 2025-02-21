@@ -49,9 +49,9 @@ from dotenv import load_dotenv
 
 load_dotenv()  # take environment variables from .env.
 
-CLIENT_ID = os.getenv("CLIENT_ID")
-CLIENT_SECRET = os.getenv("CLIENT_SECRET")
-AUTH_TOKEN_URL = os.getenv("ACCESS_TOKEN_URL")
+CLIENT_ID = os.getenv("EDS_CLIENT_ID")
+CLIENT_SECRET = os.getenv("EDS_SECRET")
+EDS_AUTH_URL = os.getenv("EDS_AUTH_URL")
 API_URL = os.getenv("EDS_API_URL")
 
 session = requests.Session()
@@ -62,7 +62,7 @@ def get_new_token(session):
     """Obtain a new authentication token using client credentials."""
     token_req_payload = {"grant_type": "client_credentials"}
     try:
-        token_response = session.post(AUTH_TOKEN_URL, data=token_req_payload)
+        token_response = session.post(EDS_AUTH_URL, data=token_req_payload)
         token_response.raise_for_status()
         tokens = token_response.json()
         return tokens["access_token"]
