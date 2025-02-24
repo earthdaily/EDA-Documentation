@@ -19,13 +19,14 @@ nav_order: 2
 EarthPlatform STAC API is protected by bearer authentication.
 A bearer token must be generated using [OAuth Client Credentials Flow](https://www.oauth.com/oauth2-servers/access-tokens/client-credentials/). The required client_id, client_secret and access_token_url values can be found on [Account Management](https://console.earthdaily.com/account) page. These API credentials are specific to your user account on EarthPlatform and should be kept confidential.
 
-![Client Credentials](../Images/STACAPI//AccountInformation.png)
+![Client Credentials](../Images/STACAPI/AccountInformation.png)
 
 ### Point to Note
 
 * The generated access_token will have a 1 hour expiry.
 * The access token should be cached locally and included in each STAC API request as a bearer authorization header.
 * When the access token has expired, an error 401 (Unauthorized) will be returned from STAC API requests.
+* `EDS_AUTH_URL` refers to the **Access token URL** in shown the Accounts page
 
 ## Examples
 
@@ -92,7 +93,6 @@ def get_new_token(session):
         return tokens["access_token"]
     except requests.exceptions.RequestException as e:
         print(f"Failed to obtain token: {e}")
-        
 
 print(get_new_token(session))
 ```
