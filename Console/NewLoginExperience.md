@@ -61,8 +61,8 @@ The new login system introduces an improved API token authentication system. Use
 Your new API token can be used with existing scripts and tools that use the **OAuth Client Credentials Flow** as described in the [Authentication Page](../GettingStarted/APIAuthentication). Simply use these values in place of your old credential information:
 
 - **EDS_AUTH_URL** (**Access token URL** in the Accounts page): `https://api.earthdaily.com/account_management/v1/authentication/api_tokens/exchange`
-- **CLIENT_ID** (**Client ID** in the Accounts page): `EARTHDAILY_API_TOKEN`
-- **CLIENT_SECRET** (**Client Secret** in the Accounts page): `[Use your new API Token here]`
+- **EDS_CLIENT_ID** (**Client ID** in the Accounts page): `EARTHDAILY_API_TOKEN`
+- **EDS_SECRET** (**Client Secret** in the Accounts page): `[Use your new API Token here]`
 
 {: .warning}
 > Your old API credentials will be **deleted** when the legacy authentication system is retired. We strongly recommend testing and transitioning to the new API token system as soon as possible to ensure uninterrupted service.
