@@ -26,6 +26,7 @@ A bearer token must be generated using [OAuth Client Credentials Flow](https://w
 * The generated access_token will have a 1 hour expiry.
 * The access token should be cached locally and included in each STAC API request as a bearer authorization header.
 * When the access token has expired, an error 401 (Unauthorized) will be returned from STAC API requests.
+* `EDS_AUTH_URL` refers to the **Access token URL** in shown the Accounts page
 
 ## Examples
 
