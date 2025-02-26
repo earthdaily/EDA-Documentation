@@ -3,7 +3,7 @@ layout: default
 title: EarthMosaics
 grand_parent: EDS Documentation
 parent: Console
-nav_order: 3
+nav_order: 4
 ---
 
 # Table of Contents

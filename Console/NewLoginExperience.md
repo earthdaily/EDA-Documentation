@@ -3,20 +3,17 @@ layout: default
 title: New Login Experience
 grand_parent: EDS Documentation
 parent: Console
-nav_order: 4
+nav_order: 1
 ---
 
+
 {: .note }
-This New Login Experience will be available from March 10th onwards
-
-# New Login Experience
-
-On **March 10, 2025** EarthDaily will switch to it's new authentication system for all EarthDaily Console sites. This upgrade represents an improvement in our security infrastructure and lays the foundation for advanced security features in the future. In the unlikely event that it does not work for you, you can choose to revert to the legacy login system during our transition period. We will still be supporting the legacy login to help you in this transition. 
+> On **March 10, 2025** EarthDaily will switch to it's new authentication system for all EarthDaily Console sites. 
 
 {: .important}
-> Reminder that you will need to change your password if you have an account before March 10th and it's your first time logging in using the new experience
+> Reminder that you will need to change your password (as mentioned [here](#setting-up-your-password)) if you have an account before March 10th and it's your first time logging in using the new experience. You can reuse your current password if it meets the new security requirements. Note that passwords for the new and old systems are maintained separately, and should to choose to revert to the legacy login system for any reason, its password will remian unchanged.
 
-## New login
+## Login
 
 
 Simply enter your email in the text box and click on the *login* button to initialize the new login flow. If you wish to revert to the legacy login experience, click on the *use legacy login experience* link.
