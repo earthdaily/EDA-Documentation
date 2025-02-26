@@ -3,7 +3,7 @@ layout: default
 title: EarthPlatform
 grand_parent: EDS Documentation
 parent: Console
-nav_order: 2
+nav_order: 3
 ---
 
 # Table of Contents

@@ -3,7 +3,7 @@ layout: default
 title: Account Information
 grand_parent: EDS Documentation
 parent: Console
-nav_order: 1
+nav_order: 2
 ---
 
 # Table of Contents
