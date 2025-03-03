@@ -6,6 +6,12 @@ parent: Collections
 nav_order: 3
 ---
 
+# Table of Contents
+* [Cloud Masking](#cloud-masking)
+    * [Why do Cloud Masks Matter](#why-do-cloud-masks-matter)
+    * [References](#references)
+
+
 # Cloud Masking
 
 [EDA's Accurate Cloud Masking](https://earthdailyagro.com/spend-less-data-scientists-time-cleaning-data-high-quality-cloud-masks-for-sentinel2-landsat-and-others-available-today/) have been shown to be more accurate then current open data standard processing which improves ML applications and the pixel compositing process for mosaics. 

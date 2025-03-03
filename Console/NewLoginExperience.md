@@ -6,6 +6,14 @@ parent: Console
 nav_order: 1
 ---
 
+# Table of Contents
+* [Login](#login)
+    * [Verifying that you're using the new login flow](#verifying-that-youre-using-the-new-login-flow)
+    * [Setting Up Your Password](#setting-up-your-password)
+* [API Authentication](#api-authentication)
+    * [Using the new API token](#using-the-new-api-token)
+
+
 
 {: .note }
 > On **March 10, 2025** EarthDaily will switch to it's new authentication system for all EarthDaily Console sites. 

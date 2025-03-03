@@ -25,7 +25,7 @@ EarthDaily data comprises of Open collections, EDA specific collections, Mosaics
 
 There are different ways outlined below for accessing the EarthDaily data. . The required client_id, client_secret and access_token_url values can be found on [Account Management](https://console.earthdaily.com/account) page. These API credentials are specific to your user account on EarthPlatform and should be kept confidential.
 
-![Client Credentials](../Images/STACAPI//AccountInformation.png)
+![Client Credentials](../../Images/STACAPI/New%20API%20Creds%20on%20Accounts%20Page.png)
 For more see: [Authentication](../GettingStarted/APIAuthentication.md)
 
 ## API
