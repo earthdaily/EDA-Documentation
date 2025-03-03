@@ -9,7 +9,9 @@ nav_order: 2
 
 # Table of contents
 * [Authentication](#authentication)
-* [Provision New API Credentials](#provision-new-api-credential)
+    * [Provision New API Credentials](#provision-new-api-credential)
+    * [Provision Legacy API Credentials](#provision-legacy-api-credential)
+    * [Points to note](#points-to-note)
 * [Examples](#examples)
     * [Command Line](#command-line)
     * [Python](#python)
@@ -21,6 +23,9 @@ EarthPlatform STAC API is protected by bearer authentication.
 A bearer token must be generated using [OAuth Client Credentials Flow](https://www.oauth.com/oauth2-servers/access-tokens/client-credentials/). The required client_id, client_secret and access_token_url values can be found on [Account Management](https://console.earthdaily.com/account) page. These API credentials are specific to your user account on EarthPlatform and should be kept confidential. Please note that we have an option to download the .env file if you want to use it with your scripts. 
 
 ![Client Credentials](../../Images/STACAPI/NewLogin%20NoAPI%20Creds%20Provisioned.png)
+
+{: .note }
+The API credentials are different for New and Legacy login flow and you can provision them as explicitly described below
 
 ### Provision New API Credential
 
@@ -36,8 +41,16 @@ When you return to the accounts page after getting new API credentials, you will
 
 In the above image, for any reason, if you want to  re-provision your API credentials, you now have an option to delete the credentials and re-provision it.
 
+### Provision Legacy API Credential
 
-### Point to Note
+If you choose to use the Legacy Login, on the Accounts page under `API Credentials` section, you will find your account specific API credentials. 
+
+![New API Credentials](../Images/STACAPI/Legacy%20API%20Creds%20on%20Accounts%20Page.png)
+
+Alternatively, you can also download it as an .env file as shown below.
+
+
+### Points to Note
 
 * The generated access_token will have a 1 hour expiry.
 * The access token should be cached locally and included in each STAC API request as a bearer authorization header.
@@ -46,7 +59,7 @@ In the above image, for any reason, if you want to  re-provision your API creden
 
 ## Examples
 
-## Command Line
+### Command Line
 Example curl request to generate token
 
 ```
@@ -63,7 +76,7 @@ Example curl response
 {"access_token":"eyJraWQiO.......","expires_in":3600,"token_type":"Bearer"}
 ```
 
-## Python
+### Python
 
 ```
 import json
@@ -113,7 +126,7 @@ def get_new_token(session):
 print(get_new_token(session))
 ```
 
-## Postman
+### Postman
 
 Below is the screenshot showing the **Authorization tab** in Postman and follow the steps 
 

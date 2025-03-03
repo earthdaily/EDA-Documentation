@@ -6,7 +6,7 @@ nav_order: 5
 has_children: true
 ---
 
-# Jupyter Notebooks test
+# Jupyter Notebooks
 Here are some examples to work with EDS data
 
 ### Basic Examples
