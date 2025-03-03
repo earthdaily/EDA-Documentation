@@ -45,7 +45,7 @@ In the above image, for any reason, if you want to  re-provision your API creden
 
 If you choose to use the Legacy Login, on the Accounts page under `API Credentials` section, you will find your account specific API credentials. 
 
-![New API Credentials](../Images/STACAPI/Legacy%20API%20Creds%20on%20Accounts%20Page.png)
+![Legacy API Credentials](../../Images/STACAPI/Legacy%20API%20Creds%20on%20Accounts%20Page.png)
 
 Alternatively, you can also download it as an .env file as shown below.
 
