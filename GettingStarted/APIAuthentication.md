@@ -9,6 +9,7 @@ nav_order: 2
 
 # Table of contents
 * [Authentication](#authentication)
+* [Provision New API Credentials](#provision-new-api-credential)
 * [Examples](#examples)
     * [Command Line](#command-line)
     * [Python](#python)
@@ -17,9 +18,24 @@ nav_order: 2
 ## Authentication
 
 EarthPlatform STAC API is protected by bearer authentication.
-A bearer token must be generated using [OAuth Client Credentials Flow](https://www.oauth.com/oauth2-servers/access-tokens/client-credentials/). The required client_id, client_secret and access_token_url values can be found on [Account Management](https://console.earthdaily.com/account) page. These API credentials are specific to your user account on EarthPlatform and should be kept confidential.
+A bearer token must be generated using [OAuth Client Credentials Flow](https://www.oauth.com/oauth2-servers/access-tokens/client-credentials/). The required client_id, client_secret and access_token_url values can be found on [Account Management](https://console.earthdaily.com/account) page. These API credentials are specific to your user account on EarthPlatform and should be kept confidential. Please note that we have an option to download the .env file if you want to use it with your scripts. 
 
-![Client Credentials](../Images/STACAPI/AccountInformation.png)
+![Client Credentials](../../Images/STACAPI/NewLogin%20NoAPI%20Creds%20Provisioned.png)
+
+### Provision New API Credential
+
+Click on the button `PROVISION NEW API CREDENTIALS` on the Accounts page as shown above to get your new account specific credentials. You will see your New API Token as below. Please save this API token for your later reference. 
+
+![New API Credentials](../../Images/STACAPI/New%20API%20Creds.png)
+
+Alternatively, you can also download it as an .env file as shown below.
+
+When you return to the accounts page after getting new API credentials, you will have below options
+
+![Delete and Download Creds](../../Images/STACAPI/New%20API%20Creds%20on%20Accounts%20Page.png)
+
+In the above image, for any reason, if you want to  re-provision your API credentials, you now have an option to delete the credentials and re-provision it.
+
 
 ### Point to Note
 
