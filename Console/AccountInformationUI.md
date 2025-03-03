@@ -35,6 +35,8 @@ On the upper right hand side of the window, you will see three small icons as be
 | ![Three](../Images/NumberLabels/Three.png)   | API Credentials |  Token URL to generate “Bearer Token” for API authentication. |
 | ![Four](../Images/NumberLabels/Four.png)  | Hosted Apps     | Use this to switch between various apps available. |
 
+
+
 ![My Account](../Images/AccountUI/AccountInformation.png)
 
 ## My Orders
