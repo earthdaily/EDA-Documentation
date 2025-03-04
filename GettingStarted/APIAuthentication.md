@@ -25,7 +25,7 @@ A bearer token must be generated using [OAuth Client Credentials Flow](https://w
 ![Client Credentials](../../Images/STACAPI/NewLogin%20NoAPI%20Creds%20Provisioned.png)
 
 {: .note }
-The API credentials are different for New and Legacy login flow and you can provision them as explicitly described below. Please note that the new ogin flow will become the default starting **March 10, 2025**
+The API credentials are different for New and Legacy login flow and you can provision them as explicitly described below. Please note that the new login flow will become the default starting **March 10, 2025**
 
 ### Provision New API Credential
 
