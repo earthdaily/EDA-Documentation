@@ -37,7 +37,7 @@ Click on the button `PROVISION NEW API CREDENTIALS` on the Accounts page as show
 It is important that you save your credentials once provisioned because it will be shown to you **ONLY ONCE**
 
 When you return to the accounts page after getting new API credentials, you will have two additional options as shown below.
-* In the above image, for any reason, if you want to  re-provision your API credentials, you now have an option to delete the credentials and re-provision it.
+* For any reason, if you want to  re-provision your API credentials, you now have an option to delete the credentials and re-provision it.
 
 * You can also download it as an .env using option `Download .ENV file` to help you directly use in your scripts by replacing the EDS_SECRET value with the token generated above
 
