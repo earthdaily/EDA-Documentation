@@ -31,7 +31,7 @@ include:
 remote_theme: just-the-docs/just-the-docs
 logo: "https://earthdaily.com/wp-content/themes/earthdaily-2023/src/assets/images/logo-1.svg"
 heading_anchors: true
-footer_content: "© 2024 EarthDaily Analytics Corp | All Rights Reserved. Distributed under the GPL 3.0 License."
+footer_content: "© 2025 EarthDaily Analytics Corp | All Rights Reserved. Distributed under the GPL 3.0 License."
 search_enabled: true
 
 # Set a path/url to a favicon that will be displayed by the browser
@@ -62,7 +62,7 @@ callouts:
     color: red
 
 # Enable or disable heading anchors
-heading_anchors: true
+#heading_anchors: true
 
 # Aux links for the upper right navigation
 aux_links:
@@ -91,7 +91,7 @@ back_to_top_text: "Back to top"
 
 # Enable or disable the site search
 # Supports true (default) or false
-search_enabled: true
+#search_enabled: true
 search:
   # Split pages into sections that can be searched individually
   # Supports 1 - 6, default: 2
