@@ -56,7 +56,7 @@ After setting your password, you can return to the console to log in with your n
 
 The new login system introduces an improved API token authentication system. Please provision the new API keys and see if all your connections are working as expected. When provisioning a new API token, you may be asked to log in again if required for security purposes. Users now have the ability to revoke compromised tokens and generate new ones as needed. 
 
-**Upon token generation, you'll be shown your API token exactly once.** Please save it immediately in a password manager or secure vault, as we cannot display it again. As an alternative, you can download the .ENV file from the Accounts page. If you want to re-provision a new token, you can choose **Delete Current Credentials** button and then you will get an option to provision new API credentials again
+**Upon token generation, you'll be shown your API token exactly once.** Please save it immediately in a password manager or secure vault, as we cannot display it again. If you want to re-provision a new token, you can choose **Delete Current Credentials** button and then you will get an option to provision new API credentials again
 
 ### Using the new API token
 
