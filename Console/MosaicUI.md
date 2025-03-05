@@ -35,13 +35,13 @@ Pressing the `GetStarted` will take you to a NewOrders page. Let's see what are 
 | S. No     | Label     | Description       |
 |-----------|-----------|-------------------|
 | ![One](../Images/NumberLabels/One.png)  | Launch EarthDailyGPT | You can use EarthDailyGPT to assist you with generating a mosaic   |
-| ![Two](../Images/NumberLabels/Two.png)  | Area of Interest - draw on the map | You can start drawing a polygon for your mosaics order. The limit currently is < 200,000 km. Please note that Mosaics only supports polygons for now (not multipolygons). <sup>2</sup>   |
+| ![Two](../Images/NumberLabels/Two.png)  | Area of Interest - draw on the map | You can start drawing a polygon for your mosaics order. The limit currently is < 200,000 km <sup>2</sup>. Please note that Mosaics only supports polygons for now (not multipolygons)   |
 | ![Three](../Images/NumberLabels/Three.png) | Area of Interest - use GeoJSON | Instead of drawing a polygon, if you have an existing GeoJSON, you have an option to enter it here. The restriction of < 200,000 km<sup>2</sup> applies to this too. Please note that Mosaics only supports polygons for now (not multipolygons).  |
 |![Four](../Images/NumberLabels/Four.png) | Time of Interest | Specify the time of interest for your Mosaics order |
 | ![Five](../Images/NumberLabels/Five.png) | Settings | This one gives you multiple choices to place your order as per your needs|
 | ![Six](../Images/NumberLabels/Six.png) | Mosaic Name | Enter a name for your Mosaic order for easy identification|
 
-The area of interest (AOI) defines the geographic extent used to build the mosaic. You can either draw the AOI on the map or provide the AOI's GeoJSON below. To draw, start by choosing either the Rectangle option or the Polygon option, and then left-click on the map. After adjusting the extent of your AOI, complete the AOI by left-clicking. Once drawn, you can select your AOI to reshape its boundaries.
+The area of interest (AOI) defines the geographic extent used to build the mosaic. You can either draw the AOI on the map or provide the AOI's GeoJSON below. To draw, start by choosing either the Rectangle option or the Polygon option (please note that multipolygons are not supported for Mosaics orders at present), and then left-click on the map. After adjusting the extent of your AOI, complete the AOI by left-clicking. Once drawn, you can select your AOI to reshape its boundaries.
 
 ![AoI](../Images/EarthMosaicsUI/AoI.png)
 
