@@ -32,12 +32,20 @@ On the upper right hand side of the window, you will see three small icons as be
 |-------|-------|-------------|
 | ![One](../Images/NumberLabels/One.png)  | User   |  Logged in user details |
 | ![Two](../Images/NumberLabels/Two.png)  | Account | Details of the account that the user belongs to. |
-| ![Three](../Images/NumberLabels/Three.png)   | API Credentials |  Token URL to generate “Bearer Token” for API authentication. |
+| ![Three](../Images/NumberLabels/Three.png)   | API Credentials |  Token URL to generate “Bearer Token” for API authentication. [Details of How to Provision](../GettingStarted/APIAuthentication.md)  |
 | ![Four](../Images/NumberLabels/Four.png)  | Hosted Apps     | Use this to switch between various apps available. |
 
 
+<br>
+
+Account page for  `New Login experience` 
+<br>
 
 ![My Account](../Images/AccountUI/AccountInformation.png)
+
+If you are using `Legacy Login`, this is what you would see on your Accounts page
+
+![My Account](../../Images/AccountUI/AccountInformation%20Legacy.png)
 
 ## My Orders
 

@@ -25,7 +25,7 @@ A bearer token must be generated using [OAuth Client Credentials Flow](https://w
 ![Client Credentials](../../Images/STACAPI/NewLogin%20NoAPI%20Creds%20Provisioned.png)
 
 {: .note }
-The API credentials are different for New and Legacy login flow and you can provision them as explicitly described below
+The API credentials are different for New and Legacy login flow and you can provision them as explicitly described below. Please note that the new login flow will become the default starting **March 10, 2025**
 
 ### Provision New API Credential
 
@@ -33,13 +33,15 @@ Click on the button `PROVISION NEW API CREDENTIALS` on the Accounts page as show
 
 ![New API Credentials](../../Images/STACAPI/New%20API%20Creds.png)
 
-Alternatively, you can also download it as an .env file as shown below.
+{: .important }
+It is important that you save your credentials once provisioned because it will be shown to you **ONLY ONCE**
 
-When you return to the accounts page after getting new API credentials, you will have below options
+When you return to the accounts page after getting new API credentials, you will have two additional options as shown below.
+* For any reason, if you want to  re-provision your API credentials, you now have an option to delete the credentials and re-provision it.
+
+* You can also download it as an .env using option `Download .ENV file` to help you directly use in your scripts by replacing the EDS_SECRET value with the token generated above
 
 ![Delete and Download Creds](../../Images/STACAPI/New%20API%20Creds%20on%20Accounts%20Page.png)
-
-In the above image, for any reason, if you want to  re-provision your API credentials, you now have an option to delete the credentials and re-provision it.
 
 ### Provision Legacy API Credential
 
