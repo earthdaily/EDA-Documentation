@@ -1,6 +1,6 @@
 ---
 layout: default
-title: New Login System Preview
+title: New Login System
 grand_parent: EDS Documentation
 parent: FAQs
 nav_order: 2
@@ -8,11 +8,11 @@ nav_order: 2
 
 # Preview to the New Login System
 
-EarthDaily is introducing an enhanced authentication system for all EarthDaily Console sites. This upgrade represents an improvement in our security infrastructure and lays the foundation for advanced security features in the future. The new authentication system is available now as a preview feature, and while we plan to make it the default in early 2025, we're providing a transition period during which both authentication methods will remain accessible.
+EarthDaily is introducing an enhanced authentication system for all EarthDaily Console sites. This upgrade represents an improvement in our security infrastructure and lays the foundation for advanced security features in the future. The new authentication system is available now as a default feature now. Although being default, we're providing a transition period during which both authentication methods will remain accessible.
 
 ## How to access the new login experience
 
-To access the new login system, **leave the `Organization` field empty** on the login page (we will keep track of this for you). Instead, immediately look for the **Use New Login Experience (preview)** link in the bottom of the login box.
+To access the new login system, **leave the `Organization` field empty** on the login page (we will keep track of this for you). Instead, immediately look for the **Use New Login Experience ** link in the bottom of the login box.
 
 ![Screenshot indicating link to new login experience](../Images/NewLogin/NewLoginFlowLink.png)
 
