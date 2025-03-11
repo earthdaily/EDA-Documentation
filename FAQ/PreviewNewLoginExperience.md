@@ -8,7 +8,7 @@ nav_order: 2
 
 # New Login System
 
-EarthDaily is introducing an enhanced authentication system for all EarthDaily Console sites. This upgrade represents an improvement in our security infrastructure and lays the foundation for advanced security features in the future. The new authentication system is available now as a default feature now. Although being default, we're providing a transition period during which both authentication methods will remain accessible.
+EarthDaily is introducing an enhanced authentication system for all EarthDaily Console sites. This upgrade represents an improvement in our security infrastructure and lays the foundation for advanced security features in the future. Although being default, we're providing a transition period during which both authentication methods will remain accessible.
 
 ## How to access the new login experience
 
