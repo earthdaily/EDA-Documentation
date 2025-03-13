@@ -14,7 +14,7 @@ nav_order: 2
 * [Order State](#order-state)
 
 ## Introduction
-The Account Information page is the landing page for each user of the customer account when they login to the [Account Information](https://console.earthdaily.com/account) It allows the user to check his own account details, his orders etc. It also has the link to the other applications like Catalog UI, Mosaic etc
+The Account Information page is the landing page for each user of the customer account when they login to the [Account Information](https://console.earthdaily.com/account) It allows the user to check his own account details, his orders etc. It also has the link to the other applications like EarthPlatform and EarthMosaics.
 
 ## General Information
   
@@ -24,7 +24,7 @@ On the upper right hand side of the window, you will see three small icons as be
 |------------|------------------|
 | ![About](../Images/AccountUI/About.png) | About page that shows the EarthDaily version |
 | ![AppSwitcher](../Images/AccountUI/AppSwitcher.png) | It will show you a list of hosted applications from EarthDaily and you can use it to switch between different applications |
-| ![UserInfo](../Images/AccountUI/UserInfo.png) | Quick information about the signedin user along with his/her account and an option to sign out |
+| ![UserInfo](../Images/AccountUI/UserInfo.png) | Quick information about the signed-in user along with his/her account and an option to sign out |
 
 ## My Account
 
@@ -55,14 +55,13 @@ It lists all the orders being placed under the customer account you belong to. T
 | S.No | Label | Description |
 |---------|-------|-------------|
 | ![Five](../Images/NumberLabels/Five.png)  | My Orders | To go to your orders page. |
-| ![Six](../Images/NumberLabels/Six.png)  | Search by Id | If you know your Orders Id, you can use this to search your order. |
-| ![Seven](../Images/NumberLabels/Seven.png) | Order Details dropdown | This dropdown shows all the details related to your order. Once order is placed, you will see it in “Processing” state. When the order is completed, it will show “Processed“ and you will also have the Processed date and time for that oder. The Product UUID will also show up after order is processed. This can be helpful to use for searching your product in destination bucket or troubleshooting.
-| ![Eight](../Images/NumberLabels/Eight.png) | Search | This is a free form text search similar to browser search for anything in the results. Instead of searching on the current page (like browser search), this is quite helpful when you want to do free form search on the whole result. It also filters the result records based on the match.|
-| ![Nine](../Images/NumberLabels/Nine.png) | Download | It allows you to download the search results as a csv if you want to to further analyze and do advanced queries. It only extracts the first level order records and leaves out the dropdown order details. |
-| ![Ten](../Images/NumberLabels/Ten.png)  | Print | Allows you to print the search results. |
-| ![Eleven](../Images/NumberLabels/Eleven.png)  | View Columns | Allows you to select the columns you want to view for the search results |
-| ![Twelve](../Images/NumberLabels/Twelve.png) | Filter | This is the detailed filter for every attribute of the order and allows you to select from the values in all the orders. |
-| ![Thirteen](../Images/NumberLabels/Thirteen.png) | Refresh | Refreshes the page as per current criteria. |
+| ![Six](../Images/NumberLabels/Six.png)  | Search Filters | You can use the search filters (search by ID, Type, Date range etc) to search for your orders. |
+| ![Seven](../Images/NumberLabels/Seven.png) | Order Details Link | This link brings you to a new page that shows all the details related to your order. Once an order is placed, you will see the order in “Processing” state. When the order is completed, it will show “Processed“ and you will also have the Processed date and time for that order. The Product UUID will also show up after the order is processed. This can be helpful to use for searching your product in the destination bucket or troubleshooting.
+| ![Eight](../Images/NumberLabels/Eight.png) | Show/Hide Filters | A toggle for you to show/hide the search filters.|
+| ![Nine](../Images/NumberLabels/Nine.png) | Show/Hide Columns | Allows you to select the columns you want to view for the search results. |
+| ![Ten](../Images/NumberLabels/Ten.png)  | Toggle Density | Allows you to toggle the density of the table. |
+| ![Eleven](../Images/NumberLabels/Eleven.png)  | Toggle Full Screen | Allows you to go to full screen mode. |
+| ![Twelve](../Images/NumberLabels/Twelve.png) | Refresh | Refreshes the page as per current criteria. |
 
  
 ![My Orders](../Images/AccountUI/MyOrders.png)
