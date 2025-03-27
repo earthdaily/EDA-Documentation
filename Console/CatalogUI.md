@@ -171,8 +171,6 @@ Now, there are some slider options to help you see the relative difference or si
 |-----------|-----------|-------------------|
 | ![TwentySeven](../Images/NumberLabels/TwentySeven.png)  | Image Opacity | Image Opacity is used if you want to check location or any other attribute relative to the basemap. |
 | ![TwentyEight](../Images/NumberLabels/TwentyEight.png)  | Image Footprint Opacity | As a query result, the more footprints you have the darker the footprints get until you can't see the ground. So Image Footprint Opacity helps to make the image footprint transparent and then you can find your location. |
-| ![TwentyNine](../Images/NumberLabels/TwentyNine.png) | Wetland Prediction Opacity | This is useful when you have a landcover raster rendered for wetland prediction. Once you have rendered the landcover classification, you can use this transparency level to compare with the image background and avoid rendering every time. |
-| ![Thirty](../Images/NumberLabels/Thirty.png) | Wetland Prediction | It renders render the landcover classification for the image. It shows dark green for forest, yellow for crops, cyan for wetland and blue for water. One thing to note is that you need to have the Image Opacity at 0% for the wetland classification to be visible. |
 
 
 ![EarthPlatform Image Sliders](../Images/CatalogUI/ImageSliders.png)
@@ -189,11 +187,7 @@ Here is an example of the Footprint opacity
  |--------------|-------------------|
  |![FootprintOpacityHigh](../Images/CatalogUI/FootprintOpacityHigh.png)| ![FootprintOpacityLow](../Images/CatalogUI/FootprintOpacityLow.png) | 
 
-Now, lets see when wetland prediction is enabled for images, how does the opacity slider work. Examples at 100% and 20%
-
- | Wetland Opacity High  |   Wetland Opacity Low  |  
- |--------------|-------------------|  
- |![WetlandOpacityHigh](../Images/CatalogUI/WetlandOpacityHigh.png)| ![WetlandOpacityLow](../Images/CatalogUI/WetlandOpacityLow.png) |  
+Wetlands Options in the image are available only upon request
 
 That completes the list of our extensive operations that can be done with the Catalog images.
 
