@@ -21,7 +21,7 @@ logger = logging.getLogger(__name__)
 #
 # Alternatively, you can manage environment variables using a .env file and the python-dotenv package.
 
-load_dotenv()
+load_dotenv("EDS.env")
 
 CLIENT_ID = os.getenv("EDS_CLIENT_ID")
 CLIENT_SECRET = os.getenv("EDS_SECRET")
@@ -111,6 +111,7 @@ def main():
         # Query for cloud masks
         items = client.search(
             collections=["sentinel-2-l2a"],
+            datetime="2022-07-01T00:00:00.000000Z/2022-08-01T00:00:00.000000Z",
             query={"eda:ag_cloud_mask_available": {"eq": True}},
             max_items=50,
         ).items()

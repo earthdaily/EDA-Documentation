@@ -205,6 +205,7 @@ curl --location 'https://api.earthdaily.com/platform/v1/stac/search' \
 --header 'Authorization: Bearer <ACCESS_TOKEN HERE>' \
 --data '{
     "collections": ["sentinel-2-l2a"],
+    "datetime":"2022-07-01T00:00:00.000000Z/2022-08-01T00:00:00.000000Z",
     "query": {
             "eda:ag_cloud_mask_available": {
                 "eq": true

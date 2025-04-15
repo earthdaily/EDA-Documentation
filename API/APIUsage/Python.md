@@ -132,6 +132,7 @@ for index, item in enumerate(items):
 
 items = client.search(
     collections=["sentinel-2-l2a"],
+    datetime="2022-07-01T00:00:00.000000Z/2022-08-01T00:00:00.000000Z",
     query={
         "eda:ag_cloud_mask_available": {
             "eq": True
