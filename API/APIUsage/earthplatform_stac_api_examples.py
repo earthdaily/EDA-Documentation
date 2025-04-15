@@ -21,7 +21,7 @@ logger = logging.getLogger(__name__)
 #
 # Alternatively, you can manage environment variables using a .env file and the python-dotenv package.
 
-load_dotenv("EDS.env")
+load_dotenv()
 
 CLIENT_ID = os.getenv("EDS_CLIENT_ID")
 CLIENT_SECRET = os.getenv("EDS_SECRET")
