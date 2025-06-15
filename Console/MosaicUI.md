@@ -67,11 +67,11 @@ The settings define how your mosaic will be generated.
 
 * Source specifies if your mosaic will be made using only Sentinel-2A or the combination of Sentinel-2A and Landsat-8/9.
 
-![Settings](../Images/EarthMosaicsUI/Settings.png)
+![Settings](../Images/EarthMosaicsUI/MosaicSettings.png)
 
 Now, after you confirm all settings and enter a name, submit the order
 
-![Submit](../Images/EarthMosaicsUI/Submit.png)
+![Submit](../Images/EarthMosaicsUI/MosaicSubmit.png)
 
 ## Mosaic Full resolution Order
 
@@ -86,11 +86,11 @@ Now, the Full Resolution Mosaic has an additional step
 
 To place the Full resolution Mosaics order you will primarily use "Full" as your Resolution setting as shown below
 
-![FullResOrder](../Images/EarthMosaicsUI/FullResOrder.png)
+![FullResOrder](../Images/EarthMosaicsUI/MosaicFullResOrder.png)
 
 Please confirm the order settings in order to checkout
 
-![Checkout](../Images/EarthMosaicsUI/Checkout.png)
+![Checkout](../Images/EarthMosaicsUI/MosaicCheckout.png)
 
 The checkout screen below shows you the order price. If you are ready to pay, go ahead and chekout to get to the payment page below.
 
