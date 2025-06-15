@@ -117,9 +117,9 @@ You can then click on the Order Id link to see more details about the Order
 
 ![MyOrders](../Images/EarthMosaicsUI/AccountOrderDetails.png)
 
-Once the order is processed successfully, you will see the state changed to "Processed" and some other options enabled for the order
+Once the order is processed successfully, you will see the state changed to "Completed" and some other options enabled for the order
 
-![OrdersMgmt](../Images/EarthMosaicsUI/OrdersMgmt.png)
+![OrdersMgmt](../Images/EarthMosaicsUI/OrderManagement.png)
 
 
 | S.No        | Label     | Description       |
