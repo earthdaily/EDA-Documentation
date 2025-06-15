@@ -130,6 +130,6 @@ Once the order is processed successfully, you will see the state changed to "Com
 
 Below is the Visualizer that opens up when you click on the View button on the Orders page. This visualizer is very similar to our EarthPlatform UI and has many common components needed to interact with the Mosaic product similar to our other products
 
-![Visualizer](../Images/EarthMosaicsUI/Visualizer.png)
+![Visualizer](../Images/EarthMosaicsUI/MosaicVisualizer.png)
 
 That is it !! Happy Mosaicking !! 
