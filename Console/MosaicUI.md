@@ -102,12 +102,12 @@ If you have any coupons to redeem, you can enter the coupon code in order to get
 
 Once you have placed the Mosaic order (either Preview or Full), you will be redirected to your Dashboard where you can see all your orders.
 
-![AllOrdersFull](../Images/EarthMosaicsUI/AllOrdersFull.png)
+![AllOrdersFull](../Images/EarthMosaicsUI/MosaicAllOrdersFull.png)
 
 Upon submission, you will see that your order is in Processing state. There is a button on top right of the panel if you want to View all of your Mosaic Orders
 
 
-![AllOrders](../Images/EarthMosaicsUI/AllOrders.png)
+![AllOrders](../Images/EarthMosaicsUI/MosaicAllOrders.png)
 
 The orderId you see in this page can be found as a LineItemId in your Account Information page under "MyOrders"
 
