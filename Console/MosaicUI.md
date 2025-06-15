@@ -107,7 +107,7 @@ Once you have placed the Mosaic order (either Preview or Full), you will be redi
 Upon submission, you will see that your order is in Processing state. There is a button on top right of the panel if you want to View all of your Mosaic Orders
 
 
-![AllOrders](../Images/EarthMosaicsUI/MosaicAllOrders.png)
+![AllOrders](../Images/EarthMosaicsUI/MosaicAllOrdersList.png)
 
 The orderId you see in this page can be found as a LineItemId in your Account Information page under "MyOrders"
 
