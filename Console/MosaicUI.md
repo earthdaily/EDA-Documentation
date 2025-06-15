@@ -104,12 +104,16 @@ Once you have placed the Mosaic order (either Preview or Full), you will be redi
 
 ![AllOrdersFull](../Images/EarthMosaicsUI/MosaicDashboardOrder.png)
 
-Upon submission, you will see that your order is in Processing state. There is a button on top right of the panel if you want to View all of your Mosaic Orders
+Upon submission, you will see that your order is in In Progress state. There is a button on top right of the panel if you want to View all of your Mosaic Orders on the Visualizer (map)
 
 
 ![AllOrders](../Images/EarthMosaicsUI/MosaicAllOrdersList.png)
 
-The orderId you see in this page can be found as a LineItemId in your Account Information page under "MyOrders"
+The orderId you see in this page can be found as an Order ID in your Account Information page under "MyOrders"
+
+![MyOrders](../Images/EarthMosaicsUI/AccountParentOrder.png)
+
+You can then click on the Order Id link to see more details about the Order
 
 ![MyOrders](../Images/EarthMosaicsUI/AccountOrderDetails.png)
 
