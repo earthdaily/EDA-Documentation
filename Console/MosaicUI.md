@@ -111,7 +111,7 @@ Upon submission, you will see that your order is in Processing state. There is a
 
 The orderId you see in this page can be found as a LineItemId in your Account Information page under "MyOrders"
 
-![MyOrders](../Images/EarthMosaicsUI/MyOrders.png)
+![MyOrders](../Images/EarthMosaicsUI/AccountOrderDetails.png)
 
 Once the order is processed successfully, you will see the state changed to "Processed" and some other options enabled for the order
 
