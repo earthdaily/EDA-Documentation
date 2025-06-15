@@ -90,7 +90,7 @@ To place the Full resolution Mosaics order you will primarily use "Full" as your
 
 Please confirm the order settings in order to checkout
 
-![Checkout](../Images/EarthMosaicsUI/MosaicCheckout.png)
+![Checkout](../Images/EarthMosaicsUI/MosaicCheckoutQuote.png)
 
 The checkout screen below shows you the order price. If you are ready to pay, go ahead and chekout to get to the payment page below.
 
