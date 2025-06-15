@@ -24,7 +24,7 @@ nav_order: 1
 ## Login
 
 
-Simply enter your email in the text box and click on the *login* button to initialize the new login flow. If you wish to revert to the legacy login experience, click on the *use legacy login experience* link.
+Simply enter your email in the text box and click on the *login* button to initialize the new login flow. 
 
 ![Screenshot of the new EDS console login page](../Images/NewLogin/NewEDSConsoleLoginPage.png)
 
