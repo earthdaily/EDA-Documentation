@@ -10,7 +10,7 @@ redirect_from:
 <!-- Redirect is used to set the page you want to have homepage -->
 
 
-## <img width="25%" alt="Azure Machine Learning.jpg" src="https://raw.githubusercontent.com/earthdaily/Images/main/Corporate/EarthDaily.png" style="border-radius: 15%">
+## <img width="25%" alt="Azure Machine Learning.jpg" src="./Images/EDA_logo_main.png" style="border-radius: 15%">
 
 **Welcome to the EDS (Earth Data Store) documentation** !!
 
