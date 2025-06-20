@@ -22,7 +22,7 @@ nav_order: 2
 EarthPlatform STAC API is protected by bearer authentication.
 A bearer token must be generated using [OAuth Client Credentials Flow](https://www.oauth.com/oauth2-servers/access-tokens/client-credentials/). The required client_id, client_secret and access_token_url values can be found on [Account Management](https://console.earthdaily.com/account) page. These API credentials are specific to your user account on EarthPlatform and should be kept confidential. Please note that we have an option to download the .env file if you want to use it with your scripts. 
 
-![Client Credentials](../../Images/STACAPI/NewLogin%20NoAPI%20Creds%20Provisioned.png)
+![Client Credentials]("../../Images/STACAPI/NewLogin%20NoAPI%20Creds%20Provisioned.png")
 
 {: .note }
 The API credentials are different for New and Legacy login flow and you can provision them as explicitly described below. Please note that the new login flow will become the default starting **March 10, 2025**
