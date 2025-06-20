@@ -132,33 +132,25 @@ Below is the example where two images are selected and viewed on the map. Auto v
 | S. No.    | Label     | Description       |
 |-----------|-----------|-------------------|
 | ![Eighteen](../Images/NumberLabels/Eighteen.png)  | Download | Download button that lets you download the catalog / product based on the tier you belong to and the collection you are allowed. Some tiers and collections cannot download the images. |
-| ![Nineteen](../Images/NumberLabels/Nineteen.png) | Add to Cart | This option appears for the low resolution images from a catalog. You can eyeball the search images and can add the item to the cart if you wish EDA to process it as high resolution ARD product or a visual product. You can view the shopping cart by clicking the cart button on the top right. |
-| ![Twenty](../Images/NumberLabels/Twenty.png) | Latency Tier | In the shopping cart, you will see all the items aded. You can choose the further options of standard vs expedited processing of your order. |
-| ![TwentyOne](../Images/NumberLabels/TwentyOne.png) | Product Type | Once in the shopping cart, you also have the option to choose the derivative product you can order based on the image you have selected. In the example below, since the item in the cart is EDC catalog, you can choose to order ortho, AI and ARD products |
-| ![TwentyTwo](../Images/NumberLabels/TwentyTwo.png) | Checkout | Checkout for placing the order successfully. You will get the confirmation and the order no. which you can further track in your account information page |
 
-
-| Download And Order  |   Cart  |
- |--------------|-------------------|
- |![DownloadandOrder](../Images/CatalogUI/DownloadandOrder.png)| ![Cart](../Images/CatalogUI/Cart.png) |
-
+ ![Download](../Images/CatalogUI/Download.png)
 
 Next, we can see how we can compare two images over a period of time to see how the landscape is changing. We can do this by using Map Slider
 
-Below there are two images chosen over the same area but with different dates “2022/03/15“ and “2022/03/23“. They have been tagged favorite (with view favorite list enabled) and View on Map enabled to be able to see the landscape details.
+Below there are two images chosen over the same area but with different dates “2022-12-16“ and “2023-03-22“. They have been tagged favorite (with view favorite list enabled) and View on Map enabled to be able to see the landscape details.
 
 | S. No.    | Label     | Description       |
 |-----------|-----------|-------------------|
-| ![TwentyThree](../Images/NumberLabels/TwentyThree.png)  | Show/ Hide Map Slider | This is the toggle for Map Slider. It gives you a capability to slide the area from left to right. Specially useful when you have two images, one on the left and one on the right. As you slide you will be able to see the landscape changes given the images are of different dates. |
-| ![TwentyFour](../Images/NumberLabels/TwentyFour.png) | Move Image Left | Click this L button to select the image to be seen on the left of the image | 
-| ![TwentyFive](../Images/NumberLabels/TwentyFive.png) | Move Image Right | Click this R button to select the image to be seen on the right of the image | 
-| ![TwentySix](../Images/NumberLabels/TwentySix.png) | Slider | The slider  |
+| ![Nineteen](../Images/NumberLabels/Nineteen.png)  | Show/ Hide Map Slider | This is the toggle for Map Slider. It gives you a capability to slide the area from left to right. Specially useful when you have two images, one on the left and one on the right. As you slide you will be able to see the landscape changes given the images are of different dates. |
+| ![Twenty](../Images/NumberLabels/Twenty.png) | Move Image Left | Click this L button to select the image to be seen on the left of the image | 
+| ![TwentyOne](../Images/NumberLabels/TwentyOne.png) | Move Image Right | Click this R button to select the image to be seen on the right of the image | 
+| ![TwentyTwo](../Images/NumberLabels/TwentyTwo.png) | Slider | The slider  |
 
 
 ![EarthPlatform Map Slider](../Images/CatalogUI/MapSlider.png)
 
 
-Below are the differences over a particular area which shows the installation of the solar panels that happened within a few days (from 2022/03/15 to 2022/03/23)
+Below are the differences over another area which shows the installation of the solar panels that happened within the period 2023-10-28 to 2024-01-26
 
 ![EarthPlatform Map Slider Left](../Images/CatalogUI/MapSliderLeft.png)
 
@@ -169,8 +161,8 @@ Now, there are some slider options to help you see the relative difference or si
 
 | S. No.    | Label     | Description       |
 |-----------|-----------|-------------------|
-| ![TwentySeven](../Images/NumberLabels/TwentySeven.png)  | Image Opacity | Image Opacity is used if you want to check location or any other attribute relative to the basemap. |
-| ![TwentyEight](../Images/NumberLabels/TwentyEight.png)  | Image Footprint Opacity | As a query result, the more footprints you have the darker the footprints get until you can't see the ground. So Image Footprint Opacity helps to make the image footprint transparent and then you can find your location. |
+| ![TwentyThree](../Images/NumberLabels/TwentyThree.png)  | Image Opacity | Image Opacity is used if you want to check location or any other attribute relative to the basemap. |
+| ![TwentyFour](../Images/NumberLabels/TwentyFour.png)  | Image Footprint Opacity | As a query result, the more footprints you have the darker the footprints get until you can't see the ground. So Image Footprint Opacity helps to make the image footprint transparent and then you can find your location. |
 
 
 ![EarthPlatform Image Sliders](../Images/CatalogUI/ImageSliders.png)
@@ -187,7 +179,6 @@ Here is an example of the Footprint opacity
  |--------------|-------------------|
  |![FootprintOpacityHigh](../Images/CatalogUI/FootprintOpacityHigh.png)| ![FootprintOpacityLow](../Images/CatalogUI/FootprintOpacityLow.png) | 
 
-Wetlands Options in the image are available only upon request
 
 That completes the list of our extensive operations that can be done with the Catalog images.
 

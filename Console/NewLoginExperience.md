@@ -16,7 +16,7 @@ nav_order: 1
 
 
 {: .note }
-> On **March 10, 2025** EarthDaily will switch to it's new authentication system for all EarthDaily Console sites. 
+> On **June 16, 2025** EarthDaily deprecated the legacy login experience and switched to its new authentication system for all EarthDaily Console sites. 
 
 {: .important}
 > Reminder that you will need to change your password (as mentioned [here](#setting-up-your-password)) if you have an account before March 10th and it's your first time logging in using the new experience. You can reuse your current password if it meets the new security requirements. Note that passwords for the new and old systems are maintained separately, and should to choose to revert to the legacy login system for any reason, its password will remian unchanged.
@@ -24,7 +24,7 @@ nav_order: 1
 ## Login
 
 
-Simply enter your email in the text box and click on the *login* button to initialize the new login flow. If you wish to revert to the legacy login experience, click on the *use legacy login experience* link.
+Simply enter your email in the text box and click on the *login* button to initialize the new login flow. 
 
 ![Screenshot of the new EDS console login page](../Images/NewLogin/NewEDSConsoleLoginPage.png)
 
@@ -68,4 +68,4 @@ Your new API token can be used with existing scripts and tools that use the **OA
 
 ## Need Help?
 
-Our support team is available to assist you with the transition to the new authentication system. Please don't hesitate to reach out if you have any questions or encounter any issues during the process.
+Our support team is available to assist you with the transition to the new authentication system. Please don't hesitate to reach out (support@earthdaily.com) if you have any questions or encounter any issues during the process.

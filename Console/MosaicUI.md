@@ -67,11 +67,11 @@ The settings define how your mosaic will be generated.
 
 * Source specifies if your mosaic will be made using only Sentinel-2A or the combination of Sentinel-2A and Landsat-8/9.
 
-![Settings](../Images/EarthMosaicsUI/Settings.png)
+![Settings](../Images/EarthMosaicsUI/MosaicSettings.png)
 
 Now, after you confirm all settings and enter a name, submit the order
 
-![Submit](../Images/EarthMosaicsUI/Submit.png)
+![Submit](../Images/EarthMosaicsUI/MosaicSubmit.png)
 
 ## Mosaic Full resolution Order
 
@@ -86,11 +86,11 @@ Now, the Full Resolution Mosaic has an additional step
 
 To place the Full resolution Mosaics order you will primarily use "Full" as your Resolution setting as shown below
 
-![FullResOrder](../Images/EarthMosaicsUI/FullResOrder.png)
+![FullResOrder](../Images/EarthMosaicsUI/MosaicFullResOrder.png)
 
 Please confirm the order settings in order to checkout
 
-![Checkout](../Images/EarthMosaicsUI/Checkout.png)
+![Checkout](../Images/EarthMosaicsUI/MosaicCheckoutQuote.png)
 
 The checkout screen below shows you the order price. If you are ready to pay, go ahead and chekout to get to the payment page below.
 
@@ -102,20 +102,24 @@ If you have any coupons to redeem, you can enter the coupon code in order to get
 
 Once you have placed the Mosaic order (either Preview or Full), you will be redirected to your Dashboard where you can see all your orders.
 
-![AllOrdersFull](../Images/EarthMosaicsUI/AllOrdersFull.png)
+![AllOrdersFull](../Images/EarthMosaicsUI/MosaicDashboardOrder.png)
 
-Upon submission, you will see that your order is in Processing state. There is a button on top right of the panel if you want to View all of your Mosaic Orders
+Upon submission, you will see that your order is in In Progress state. There is a button on top right of the panel if you want to View all of your Mosaic Orders on the Visualizer (map)
 
 
-![AllOrders](../Images/EarthMosaicsUI/AllOrders.png)
+![AllOrders](../Images/EarthMosaicsUI/MosaicAllOrdersList.png)
 
-The orderId you see in this page can be found as a LineItemId in your Account Information page under "MyOrders"
+The orderId you see in this page can be found as an Order ID in your Account Information page under "MyOrders"
 
-![MyOrders](../Images/EarthMosaicsUI/MyOrders.png)
+![MyOrders](../Images/EarthMosaicsUI/AccountParentOrder.png)
 
-Once the order is processed successfully, you will see the state changed to "Processed" and some other options enabled for the order
+You can then click on the Order Id link to see more details about the Order
 
-![OrdersMgmt](../Images/EarthMosaicsUI/OrdersMgmt.png)
+![MyOrders](../Images/EarthMosaicsUI/AccountOrderDetails.png)
+
+Once the order is processed successfully, you will see the state changed to "Completed" and some other options enabled for the order
+
+![OrdersMgmt](../Images/EarthMosaicsUI/OrderManagement.png)
 
 
 | S.No        | Label     | Description       |
@@ -126,6 +130,6 @@ Once the order is processed successfully, you will see the state changed to "Pro
 
 Below is the Visualizer that opens up when you click on the View button on the Orders page. This visualizer is very similar to our EarthPlatform UI and has many common components needed to interact with the Mosaic product similar to our other products
 
-![Visualizer](../Images/EarthMosaicsUI/Visualizer.png)
+![Visualizer](../Images/EarthMosaicsUI/MosaicVisualizer.png)
 
 That is it !! Happy Mosaicking !! 
