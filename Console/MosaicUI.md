@@ -109,7 +109,7 @@ Upon submission, you will see that your order is in In Progress state. There is 
 
 ![AllOrders](../Images/EarthMosaicsUI/MosaicAllOrdersList.png)
 
-<The orderId you see in this page can be found as an Order ID in your Account Information page under "MyOrders"
+The orderId you see in this page can be found as an Order ID in your Account Information page under "MyOrders"
 
 ![MyOrders](../Images/EarthMosaicsUI/AccountParentOrder.png)
 
