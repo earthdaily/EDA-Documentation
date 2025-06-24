@@ -50,7 +50,6 @@ Below is the list of **public** fields available via API
  | eda:cloud_mask_collection_id | String      | EDA Cloud Mask collection id available for this item  |
  | eda:area_km2     | Number |   Mosaic - the approximate area in km^2 of the valid region of the mosaic                                           |
  | eda:radiometric_scaling| Number      |   Obsolete                                |
- | eda:orbit_number| String      |    The satellite orbit                               |
  | eda:pixel_composite_method| String      |    Pixel Composite Method used for Mosaics                               |
 
  Below are some of the **private** fields being available
@@ -71,8 +70,8 @@ Below is the list of **public** fields available via API
  | eda:source_created| String      | If we ingest third party item, we keep a track of when it was created in our system but we also maintain history of the actual item created. This is when third party created it
  | eda:source_updated| String      | If we ingest third party item, we keep a track of when it was updated in our system but we also maintain history of the actual item updated. This is when third party updated it             |
  | eda:unusable_cover     | Number | Estimate of unusable cover. Only for Land products. Unusable cover includes at least cloud and water.            |
- | eda:num_cols| String      |                                   |
- | eda:num_rows| String      |                                  |
+ | eda:num_cols| Number      | Number of columns in the image                                  |
+ | eda:num_rows| Number      | Number of rows in the image                                  |
  | eda:derived_from_l1c_item_id| String      | Which L1c item was used for the creation of the L1 derived products                                  |
  | eda:derived_from_l1c_collection_id     | String | Which L1c collection was used for the creation of the L1 derived collection                   |
  | eda:altitude| Number      |   Altitude of the image capture location. Altitude at the center of the product                                |
@@ -81,10 +80,11 @@ Below is the list of **public** fields available via API
  | eda:end_attitude| List of Numbers      |    Satellite attitude at the end of the acquisition (Degrees RPY )                               |
  | eda:mean_attitude| List of Numbers      |   Mean satellite attitude (Degrees RPY )                                |
  | eda:mtf_enhancement_applied| Boolean      |   Indicates whether MTF enhancement was applied                                |
- | eda:product_status| Number      |   Mosaic Product Status - Pending Validation, Valid, Deprecated . Obsolete                              |
+ | eda:bands| List of Strings      |   List of band names available in the product                                |
+ | eda:product_status| String      |   Product Status - One of "PENDING_VALIDATION", "VALID", "DEPRECATED"                              |
  | eda:source| String      |     Obsolete                              |
  | eda:auxiliary_atmospheric_sources| Object      |   Auxiliary atmospheric retrieval sources that were used for BOA generation (empty if none were used) Only applicable and included for L2A VNIR Basic Land BOA and L2A VNIR Advanced Land BOA products. e.g. `{ “aerosol”: “MODIS”, “water_vapour”: “ECMWF observation”}`
  | eda:basemap| String      |  The geometric reference used for any geometric corrections applied to the imagery  (Mosaic)                                |
- | eda:download_bundle_status| Number      |   Whether the download bundle asset is available or in progress. If this tag is absent, then the download bundle asset is not available for that item.|
+ | eda:download_bundle_status| String      |   Whether the download bundle asset is available or in progress. One of "AVAILABLE", "IN_PROGRESS". If this tag is absent, then the download bundle asset is not available for that item.|
  | eda:aocs_mode| String      |   AOCS Mode - One of “Nadir”, “DEM”, “Side Slither”.  Only provided for the Catalogue                                |
  | eda:cloud_detect_method| String | Algorithm used in cloud detection |
