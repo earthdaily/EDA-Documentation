@@ -1,4 +1,11 @@
+# OS Related
 .DS_Store
 
+# Environment Variables
 .env
 .venv/
+
+# Ruby Related
+.Gemfile
+.Gemfile.lock
+_site/
