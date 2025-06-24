@@ -86,27 +86,30 @@ You can find the detailed examples using [Python script](../API/APIUsage/Python.
 
 The fastest way to get up and running is to use EDA's [Python Client Repository](https://github.com/earthdaily/earthdaily-python-client). 
 
-Build a new Conda Environment:
+Build a new Virtual Environment:
 ```bash
-# Clone the repository and go inside
-git clone git@github.com:earthdaily/earthdaily-python-client.git
-cd earthdaily-python-client
+# Create a virtual environment
+python -m venv .venv
+source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 
-# Create a virtual environment named earthdaily and install package dependencies
-conda env create -n earthdaily -f requirements.yml
-conda activate earthdaily
-
-# Install package in editable mode
-pip install -e .
-
-copy-earthdaily-credentials-template --default
-
+# Install the EarthDaily Python client
+pip install earthdaily
 ```
+
+Create a `.env` file in your project directory with your API credentials:
+```
+EDS_AUTH_URL=https://api.earthdaily.com/account_management/v1/authentication/api_tokens/exchange
+EDS_CLIENT_ID=EARTHDAILY_API_TOKEN
+EDS_SECRET=<API_TOKEN>
+EDS_API_URL=https://api.earthdaily.com
+```
+
+**Important:** Replace `<API_TOKEN>` with your actual API secret from the [Account Management](https://console.earthdaily.com/account) page.
 
 
 Test the Available Collections:
 ```python
-from earthdaily.earthdatastore.cube_utils import asset_mapper
+from earthdaily.legacy.earthdatastore.cube_utils import asset_mapper
 from rich.table import Table
 from rich.console import Console
 
