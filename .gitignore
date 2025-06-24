@@ -6,6 +6,6 @@
 .venv/
 
 # Ruby Related
-.Gemfile
-.Gemfile.lock
+Gemfile
+Gemfile.lock
 _site/
