@@ -151,5 +151,3 @@ The following examples are still available but are now located in the legacy exa
 5. [Create a Data Cube](https://github.com/earthdaily/earthdaily-python-client/blob/main/examples/legacy_examples/first_steps_create_datacube.py)
 6. [Create a Multisensor Cube](https://github.com/earthdaily/earthdaily-python-client/blob/main/examples/legacy_examples/multisensors_cube.py)
 7. [Stack Summary](https://github.com/earthdaily/earthdaily-python-client/blob/main/examples/legacy_examples/summary_stack.py)
-
-The fastest way to get up and running is to use EDA's [Python Client Repository](https://github.com/earthdaily/earthdaily-python-client). 
