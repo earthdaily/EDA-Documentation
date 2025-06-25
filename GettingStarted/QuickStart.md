@@ -132,13 +132,24 @@ This will output a list of assets for all available collections to you in the pl
 
 ## Other Examples
 
+### Examples
 
-1. [Common Band Names](https://github.com/earthdaily/earthdaily-python-client/blob/main/examples/common_band_names.py)
-2. [Compare Scale with Sentinel-2](https://github.com/earthdaily/earthdaily-python-client/blob/main/examples/compare_scale_s2.py)
-3. [EarthDaily Simulated Datasets](https://github.com/earthdaily/earthdaily-python-client/blob/main/examples/earthdaily_simulated_dataset.py)
-4. [Field Evolution](https://github.com/earthdaily/earthdaily-python-client/blob/main/examples/field_evolution.py)
-5. [Create a Data Cube](https://github.com/earthdaily/earthdaily-python-client/blob/main/examples/first_steps_create_datacube.py)
-6. [Create a Multisensor Cube](https://github.com/earthdaily/earthdaily-python-client/blob/main/examples/multisensors_cube.py)
-7. [Stack Summary](https://github.com/earthdaily/earthdaily-python-client/blob/main/examples/summary_stack.py)
+Find comprehensive example scripts in the [examples directory](https://github.com/earthdaily/earthdaily-python-client/tree/main/examples) of the EarthDaily Python Client repository:
+
+1. [Asset Download Example](https://github.com/earthdaily/earthdaily-python-client/blob/main/examples/asset_download_example.py)
+2. [Bulk Search Example](https://github.com/earthdaily/earthdaily-python-client/blob/main/examples/bulk_search_example.py)
+3. [Datacube Example](https://github.com/earthdaily/earthdaily-python-client/blob/main/examples/datacube_example.py)
+4. [Quick Start](https://github.com/earthdaily/earthdaily-python-client/blob/main/examples/quick_start.py)
+
+### Legacy Examples
+
+The following examples are still available but are now located in the legacy examples directory:
+
+1. [Common Band Names](https://github.com/earthdaily/earthdaily-python-client/blob/main/examples/legacy_examples/common_band_names.py)
+2. [Compare Scale with Sentinel-2](https://github.com/earthdaily/earthdaily-python-client/blob/main/examples/legacy_examples/compare_scale_s2.py)
+4. [Field Evolution](https://github.com/earthdaily/earthdaily-python-client/blob/main/examples/legacy_examples/field_evolution.py)
+5. [Create a Data Cube](https://github.com/earthdaily/earthdaily-python-client/blob/main/examples/legacy_examples/first_steps_create_datacube.py)
+6. [Create a Multisensor Cube](https://github.com/earthdaily/earthdaily-python-client/blob/main/examples/legacy_examples/multisensors_cube.py)
+7. [Stack Summary](https://github.com/earthdaily/earthdaily-python-client/blob/main/examples/legacy_examples/summary_stack.py)
 
 The fastest way to get up and running is to use EDA's [Python Client Repository](https://github.com/earthdaily/earthdaily-python-client). 
