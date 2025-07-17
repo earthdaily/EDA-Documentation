@@ -102,7 +102,7 @@ Advanced searching can be performed using a `query` object. This allows searchin
 ```
 curl --location 'https://api.earthdaily.com/platform/v1/stac/search' \
 --header 'Content-Type: application/json' \
---header 'Authorization: Bearer eyJraWQiOiJwdWlZR3BtalVETHFvdGVLR1wvbDM4SkJzMlVrdWVUb2VPS21EN1B4d1o0OD0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI0dmowNHBwMnM0OWdsaGlnNnAxZ2VkZDNmbSIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYWNjb3VudElkOnVzZXJJZFwvTTliTVlLYmlXRk4yZldBWnBlenhzdDozYTI1MmIzYjI2ZWQ0Y2FmYTI5ODA5ZWM3ZWExYzU2OCIsImF1dGhfdGltZSI6MTcxOTI1MTg5OCwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLnVzLWVhc3QtMS5hbWF6b25hd3MuY29tXC91cy1lYXN0LTFfeGN3T3dseWlmIiwiZXhwIjoxNzE5MjU1NDk4LCJpYXQiOjE3MTkyNTE4OTgsInZlcnNpb24iOjIsImp0aSI6IjhkY2Y1NmY5LWU2Y2ItNDVmYS1hODY5LTMzZmY2OThlY2ExYiIsImNsaWVudF9pZCI6IjR2ajA0cHAyczQ5Z2xoaWc2cDFnZWRkM2ZtIn0.E41hOMFyESoS393u4GRCvySP6-aDvbyeBp6kdSPZ7tFQrxqthiByXy6NBN8plLmEFO1vqQHpu5gA6Gy3L0v7_ACZXa74LJk5MvbtTCmoMh9QlFrCkaTpjGmpzEIjDwn_KRumrhf5d_omE6GpeE6vrz4I9-jQ0_P9LO3IQH3CcVX61oRvd44MT-1jxgu4bM3mEinjGOMYfszOgaj4O5PZ1kwund-05yfAiUnM81D5tCRiPSXbiOMMhSy2g-E-75t6AXZhLJg_EmWtERZ2Kf3UT5YU5-MI34-yx2RkqgDYlhanbyUy-W2K0OLILJucKX-I5cpTzt24WCOnUc0aFS2r6w' \
+--header 'Authorization: Bearer <ACCESS_TOKEN HERE>' \
 --data '{
     "limit": 20,
     "collections": [
