@@ -168,6 +168,8 @@ curl --location 'https://api.earthdaily.com/platform/v1/stac/search' \
 
 ## Downloading Assets
 
+### Presigned URLs
+
 ```
 curl --location 'https://api.earthdaily.com/platform/v1/stac/search' \
 --header 'Content-Type: application/json' \
@@ -194,6 +196,79 @@ Example response
         }
         ....
     }
+}
+```
+
+### Proxy URLs
+
+```
+curl --location 'https://api.earthdaily.com/platform/v1/stac/search' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Bearer <ACCESS_TOKEN HERE>' \
+--header 'X-Proxy-Asset-Urls: true' \
+--data '{
+    "limit": 20,
+    "collections": [
+        "sentinel-2-l2a-cog-ag-cloud-mask"
+    ]
+}'
+
+```
+
+Example response with proxy URLs
+```
+"assets": {
+    "agriculture-cloud-mask": {
+        "href": "s3://earthdaily-eds-edc-skyfox-generic/_PUBLIC/sentinel-2-l2a-cog-ag-cloud-mask/2024/05/31/S2A_MSIL2A_20240531T113321_N0510_R080_T29UQR_20240531T190753.SAFE_AG_CLOUD_MASK_20240604215939/S2A_MSIL2A_20240531T113321_N0510_R080_T29UQR_20240531T190753.SAFE_AG_CLOUD_MASK_20240604215939.tif",
+        "alternate": {
+            "download": {
+                "href": "https://api.earthdaily.com/platform/v1/asset?asset_path=https%3A%2F%2Fearthdaily-eds-edc-skyfox-generic.s3.amazonaws.com%2F_PUBLIC%2Fsentinel-2-l2a-cog-ag-cloud-mask%2F2024%2F05%2F31%2FS2A_MSIL2A_20240531T113321_N0510_R080_T29UQR_20240531T190753.SAFE_AG_CLOUD_MASK_20240604215939%2FS2A_MSIL2A_20240531T113321_N0510_R080_T29UQR_20240531T190753.SAFE_AG_CLOUD_MASK_20240604215939.tif&item_id=S2A_MSIL2A_20240531T113321_N0510_R080_T29UQR_20240531T190753.SAFE_AG_CLOUD_MASK_20240604215939&collection_id=sentinel-2-l2a-cog-ag-cloud-mask&asset=agriculture-cloud-mask"
+            }
+        }
+        ....
+    }
+}
+```
+
+Access the proxy URL to get a redirect to presigned URL
+
+```
+curl --location 'https://api.earthdaily.com/platform/v1/asset?asset_path=https%3A%2F%2Fearthdaily-eds-edc-skyfox-generic.s3.amazonaws.com%2F_PUBLIC%2Fsentinel-2-l2a-cog-ag-cloud-mask%2F2024%2F05%2F31%2FS2A_MSIL2A_20240531T113321_N0510_R080_T29UQR_20240531T190753.SAFE_AG_CLOUD_MASK_20240604215939%2FS2A_MSIL2A_20240531T113321_N0510_R080_T29UQR_20240531T190753.SAFE_AG_CLOUD_MASK_20240604215939.tif&item_id=S2A_MSIL2A_20240531T113321_N0510_R080_T29UQR_20240531T190753.SAFE_AG_CLOUD_MASK_20240604215939&collection_id=sentinel-2-l2a-cog-ag-cloud-mask&asset=agriculture-cloud-mask' \
+--header 'Authorization: Bearer <ACCESS_TOKEN HERE>'
+```
+
+Response (307 redirect with presigned URL)
+```
+HTTP/1.1 307 Temporary Redirect
+Date: Thu, 17 Jul 2025 10:57:20 GMT
+Content-Type: application/json
+Content-Length: 0
+Connection: keep-alive
+Location: https://earthdaily-eds-edc-skyfox-generic.s3.amazonaws.com/_PUBLIC/sentinel-2-l2a-cog-ag-cloud-mask/2024/05/31/S2A_MSIL2A_20240531T113321_N0510_R080_T29UQR_20240531T190753.SAFE_AG_CLOUD_MASK_20240604215939/S2A_MSIL2A_20240531T113321_N0510_R080_T29UQR_20240531T190753.SAFE_AG_CLOUD_MASK_20240604215939.tif?AWSAccessKeyId=ASIAWA4UP6OOD5G75ZHW&Signature=qXa6tbU8qoDYqWd6Yx6WKzeRUko%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEFo...&Expires=1752793040
+```
+
+### Error Cases
+
+Using both headers simultaneously returns an error:
+
+```
+curl --location 'https://api.earthdaily.com/platform/v1/stac/search' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Bearer <ACCESS_TOKEN HERE>' \
+--header 'X-Signed-Asset-Urls: true' \
+--header 'X-Proxy-Asset-Urls: true' \
+--data '{
+    "limit": 20,
+    "collections": ["sentinel-2-l2a-cog-ag-cloud-mask"]
+}'
+```
+
+Error response:
+```json
+{
+    "status": "Bad Request",
+    "message": "Both presigned URLs and proxy URLs are requested.",
+    "status_code": 400
 }
 ```
 

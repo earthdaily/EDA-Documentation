@@ -251,7 +251,9 @@ Currently, these URLs may use either `https://` or `s3://` protocols.
 
 For assets hosted on `S3` but accessible via `HTTP`, you can find an `HTTPS` version listed as an [alternate asset](https://github.com/stac-extensions/alternate-assets) with the key `download_url`.
 
-For private and requester-pays S3 assets, and Azure Blob assets, we offer presigned URLs, which ensure secure and temporary access:
+For private and requester-pays S3 assets, and Azure Blob assets, we offer two types of URLs for secure access:
+
+### Presigned URLs
 
 > **Default Behavior**: Presigned URLs are automatically included for single item requests (`/items/{item_id}`) but not for searches (`/search` or `/items`) due to performance considerations.
 > **Customization**: You can request presigned URLs in search responses by using the `X-Signed-Asset-Urls` header set to `true`. Note that using a high `limit` parameter during search queries along with a large number of assets might increase response times significantly.
@@ -262,9 +264,26 @@ Presigned URLs are available for all assets in EDA buckets across all customer a
 
 Please ensure to manage the generation of presigned URLs carefully to optimize performance and avoid excessive latency in your application.
 
-<!-- space for examples -->
-**Example** : [Command Line](CommandLine.md#downloading-assets) | [Postman](Postman.md#downloading-assets) 
- 
+### Proxy URLs
+
+As an alternative to presigned URLs, proxy URLs provide extended asset access capabilities and improved performance for bulk search queries.
+
+> **Important**: Proxy URLs and presigned URLs are mutually exclusive. You cannot request both in the same API call.
+
+**Key Benefits:**
+* **Extended Access**: Remain valid beyond the 12-hour limit when used with a valid authentication token
+* **Performance**: Significantly reduces processing time for bulk search queries
+
+**How to Use Proxy URLs:**
+
+Request proxy URLs by setting the `X-Proxy-Asset-Urls` header to `true`. When accessing the returned proxy URL with proper authentication, it responds with a `307 Temporary Redirect` containing a fresh presigned URL in the `Location` header.
+
+**Requirements:**
+* Must include `Authorization: Bearer <ACCESS_TOKEN>` header when accessing proxy URLs  
+* Cannot be used with `X-Signed-Asset-Urls: true` (returns 400 Bad Request)
+
+
+**Example** : [Command Line](CommandLine.md#downloading-assets) | [Postman](Postman.md#downloading-assets) | [Python](Python.md#downloading-assets)
 
 ## Cloud Mask Query  
 

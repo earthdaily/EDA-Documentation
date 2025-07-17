@@ -125,6 +125,55 @@ for index, item in enumerate(items):
     print(f"{index}, {item}")
 ```
 
+### Downloading Assets
+
+#### Using Presigned URLs
+
+```python
+# Request with presigned URLs
+items = client.search(
+    collections=["sentinel-2-l2a-cog-ag-cloud-mask"],
+    limit=20,
+    headers={"X-Signed-Asset-Urls": "true"}
+).items()
+
+for item in items:
+    for asset_key, asset in item.assets.items():
+        if "alternate" in asset.to_dict() and "download" in asset.to_dict()["alternate"]:
+            presigned_url = asset.to_dict()["alternate"]["download"]["href"]
+            print(f"Presigned URL for {asset_key}: {presigned_url}")
+```
+
+#### Using Proxy URLs
+
+```python
+import requests
+
+# Request with proxy URLs
+items = client.search(
+    collections=["sentinel-2-l2a-cog-ag-cloud-mask"],
+    limit=20,
+    headers={"X-Proxy-Asset-Urls": "true"}
+).items()
+
+for item in items:
+    for asset_key, asset in item.assets.items():
+        if "alternate" in asset.to_dict() and "download" in asset.to_dict()["alternate"]:
+            proxy_url = asset.to_dict()["alternate"]["download"]["href"]
+            
+            # Access proxy URL to get presigned URL
+            response = requests.get(
+                proxy_url,
+                headers={"Authorization": f"Bearer {token}"},
+                allow_redirects=False
+            )
+            
+            if response.status_code == 307:
+                presigned_url = response.headers.get("Location")
+                print(f"Proxy URL for {asset_key}: {proxy_url}")
+                print(f"Redirected to: {presigned_url}")
+```
+
 ### Cloud Masks
 
 ```python
