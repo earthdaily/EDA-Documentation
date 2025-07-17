@@ -244,7 +244,7 @@ Date: Thu, 17 Jul 2025 10:57:20 GMT
 Content-Type: application/json
 Content-Length: 0
 Connection: keep-alive
-Location: https://earthdaily-eds-edc-skyfox-generic.s3.amazonaws.com/_PUBLIC/sentinel-2-l2a-cog-ag-cloud-mask/2024/05/31/S2A_MSIL2A_20240531T113321_N0510_R080_T29UQR_20240531T190753.SAFE_AG_CLOUD_MASK_20240604215939/S2A_MSIL2A_20240531T113321_N0510_R080_T29UQR_20240531T190753.SAFE_AG_CLOUD_MASK_20240604215939.tif?AWSAccessKeyId=ASIAWA4UP6OOD5G75ZHW&Signature=qXa6tbU8qoDYqWd6Yx6WKzeRUko%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEFo...&Expires=1752793040
+Location: https://earthdaily-eds-edc-skyfox-generic.s3.amazonaws.com/_PUBLIC/sentinel-2-l2a-cog-ag-cloud-mask/2024/05/31/S2A_MSIL2A_20240531T113321_N0510_R080_T29UQR_20240531T190753.SAFE_AG_CLOUD_MASK_20240604215939/S2A_MSIL2A_20240531T113321_N0510_R080_T29UQR_20240531T190753.SAFE_AG_CLOUD_MASK_20240604215939.tif?AWSAccessKeyId=.....&Signature=.....&x-amz-security-........&Expires=1752793040
 ```
 
 ### Error Cases
