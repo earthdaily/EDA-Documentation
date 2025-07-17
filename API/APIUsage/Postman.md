@@ -78,7 +78,19 @@ Sorting by property `eo:cloud_cover` is also supported on the `/search` endpoint
 
 ## Downloading Assets
 
-![Collections](../../Images/STACAPI/PostmanExamples/DownloadingAssets.png)
+### Presigned URLs
+
+![Presigned URLs](../../Images/STACAPI/PostmanExamples/DownloadingAssets.png)
+
+### Proxy URLs
+
+**Step 1: Request with X-Proxy-Asset-Urls header**
+
+![Proxy URLs Request](../../Images/STACAPI/PostmanExamples/DownloadAssetProxy.png)
+
+**Step 2: Access the proxy URL to get redirect**
+
+![Proxy URL Redirect](../../Images/STACAPI/PostmanExamples/DownloadAssetProxyRedirect.png)
 
 ## CloudMasks
 
