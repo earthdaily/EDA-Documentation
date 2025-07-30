@@ -17,24 +17,32 @@ nav_order: 3
 -->
 
 ## Introduction
-Customers can get access to our image catalog and products through EarthPlatform. It is a portal where the user can browse through our minimally processed catalog items. In addition to provide useful metadata and details about the listed images, it provides capabilities to interact with the scene content and order a high resolution product for selected catalog items. You can access the [EarthPlatform](https://console.earthdaily.com/platform) by appending the endpoint /catalog to the base URL.
+Customers can get access to and browse through our image catalog and products through the EarthPlatform. In addition to providing useful metadata and details about the listed images, it provides capabilities to interact with the scene contents. You can access the EarthPlatform [here](https://console.earthdaily.com/platform).
 
 
 ## Search
-EarthPlatform has search panel with various options to customize your search. Lets have a look at them.
+EarthPlatform has a search panel with various options to customize your search. Let's have a look at them.
 
 Once you login with your credentials, the landing page for EarthPlatform is shown below
 
 | S. No     | Label     | Description       |
 |-----------|-----------|-------------------|
 | ![One](../Images/NumberLabels/One.png) | Search box | Enter any geographic area like “Vancouver”, “Chile” etc to find and focus. |
-| ![Two](../Images/NumberLabels/Two.png) | Polygon tool | It allows you to select a given area on the map quite precisely by allowing you to create a vertex as and when you do a left click. Make sure you click the first vertex of the polygon to complete it. |
-| ![Three](../Images/NumberLabels/Three.png)  | Rectangle Polygon | Select two vertices of the diagonal on the map to form a rectangular area. |
-| ![Four](../Images/NumberLabels/Four.png) | Input GeoJSON | Click this button if you have a GeoJson you wish to enter for the given area to define it. |
-| ![Five](../Images/NumberLabels/Five.png) | Layers | Select the layers you wish to see on the map. Options include satellite, streets or both. |
-| ![Six](../Images/NumberLabels/Six.png) | Ruler | This one allows you to select the endpoints to draw a line and gives you the distance of each line as you keep drawing around. |
-| ![Seven](../Images/NumberLabels/Seven.png) | Results panel | This is the area where you would see the thumbnails of the search results for your images. |
-| ![Eight](../Images/NumberLabels/Eight.png)| Filter panel | Allows you to enter various search criteria. Initially it has selection for Collections and time range. As soon as you select the collection, it expands and you can enter additional search parameters. |
+| ![Two](../Images/NumberLabels/Two.png) | Rectangle tool | Select two vertices of the diagonal on the map to form a rectangular area as a geospatial filter. |
+| ![Three](../Images/NumberLabels/Three.png)  | Polygon tool | Select a given area as a geospatial filter on the map by creating a vertex as and when you do a left click. Make sure you click the first vertex of the polygon or double-click after creating the last vertex to complete it. |
+| ![Four](../Images/NumberLabels/Four.png) | Input GeoJSON | Click this button if you have a GeoJson you wish to enter as a geospatial filter. |
+| ![Five](../Images/NumberLabels/Five.png) | Viewport | Select this to define the current map extents as a geospatial filter. |
+| ![Six](../Images/NumberLabels/Six.png) | Basic Search Filters | Selection one or more Collections (up to 15) from the list and define a date range as your basic search filters.|
+| ![Seven](../Images/NumberLabels/Seven.png) | Advanced Filters | Click on the Advanced Filters icon to define additional filters based on the Collections selected. |
+| ![Eight](../Images/NumberLabels/Eight.png)| Reset button | Click to reset all search filters. |
+| ![Nine](../Images/NumberLabels/Nine.png)| Submit button | Click to submit the search. |
+| ![Ten](../Images/NumberLabels/Ten.png) | Results panel | This is the area where you would see the thumbnails of the search results for your images. |
+| ![Eleven](../Images/NumberLabels/Eleven.png) | App Switcher | Click this button to switch to another application. |
+| ![Twelve](../Images/NumberLabels/Twelve.png) | Map Slider | Click to enable the Map Slider to enter the image comparison mode. |
+| ![Thirteen](../Images/NumberLabels/Thirteen.png) | Settings | Click to change base map layers, map projection, and units. |
+| ![Fourteen](../Images/NumberLabels/Fourteen.png) | Ruler | Click to draw a line and measure the distance between 2 points. |
+| ![Fifteen](../Images/NumberLabels/Fifteen.png) | Help Center | Click to report an issue, contact us, or access the documentation. |
+| ![Sixteen](../Images/NumberLabels/Sixteen.png)| Bottm panel | Shows latitude and longitude of current cursor position, current map zoom level, and the map scale bar . |
 
 
 ![EarthPlatform Landing Page](../Images/CatalogUI/LandingPage.png)
