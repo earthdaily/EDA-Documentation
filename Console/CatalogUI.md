@@ -23,7 +23,7 @@ Customers can get access to and browse through our image catalog and products th
 ## Search
 EarthPlatform has a search panel with various options to customize your search. Let's have a look at them.
 
-Once you login with your credentials, the landing page for EarthPlatform is shown below
+Once you login with your credentials, the landing page for EarthPlatform is shown below:
 
 | S. No     | Label     | Description       |
 |-----------|-----------|-------------------|
@@ -42,30 +42,30 @@ Once you login with your credentials, the landing page for EarthPlatform is show
 | ![Thirteen](../Images/NumberLabels/Thirteen.png) | Settings | Click to change base map layers, map projection, and units. |
 | ![Fourteen](../Images/NumberLabels/Fourteen.png) | Ruler | Click to draw a line and measure the distance between 2 points. |
 | ![Fifteen](../Images/NumberLabels/Fifteen.png) | Help Center | Click to report an issue, contact us, or access the documentation. |
-| ![Sixteen](../Images/NumberLabels/Sixteen.png)| Bottm panel | Shows latitude and longitude of current cursor position, current map zoom level, and the map scale bar . |
+| ![Sixteen](../Images/NumberLabels/Sixteen.png)| Bottom panel | Shows latitude and longitude of current cursor position, current map zoom level, and the map scale bar. |
 
 
 ![EarthPlatform Landing Page](../Images/CatalogUI/LandingPage.png)
 
-NOTE : The filter panel expands with additional parameters based on the collection selected as shown below. You can also see the results panel populated with images and each thumbnail on the left that you hover over will show a center mass turned yellow on the map
+NOTE : The Advanced Filters panel expands with additional parameters based on the Collection selected, as shown below. When there are results returned from the search, you can see the results panel populated with images, along with thumbnails if available. When you hover over a search result, the corresponding footprint will be highlighted in yellow on the map.
 
 ![EarthPlatform Filter Panel](../Images/CatalogUI/Filter.png)
 
-Below are some images that will give you an idea of how the various tools mentioned above work
+Below are some images that will give you an idea of how the various tools work.
 
 ![EarthPlatform Polygon Area Calculator](../Images/CatalogUI/AreaCalculator.png)
 
 ![EarthPlatform Rectangular Area Calculator](../Images/CatalogUI/AreaCalculatorSqr.png)
 
 
-GeoJSON Viewer
+GeoJSON Viewer and Importer
 
 ![EarthPlatform JSON Viewer](../Images/CatalogUI/JSONViewer.png)
 
 
-Street and satellite View
+Streets and Satellite Views
 
- | Street View  |   Satellite View  |
+ | Streets View  |   Satellite & Streets View  |
  |--------------|-------------------|
  |![StreetView](../Images/CatalogUI/StreetView.png)| ![SatelliteView](../Images/CatalogUI/SatelliteView.png) |
 
@@ -77,18 +77,20 @@ Ruler
 
 ## Interacting with the catalog
 
-Now lets see once you have the search results, what all can you do with those images. As you can see below, you have a small checkbox to select one or more images for any actions you would like to perform.
+Now let's see once you have the search results, what can you do with those images. As you can see below, you can click different icons to perform actions on them. There is also a small checkbox for you to select multiple items and then perform actions on them.
 
 | S. No.    |  Label    | Description       |
 |-----------|-----------|-------------------|
-| ![Nine](../Images/NumberLabels/Nine.png)  | Show/Hide Filter | This button toggles the filter panel. For this image I have hidden the filter panel as you see below. |
-| ![Ten](../Images/NumberLabels/Ten.png)  | Show Item Properties | It shows the Item Properties on the right hand side panel |
-| ![Eleven](../Images/NumberLabels/Eleven.png)  | Favorite Item | Tag the image as favorite. Once you tag even one image as favorite, a toggle button will appear at the top (as shown in the right side image) to show only the items tagged as favorites. |
-| ![Twelve](../Images/NumberLabels/Twelve.png)  | View on Map | This enables the images to be rendered to appear as tiles on the map instead of just the center mass. |
-| ![Thirteen](../Images/NumberLabels/Thirteen.png)  | View Visualization | Toggles the visualization panel where you can adjust the min and max of the available color bands and also the gamma values. You can also update the min and max based on the current image. |
-| ![Fourteen](../Images/NumberLabels/Fourteen.png)  | Auto adjust Visualization | Auto adjust the image by applying the settings in the visualization panel for bands, gamma and the min and max percentiles. If the values in visualization panel have not been set then it applies the default values. |
-| ![Fifteen](../Images/NumberLabels/Fifteen.png)  | View all on Map | This is a toggle which you should be really careful to use. It will render all the images on the map and because each rendering takes some time, doing it on a large no. of images can take some time and you might need to be patient for it to complete rendering everything. | 
-| ![Sixteen](../Images/NumberLabels/Sixteen.png)  | View Favorites Only | This toggle button will show all the images that the user has tagged as favorite (star button next to the thumbnail) |
+| ![Seventeen](../Images/NumberLabels/Seventeen.png)  | Show Item Properties | Show the Item Properties on the right hand side panel. |
+| ![Eighteen](../Images/NumberLabels/Eighteen.png)  | Favorite Item | Tag the image as favorite, and then use the toggle button on top (#26) to show only the items tagged as favorites. |
+| ![Nineteen](../Images/NumberLabels/Nineteen.png)  | Fly to Bounds | Zoom in to the image location. |
+| ![Twenty](../Images/NumberLabels/Twenty.png)  | Toggle Layer Visibility | Show/Hide the footprint on the map. |
+| ![TwentyOne](../Images/NumberLabels/TwentyOne.png)  | View on Map | Render the image on the map. |
+| ![TwentyTwo](../Images/NumberLabels/TwentyTwo.png)  | View Visualization Configuration | Toggles the visualization configuration panel where you can adjust the min and max of the available color bands and also the gamma values. You can update the min and max of the current image or optionally update all images from the same Collection. |
+| ![TwentyThree](../Images/NumberLabels/TwentyThree.png)  | Auto adjust Visualization | Shorthand convenience tool to auto adjust the image by clipping desired percentages off the image, based on a calculated histogram. If the values in the visualization configuration panel have not been modified then it applies the default values of 2% and 98%. |
+| ![TwentyFour](../Images/NumberLabels/TwentyFour.png)  | Multi-Select | Allows you to multi-select images and perform actions on them. See #25 for the action menu. | 
+| ![TwentyFive](../Images/NumberLabels/TwentyFive.png)  | Multi-Select Actions | Actions that you can perform on multiple images. The first one 'View all on map' allows you to render all the images on the map. Use this with caution as it takes time to render if you have a large number of images. | 
+| ![TwentySix](../Images/NumberLabels/TwentySix.png)  | View Favorites Only | This toggle button will show all the images that the user has tagged as favorite (see #18). |
 
 ![EarthPlatform Interaction](../Images/CatalogUI/CatalogInteraction.png)
 
