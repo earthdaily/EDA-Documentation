@@ -40,10 +40,12 @@ Following this section is the list of collections available in our free tier to 
 
 ### EDA Collections
 
-| Collection Name |  Collection Id |    Source of Collection | 
-|------------------------|-------------|--------------------------|
-| AI Ready Mosaics      |    ai-ready-mosaics   |                               |
-| AI Ready Mosaics Preview      |    ai-ready-mosaics-preview   |                    |
-| AI Ready Mosaics Sample      |    ai-ready-mosaics-sample   |                 |
-| Cropland Data Layer US      |    cropland-data-layer-us   |              |
-| Earthdaily Simulated Cloudless L2A Cog EDagro   |    earthdaily-simulated-cloudless-l2a-cog-edagro     |
+| Collection Name |  Collection Id |    
+|------------------|-------------------------|
+| Above Ground Biomass Density, Tree Height and Tree Cover <br> using multi mode input at 10m resolution - Publication |    earthdaily:carbon-analytics:multimode-10m-agbd:3x3:v2.1  |  
+| AI Ready Mosaics      |    ai-ready-mosaics   |                            
+| AI Ready Mosaics Preview      |    ai-ready-mosaics-preview   |            
+| AI Ready Mosaics Sample      |    ai-ready-mosaics-sample   |              
+| Cropland Data Layer US      |    cropland-data-layer-us   |        
+| EDC Preview      |    edc-preview   |           
+| Forest mask using multi mode input at 10m resolution - Publication     |    earthdaily:carbon-analytics:forestmask:3x3:v2.1   |   
