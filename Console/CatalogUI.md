@@ -17,7 +17,7 @@ nav_order: 3
 -->
 
 ## Introduction
-Customers can get access to and browse through our image catalog and products through the EarthPlatform. In addition to providing useful metadata and details about the listed images, it provides capabilities to interact with the scene contents. You can access the EarthPlatform [here](https://console.earthdaily.com/platform).
+Customers can access and browse through our image catalog and products through the EarthPlatform. In addition to providing useful metadata and details about the listed images, it provides capabilities to interact with the scene contents. You can access the EarthPlatform [here](https://console.earthdaily.com/platform).
 
 
 ## Search
@@ -94,67 +94,48 @@ Now let's see once you have the search results, what can you do with those image
 
 ![EarthPlatform Interaction](../Images/CatalogUI/CatalogInteraction.png)
 
-Below is the example of the Item Properties as shown on the right
+Below is an example of toggling the Item Properties to be shown on the right. A subset of the STAC item properties will be shown
 
 
 ![EarthPlatform Item Properties](../Images/CatalogUI/ItemProperties.png)
 
 
-Click on the “Show Full“ to pop up a form that will show the text and JSON format of the STAC item properties as below
+Toggle the Show Full button to show the entire contents of the STAC item properties, as below. Under the Show Full mode you can also get the individual asset urls and download the images by following the "href"
 
 ![EarthPlatform Show Full](../Images/CatalogUI/ShowFull.png)
 
-Display Mode : Text below. This comes really handy when you want to get the STAC details of the given image/item. You can also get the individual asset urls and download the images as shown below in the “href” 
+Here is an example of tagging an item as favorite and then toggling the Favorites only button to see only the favorites list
 
-![EarthPlatform Show Full Text](../Images/CatalogUI/ShowFulltext.png)
-
-
-Here is the image showing the JSON format of the item properties. This is very useful when you want to get the whole or part of JSON and use it in your own application for several purposes.
-
-![EarthPlatform Show Full JSON](../Images/CatalogUI/ShowFulljson.png)
-
-Here is the example of tagging an item as favorite and then toggle the View favorite to see only the favorites list
-
-| Favorites  |   View Favourites  |
+| Favorites  |   View Favorites  |
  |--------------|-------------------|
- |![Favorites](../Images/CatalogUI/Favorites.png)| ![ViewFavourites](../Images/CatalogUI/ViewFavourites.png) |
+ |![Favorites](../Images/CatalogUI/Favorites.png)| ![ViewFavorites](../Images/CatalogUI/ViewFavourites.png) |
 
-Next is the example of View on Map button
+Next is an example of the View on Map button
 
 ![EarthPlatform View on Map](../Images/CatalogUI/MapView.png)
 
-Here is the example of what the visualization can do when you change the min and the max band ranges
+Here is an example of what the visualization configuration options can do when you change the min and the max band ranges
 
 ![EarthPlatform Visualization](../Images/CatalogUI/Visualization.png)
 
-Below is the example where two images are selected and viewed on the map. Auto visualization was enabled for the right hand side image and you can see the difference it makes.
+Below is an example where two images are selected and viewed on the map. Auto visualization was applied for the right hand side image and you can see the difference it makes
 
 ![EarthPlatform Auto Visualization](../Images/CatalogUI/AutoVisualization.png)
 
-
-| S. No.    | Label | Description |
-|-----------|-------|-------------|
-| ![Seventeen](../Images/NumberLabels/Seventeen.png)   | Fly to Bounds | When you click at the center of this button, it zooms into the map to this thumbnail for a focussed view. | 
+Below is an example of flying to the geographic bounds of an image
 
 ![EarthPlatform Fly To Bounds](../Images/CatalogUI/FlyToBounds.png)
 
+Next, we can see how we can compare two images over a period of time to see how the landscape is changing. We can do this by using the Map Slider
+
+Below there are two images chosen over the same area but with different dates “2022-12-16“ and “2023-03-22“. They have been tagged as favorite (with view favorite list enabled) and View on Map enabled to be able to see the landscape details.
 
 | S. No.    | Label     | Description       |
 |-----------|-----------|-------------------|
-| ![Eighteen](../Images/NumberLabels/Eighteen.png)  | Download | Download button that lets you download the catalog / product based on the tier you belong to and the collection you are allowed. Some tiers and collections cannot download the images. |
-
- ![Download](../Images/CatalogUI/Download.png)
-
-Next, we can see how we can compare two images over a period of time to see how the landscape is changing. We can do this by using Map Slider
-
-Below there are two images chosen over the same area but with different dates “2022-12-16“ and “2023-03-22“. They have been tagged favorite (with view favorite list enabled) and View on Map enabled to be able to see the landscape details.
-
-| S. No.    | Label     | Description       |
-|-----------|-----------|-------------------|
-| ![Nineteen](../Images/NumberLabels/Nineteen.png)  | Show/ Hide Map Slider | This is the toggle for Map Slider. It gives you a capability to slide the area from left to right. Specially useful when you have two images, one on the left and one on the right. As you slide you will be able to see the landscape changes given the images are of different dates. |
-| ![Twenty](../Images/NumberLabels/Twenty.png) | Move Image Left | Click this L button to select the image to be seen on the left of the image | 
-| ![TwentyOne](../Images/NumberLabels/TwentyOne.png) | Move Image Right | Click this R button to select the image to be seen on the right of the image | 
-| ![TwentyTwo](../Images/NumberLabels/TwentyTwo.png) | Slider | The slider  |
+| ![TwentySeven](../Images/NumberLabels/TwentySeven.png)  | Show/Hide Map Slider | This is the toggle for Map Slider. It gives you a capability to slide the area from left to right. This is especially useful when you have two images that you want to compare. As you slide you will be able to see the landscape changes given the images are of different dates. |
+| ![TwentyEight](../Images/NumberLabels/TwentyEight.png) | Move Image Left | Click this Left button to select the image to be seen on the left of the map slider. | 
+| ![TwentyNine](../Images/NumberLabels/TwentyNine.png) | Move Image Right | Click this Right button to select the image to be seen on the right of the map slider. | 
+| ![Thirty](../Images/NumberLabels/Thirty.png) | Slider | The map slider.  |
 
 
 ![EarthPlatform Map Slider](../Images/CatalogUI/MapSlider.png)
@@ -171,8 +152,8 @@ Now, there are some slider options to help you see the relative difference or si
 
 | S. No.    | Label     | Description       |
 |-----------|-----------|-------------------|
-| ![TwentyThree](../Images/NumberLabels/TwentyThree.png)  | Image Opacity | Image Opacity is used if you want to check location or any other attribute relative to the basemap. |
-| ![TwentyFour](../Images/NumberLabels/TwentyFour.png)  | Image Footprint Opacity | As a query result, the more footprints you have the darker the footprints get until you can't see the ground. So Image Footprint Opacity helps to make the image footprint transparent and then you can find your location. |
+| ![ThirtyOne](../Images/NumberLabels/ThirtyOne.png)  | Image Opacity | Image Opacity is used to toggle the opacity/transparency of an image. |
+| ![ThirtyTwo](../Images/NumberLabels/ThirtyTwo.png)  | Image Footprint Opacity | Image Footprint Opacity is used to toggle the opactiy/transparency of the footprint of an image. This is useful when you want to see the basemap more clearly, especially when there are multiple footprints overlapping the same area causing the basemap to be difficult to see. |
 
 
 ![EarthPlatform Image Sliders](../Images/CatalogUI/ImageSliders.png)
@@ -183,14 +164,14 @@ Below you can see the opacity for the image at 100%, 50% and 0
  |--------------|-------------------|-------------------|
  |![ImageOpacity0](../Images/CatalogUI/ImageOpacity0.png)| ![ImageOpacity50](../Images/CatalogUI/ImageOpacity50.png) |  ![ImageOpacity100](../Images/CatalogUI/ImageOpacity100.png) | 
 
-Here is an example of the Footprint opacity
+Here are examples of adjusting the Footprint opacity
 
  | Footprint Opacity High  |   Footprint Opacity Low  |  
  |--------------|-------------------|
  |![FootprintOpacityHigh](../Images/CatalogUI/FootprintOpacityHigh.png)| ![FootprintOpacityLow](../Images/CatalogUI/FootprintOpacityLow.png) | 
 
 
-That completes the list of our extensive operations that can be done with the Catalog images.
+That completes the list of our extensive features that are available in EarthPlatform.
 
 <!-- 
 ## Interacting with the product
