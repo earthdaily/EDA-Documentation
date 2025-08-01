@@ -35,9 +35,9 @@ Once you login with your credentials, the landing page for EarthPlatform is show
 | ![Six](../Images/NumberLabels/Six.png) | Basic Filters | Select one or more Collections (up to 15) from the list and define a date range as your basic search filters.|
 | ![Seven](../Images/NumberLabels/Seven.png) | Advanced Filters | Click on the Advanced Filters icon to define additional filters based on the Collections selected. |
 | ![Eight](../Images/NumberLabels/Eight.png)| Reset Button | Click to reset all search filters. |
-| ![Nine](../Images/NumberLabels/Nine.png)| Submit Button | Click to submit the search. |
+| ![Nine](../Images/NumberLabels/Nine.png)| Search Button | Click to submit the search. |
 | ![Ten](../Images/NumberLabels/Ten.png) | Results Panel | This is the area where you would see the thumbnails of the search results for your images. |
-| ![Eleven](../Images/NumberLabels/Eleven.png) | App Switcher | Click this button to switch to another application. |
+| ![Eleven](../Images/NumberLabels/Eleven.png) | App Switcher | Click this button to switch to another EDA-hosted application. |
 | ![Twelve](../Images/NumberLabels/Twelve.png) | Map Slider | Click to enable the Map Slider to enter the image comparison mode. |
 | ![Thirteen](../Images/NumberLabels/Thirteen.png) | Settings | Click to change base map layers, map projection, and units. |
 | ![Fourteen](../Images/NumberLabels/Fourteen.png) | Ruler | Click to draw a line and measure the distance between 2 points. |
@@ -51,7 +51,7 @@ NOTE : The Advanced Filters panel expands with additional parameters based on th
 
 ![EarthPlatform Filter Panel](../Images/CatalogUI/Filter.png)
 
-Below are some images that will give you an idea of how the various tools work.
+Below are some images that will give you an idea of how the various controls work.
 
 ![EarthPlatform Polygon Area Calculator](../Images/CatalogUI/AreaCalculator.png)
 
