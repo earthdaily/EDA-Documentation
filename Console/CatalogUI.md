@@ -17,47 +17,55 @@ nav_order: 3
 -->
 
 ## Introduction
-Customers can get access to our image catalog and products through EarthPlatform. It is a portal where the user can browse through our minimally processed catalog items. In addition to provide useful metadata and details about the listed images, it provides capabilities to interact with the scene content and order a high resolution product for selected catalog items. You can access the [EarthPlatform](https://console.earthdaily.com/platform) by appending the endpoint /catalog to the base URL.
+Customers can access and browse through our image catalog and products through the EarthPlatform. In addition to providing useful metadata and details about the listed images, it provides capabilities to interact with them. You can access the EarthPlatform [here](https://console.earthdaily.com/platform).
 
 
 ## Search
-EarthPlatform has search panel with various options to customize your search. Lets have a look at them.
+EarthPlatform has a search panel with various customization options. Let's have a look at them.
 
-Once you login with your credentials, the landing page for EarthPlatform is shown below
+Once you login with your credentials, the landing page for EarthPlatform is shown:
 
 | S. No     | Label     | Description       |
 |-----------|-----------|-------------------|
-| ![One](../Images/NumberLabels/One.png) | Search box | Enter any geographic area like “Vancouver”, “Chile” etc to find and focus. |
-| ![Two](../Images/NumberLabels/Two.png) | Polygon tool | It allows you to select a given area on the map quite precisely by allowing you to create a vertex as and when you do a left click. Make sure you click the first vertex of the polygon to complete it. |
-| ![Three](../Images/NumberLabels/Three.png)  | Rectangle Polygon | Select two vertices of the diagonal on the map to form a rectangular area. |
-| ![Four](../Images/NumberLabels/Four.png) | Input GeoJSON | Click this button if you have a GeoJson you wish to enter for the given area to define it. |
-| ![Five](../Images/NumberLabels/Five.png) | Layers | Select the layers you wish to see on the map. Options include satellite, streets or both. |
-| ![Six](../Images/NumberLabels/Six.png) | Ruler | This one allows you to select the endpoints to draw a line and gives you the distance of each line as you keep drawing around. |
-| ![Seven](../Images/NumberLabels/Seven.png) | Results panel | This is the area where you would see the thumbnails of the search results for your images. |
-| ![Eight](../Images/NumberLabels/Eight.png)| Filter panel | Allows you to enter various search criteria. Initially it has selection for Collections and time range. As soon as you select the collection, it expands and you can enter additional search parameters. |
+| ![One](../Images/NumberLabels/One.png) | Search Box | Enter any geographic area like “Vancouver”, “Chile” etc to find and focus. |
+| ![Two](../Images/NumberLabels/Two.png) | Rectangle Tool | Select two vertices of the diagonal on the map to form a rectangular area as a geospatial filter. |
+| ![Three](../Images/NumberLabels/Three.png)  | Polygon Tool | Select a given area as a geospatial filter on the map by creating a vertex as and when you do a left click. Make sure you click the first vertex of the polygon or double-click after creating the last vertex to complete it. |
+| ![Four](../Images/NumberLabels/Four.png) | Input GeoJSON | Click this button if you have a GeoJson you wish to enter or import as a geospatial filter. |
+| ![Five](../Images/NumberLabels/Five.png) | Viewport | Select this to define the current map extents as a geospatial filter. |
+| ![Six](../Images/NumberLabels/Six.png) | Basic Filters | Select one or more Collections (up to 15) from the list and define a date range as your basic search filters.|
+| ![Seven](../Images/NumberLabels/Seven.png) | Advanced Filters | Click on the Advanced Filters icon to define additional filters based on the Collections selected. |
+| ![Eight](../Images/NumberLabels/Eight.png)| Reset Button | Click to reset all search filters. |
+| ![Nine](../Images/NumberLabels/Nine.png)| Search Button | Click to submit the search. |
+| ![Ten](../Images/NumberLabels/Ten.png) | Results Panel | This is the area where you would see the thumbnails of the search results for your images. |
+| ![Eleven](../Images/NumberLabels/Eleven.png) | App Switcher | Click this button to switch to another EDA-hosted application. |
+| ![Twelve](../Images/NumberLabels/Twelve.png) | Map Slider | Click to enable the Map Slider to enter the image comparison mode. |
+| ![Thirteen](../Images/NumberLabels/Thirteen.png) | Settings | Click to change base map layers, map projection, and units. |
+| ![Fourteen](../Images/NumberLabels/Fourteen.png) | Ruler | Click to draw a line and measure the distance between 2 points. |
+| ![Fifteen](../Images/NumberLabels/Fifteen.png) | Help Center | Click to report an issue, contact us, or access the documentation. |
+| ![Sixteen](../Images/NumberLabels/Sixteen.png)| Bottom Panel | Shows latitude and longitude of current cursor position, current map zoom level, and the map scale bar. |
 
 
 ![EarthPlatform Landing Page](../Images/CatalogUI/LandingPage.png)
 
-NOTE : The filter panel expands with additional parameters based on the collection selected as shown below. You can also see the results panel populated with images and each thumbnail on the left that you hover over will show a center mass turned yellow on the map
+NOTE : The Advanced Filters panel expands with additional parameters based on the Collection selected, as shown below. When there are results returned from the search, you can see the results panel populated with images, along with thumbnails if available. When you hover over a search result, the corresponding footprint will be highlighted in yellow on the map.
 
 ![EarthPlatform Filter Panel](../Images/CatalogUI/Filter.png)
 
-Below are some images that will give you an idea of how the various tools mentioned above work
+Below are some images that will give you an idea of how the various controls work.
 
 ![EarthPlatform Polygon Area Calculator](../Images/CatalogUI/AreaCalculator.png)
 
 ![EarthPlatform Rectangular Area Calculator](../Images/CatalogUI/AreaCalculatorSqr.png)
 
 
-GeoJSON Viewer
+GeoJSON Viewer and Importer
 
 ![EarthPlatform JSON Viewer](../Images/CatalogUI/JSONViewer.png)
 
 
-Street and satellite View
+Streets and Satellite Views
 
- | Street View  |   Satellite View  |
+ | Streets View  |   Satellite & Streets View  |
  |--------------|-------------------|
  |![StreetView](../Images/CatalogUI/StreetView.png)| ![SatelliteView](../Images/CatalogUI/SatelliteView.png) |
 
@@ -69,82 +77,65 @@ Ruler
 
 ## Interacting with the catalog
 
-Now lets see once you have the search results, what all can you do with those images. As you can see below, you have a small checkbox to select one or more images for any actions you would like to perform.
+Now let's see once you have the search results, what you can do with those images. As you can see below, you can click different icons to perform actions on them. There is also a small checkbox for you to select multiple items and then perform actions on them.
 
 | S. No.    |  Label    | Description       |
 |-----------|-----------|-------------------|
-| ![Nine](../Images/NumberLabels/Nine.png)  | Show/Hide Filter | This button toggles the filter panel. For this image I have hidden the filter panel as you see below. |
-| ![Ten](../Images/NumberLabels/Ten.png)  | Show Item Properties | It shows the Item Properties on the right hand side panel |
-| ![Eleven](../Images/NumberLabels/Eleven.png)  | Favorite Item | Tag the image as favorite. Once you tag even one image as favorite, a toggle button will appear at the top (as shown in the right side image) to show only the items tagged as favorites. |
-| ![Twelve](../Images/NumberLabels/Twelve.png)  | View on Map | This enables the images to be rendered to appear as tiles on the map instead of just the center mass. |
-| ![Thirteen](../Images/NumberLabels/Thirteen.png)  | View Visualization | Toggles the visualization panel where you can adjust the min and max of the available color bands and also the gamma values. You can also update the min and max based on the current image. |
-| ![Fourteen](../Images/NumberLabels/Fourteen.png)  | Auto adjust Visualization | Auto adjust the image by applying the settings in the visualization panel for bands, gamma and the min and max percentiles. If the values in visualization panel have not been set then it applies the default values. |
-| ![Fifteen](../Images/NumberLabels/Fifteen.png)  | View all on Map | This is a toggle which you should be really careful to use. It will render all the images on the map and because each rendering takes some time, doing it on a large no. of images can take some time and you might need to be patient for it to complete rendering everything. | 
-| ![Sixteen](../Images/NumberLabels/Sixteen.png)  | View Favorites Only | This toggle button will show all the images that the user has tagged as favorite (star button next to the thumbnail) |
+| ![Seventeen](../Images/NumberLabels/Seventeen.png)  | Show Item Properties | Show the Item Properties on the right hand side panel. |
+| ![Eighteen](../Images/NumberLabels/Eighteen.png)  | Favorite Item | Tag the image as favorite, and then use the toggle button on top (#26) to show only the items tagged as favorites. |
+| ![Nineteen](../Images/NumberLabels/Nineteen.png)  | Fly to Bounds | Zoom in to the image location. |
+| ![Twenty](../Images/NumberLabels/Twenty.png)  | Toggle Layer Visibility | Show/Hide the footprint on the map. |
+| ![TwentyOne](../Images/NumberLabels/TwentyOne.png)  | View on Map | Render the image on the map. |
+| ![TwentyTwo](../Images/NumberLabels/TwentyTwo.png)  | View Visualization Configuration | Toggles the visualization configuration panel where you can adjust the min and max of the available color bands and also the gamma values. You can update the min and max of the current image or optionally update all images from the same Collection. |
+| ![TwentyThree](../Images/NumberLabels/TwentyThree.png)  | Auto adjust Visualization | Shorthand convenience tool to auto adjust the image by clipping desired percentages off the image, based on a calculated histogram. If the values in the visualization configuration panel have not been modified then it applies the default values of 2% and 98%. |
+| ![TwentyFour](../Images/NumberLabels/TwentyFour.png)  | Multi-Select | Allows you to multi-select images and perform actions on them. See #25 for the action menu. | 
+| ![TwentyFive](../Images/NumberLabels/TwentyFive.png)  | Multi-Select Actions | Actions that you can perform on multiple images. The first one 'View all on map' allows you to render all the images on the map. Use this with caution as it takes time to render if you have a large number of images. | 
+| ![TwentySix](../Images/NumberLabels/TwentySix.png)  | View Favorites Only | This toggle button will show all the images that the user has tagged as favorite (see #18). |
 
 ![EarthPlatform Interaction](../Images/CatalogUI/CatalogInteraction.png)
 
-Below is the example of the Item Properties as shown on the right
+Below is an example of toggling the Item Properties to be shown on the right. A subset of the STAC item properties will be shown
 
 
 ![EarthPlatform Item Properties](../Images/CatalogUI/ItemProperties.png)
 
 
-Click on the “Show Full“ to pop up a form that will show the text and JSON format of the STAC item properties as below
+Toggle the Show Full button to show the entire contents of the STAC item properties, as below. Under the Show Full mode you can also get the individual asset urls and download the images by following the "href"
 
 ![EarthPlatform Show Full](../Images/CatalogUI/ShowFull.png)
 
-Display Mode : Text below. This comes really handy when you want to get the STAC details of the given image/item. You can also get the individual asset urls and download the images as shown below in the “href” 
+Here is an example of tagging an item as favorite and then toggling the Favorites only button to see only the favorites list
 
-![EarthPlatform Show Full Text](../Images/CatalogUI/ShowFulltext.png)
-
-
-Here is the image showing the JSON format of the item properties. This is very useful when you want to get the whole or part of JSON and use it in your own application for several purposes.
-
-![EarthPlatform Show Full JSON](../Images/CatalogUI/ShowFulljson.png)
-
-Here is the example of tagging an item as favorite and then toggle the View favorite to see only the favorites list
-
-| Favorites  |   View Favourites  |
+| Favorites  |   View Favorites  |
  |--------------|-------------------|
- |![Favorites](../Images/CatalogUI/Favorites.png)| ![ViewFavourites](../Images/CatalogUI/ViewFavourites.png) |
+ |![Favorites](../Images/CatalogUI/Favorites.png)| ![ViewFavorites](../Images/CatalogUI/ViewFavourites.png) |
 
-Next is the example of View on Map button
+Next is an example of the View on Map button
 
 ![EarthPlatform View on Map](../Images/CatalogUI/MapView.png)
 
-Here is the example of what the visualization can do when you change the min and the max band ranges
+Here is an example of what the visualization configuration options can do when you change the min and the max band ranges
 
 ![EarthPlatform Visualization](../Images/CatalogUI/Visualization.png)
 
-Below is the example where two images are selected and viewed on the map. Auto visualization was enabled for the right hand side image and you can see the difference it makes.
+Below is an example where two images are selected and viewed on the map. Auto visualization was applied for the right hand side image and you can see the difference it makes
 
 ![EarthPlatform Auto Visualization](../Images/CatalogUI/AutoVisualization.png)
 
-
-| S. No.    | Label | Description |
-|-----------|-------|-------------|
-| ![Seventeen](../Images/NumberLabels/Seventeen.png)   | Fly to Bounds | When you click at the center of this button, it zooms into the map to this thumbnail for a focussed view. | 
+Below is an example of flying to the geographic bounds of an image
 
 ![EarthPlatform Fly To Bounds](../Images/CatalogUI/FlyToBounds.png)
 
+Next, we can see how we can compare two images over a period of time to see how the landscape is changing. We can do this by using the Map Slider
+
+Below there are two images chosen over the same area but with different dates “2022-12-16“ and “2023-03-22“. They have been tagged as favorite (with view favorite list enabled) and View on Map enabled to be able to see the landscape details.
 
 | S. No.    | Label     | Description       |
 |-----------|-----------|-------------------|
-| ![Eighteen](../Images/NumberLabels/Eighteen.png)  | Download | Download button that lets you download the catalog / product based on the tier you belong to and the collection you are allowed. Some tiers and collections cannot download the images. |
-
- ![Download](../Images/CatalogUI/Download.png)
-
-Next, we can see how we can compare two images over a period of time to see how the landscape is changing. We can do this by using Map Slider
-
-Below there are two images chosen over the same area but with different dates “2022-12-16“ and “2023-03-22“. They have been tagged favorite (with view favorite list enabled) and View on Map enabled to be able to see the landscape details.
-
-| S. No.    | Label     | Description       |
-|-----------|-----------|-------------------|
-| ![Nineteen](../Images/NumberLabels/Nineteen.png)  | Show/ Hide Map Slider | This is the toggle for Map Slider. It gives you a capability to slide the area from left to right. Specially useful when you have two images, one on the left and one on the right. As you slide you will be able to see the landscape changes given the images are of different dates. |
-| ![Twenty](../Images/NumberLabels/Twenty.png) | Move Image Left | Click this L button to select the image to be seen on the left of the image | 
-| ![TwentyOne](../Images/NumberLabels/TwentyOne.png) | Move Image Right | Click this R button to select the image to be seen on the right of the image | 
-| ![TwentyTwo](../Images/NumberLabels/TwentyTwo.png) | Slider | The slider  |
+| ![TwentySeven](../Images/NumberLabels/TwentySeven.png)  | Show/Hide Map Slider | This is the toggle for Map Slider. It gives you a capability to slide the area from left to right. This is especially useful when you have two images that you want to compare. As you slide you will be able to see the landscape changes given the images are of different dates. |
+| ![TwentyEight](../Images/NumberLabels/TwentyEight.png) | Move Image Left | Click this Left button to select the image to be seen on the left of the map slider. | 
+| ![TwentyNine](../Images/NumberLabels/TwentyNine.png) | Move Image Right | Click this Right button to select the image to be seen on the right of the map slider. | 
+| ![Thirty](../Images/NumberLabels/Thirty.png) | Slider | The map slider.  |
 
 
 ![EarthPlatform Map Slider](../Images/CatalogUI/MapSlider.png)
@@ -156,13 +147,13 @@ Below are the differences over another area which shows the installation of the 
 
 ![EarthPlatform Map Slider Right](../Images/CatalogUI/MapSliderRight.png)
 
-Now, there are some slider options to help you see the relative difference or similarity between the image and the base-map.
+Now, there are some slider options to help you adjust the opacity
 
 
 | S. No.    | Label     | Description       |
 |-----------|-----------|-------------------|
-| ![TwentyThree](../Images/NumberLabels/TwentyThree.png)  | Image Opacity | Image Opacity is used if you want to check location or any other attribute relative to the basemap. |
-| ![TwentyFour](../Images/NumberLabels/TwentyFour.png)  | Image Footprint Opacity | As a query result, the more footprints you have the darker the footprints get until you can't see the ground. So Image Footprint Opacity helps to make the image footprint transparent and then you can find your location. |
+| ![ThirtyOne](../Images/NumberLabels/ThirtyOne.png)  | Image Opacity | Image Opacity is used to toggle the opacity/transparency of an image. |
+| ![ThirtyTwo](../Images/NumberLabels/ThirtyTwo.png)  | Image Footprint Opacity | Image Footprint Opacity is used to toggle the opactiy/transparency of the footprint of an image. This is useful when you want to see the basemap more clearly, especially when there are multiple footprints overlapping the same area causing the basemap to be difficult to see. |
 
 
 ![EarthPlatform Image Sliders](../Images/CatalogUI/ImageSliders.png)
@@ -173,14 +164,14 @@ Below you can see the opacity for the image at 100%, 50% and 0
  |--------------|-------------------|-------------------|
  |![ImageOpacity0](../Images/CatalogUI/ImageOpacity0.png)| ![ImageOpacity50](../Images/CatalogUI/ImageOpacity50.png) |  ![ImageOpacity100](../Images/CatalogUI/ImageOpacity100.png) | 
 
-Here is an example of the Footprint opacity
+Here are examples of adjusting the Footprint opacity
 
  | Footprint Opacity High  |   Footprint Opacity Low  |  
  |--------------|-------------------|
  |![FootprintOpacityHigh](../Images/CatalogUI/FootprintOpacityHigh.png)| ![FootprintOpacityLow](../Images/CatalogUI/FootprintOpacityLow.png) | 
 
 
-That completes the list of our extensive operations that can be done with the Catalog images.
+That completes the list of our extensive features that are available in EarthPlatform.
 
 <!-- 
 ## Interacting with the product
