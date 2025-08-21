@@ -151,8 +151,6 @@ for index, item in enumerate(items):
 
 The EarthDaily client provides seamless asset downloading with automatic handling of proxy URLs and presigned URLs:
 
-#### Using the EarthDaily Client (Recommended)
-
 ```python
 # Search for items with assets to download
 search_results = client.platform.pystac_client.search(
