@@ -264,6 +264,8 @@ Presigned URLs are available for all assets in EDA buckets across all customer a
 
 Please ensure to manage the generation of presigned URLs carefully to optimize performance and avoid excessive latency in your application.
 
+**Example** : [Command Line](CommandLine.md#presigned-urls) | [Postman](Postman.md#presigned-urls) | [Python](Python.md#downloading-assets)
+
 ### Proxy URLs
 
 As an alternative to presigned URLs, proxy URLs provide extended asset access capabilities and improved performance for bulk search queries.
@@ -283,7 +285,7 @@ Request proxy URLs by setting the `X-Proxy-Asset-Urls` header to `true`. When ac
 * Cannot be used with `X-Signed-Asset-Urls: true` (returns 400 Bad Request)
 
 
-**Example** : [Command Line](CommandLine.md#downloading-assets) | [Postman](Postman.md#downloading-assets) | [Python](Python.md#downloading-assets)
+**Example** : [Command Line](CommandLine.md#proxy-urls) | [Postman](Postman.md#proxy-urls) | [Python](Python.md#downloading-assets)
 
 ## Cloud Mask Query  
 
