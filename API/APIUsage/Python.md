@@ -7,64 +7,83 @@ nav_order: 3
 ---
 
 ## Python
-For Python environments, we recommend using [PySTAC Client](https://pystac-client.readthedocs.io/en/stable/#). Complete examples of using PySTAC Client with EarthPlatform STAC API are included: 
 
-[earthplatform_stac_api_example](https://github.com/earthdaily/EDA-Documentation/tree/gh-pages/API/APIUsage/earthplatform_stac_api_examples.py)   
+For Python environments, we recommend using the **[EarthDaily Python Client](https://pypi.org/project/earthdaily/)** which provides a unified interface for interacting with the EarthDaily platform.
 
-Below are the various sections of the script in reagrds to STAC endpoints
+### Installation
 
-### Getting the authentication token for Pystac Client
+```bash
+# Basic installation
+pip install earthdaily
+
+# Recommended installation with platform features
+pip install earthdaily[platform]
+
+# Full installation with all features
+pip install earthdaily[platform,legacy]
+```
+### Environment Setup
+
+Create a `.env` file in your project root:
+
+```bash
+# .env
+EDS_CLIENT_ID=your_client_id
+EDS_SECRET=your_client_secret
+EDS_AUTH_URL=https://your-auth-url.com/oauth/token
+EDS_API_URL=https://api.earthdaily.com
+```
+
+### Getting Started with EarthDaily Client
 
 ```python
 from dotenv import load_dotenv
+from earthdaily import EDSClient, EDSConfig
 
-load_dotenv()  # take environment variables from .env.
+# Load environment variables from .env file
+load_dotenv()
 
-CLIENT_ID = os.getenv("EDS_CLIENT_ID")
-CLIENT_SECRET = os.getenv("EDS_SECRET")
-EDS_AUTH_URL = os.getenv("EDS_AUTH_URL")
-API_URL = os.getenv("EDS_API_URL")
+# Initialize client with configuration from environment variables
+config = EDSConfig()
+client = EDSClient(config)
 
-# Setup requests session
-session = requests.Session()
-session.auth = (CLIENT_ID, CLIENT_SECRET)
-
-
-def get_new_token(session):
-    """Obtain a new authentication token using client credentials."""
-    token_req_payload = {"grant_type": "client_credentials"}
-    try:
-        token_response = session.post(EDS_AUTH_URL, data=token_req_payload)
-        token_response.raise_for_status()
-        tokens = token_response.json()
-        return tokens["access_token"]
-    except requests.exceptions.RequestException as e:
-        print(f"Failed to obtain token: {e}")
-
-token = get_new_token(session)
-
-catalog = Client.open(API_URL, headers={"Authorization": f"bearer {token}"})
+# Alternative: Direct configuration without .env file
+config = EDSConfig(
+    client_id="your_client_id",
+    client_secret="your_client_secret", 
+    token_url="https://your-auth-url.com/oauth/token",
+    api_url="https://api.earthdaily.com"
+)
+client = EDSClient(config)
 ```
 
-### Get collections
+
+
+### Get Collections
 
 ```python
-for collection in client.get_all_collections():
-    print(collection)
+# Get all collections using the platform client
+collections = client.platform.pystac_client.get_collections()
+for collection in collections:
+    print(f"Collection: {collection.id} - {collection.description}")
 ```
 
-### Get a specific collection 
+### Get a Specific Collection 
+
 ```python
-collection = client.get_collection("sentinel-2-l2a")
-print(collection)
+# Get specific collection
+collection = client.platform.pystac_client.get_collection("sentinel-2-l2a")
+print(f"Collection: {collection.id} - {collection.description}")
 ```
 
 ### Search 
 
-Search a collection with different filter criteria, setting query with field conditions and sorting
+Search for items using the modern client interface:
+
 ```python
-items = client.search(
-    collections=["sentinel-2-l2a", "sentinel-l1c"],
+# Search using the platform client
+search_results = client.platform.pystac_client.search(
+    collections=["sentinel-2-l2a", "sentinel-2-l1c"],
     datetime="2022-07-01T00:00:00.000000Z/2023-08-01T00:00:00.000000Z",
     intersects={
         "coordinates": [
@@ -105,81 +124,87 @@ items = client.search(
             "direction": "asc"
         }
     ],
-    limit=50,  # This is the number of items to be returned per page
-    max_items=100,  # This is number of items to page over
-).items()
+    max_items=100
+)
 
+# Process search results
+items = list(search_results.items())
 for index, item in enumerate(items):
-    print(f"{index}, {item}")
+    print(f"Item {index}: ID={item.id}, Cloud Cover={item.properties.get('eo:cloud_cover')}")
 ```
 
 ### Specific Item
 
 ```python
-items = client.search(
+# Search for specific items by ID
+search_results = client.platform.pystac_client.search(
     collections=["sentinel-2-l2a"],
     ids=["S2B_35XMG_20230615_1_L2A", "S2B_39XVJ_20230615_0_L2A", "S2B_27LZJ_20230615_0_L2A"]
-).items()
+)
 
+items = list(search_results.items())
 for index, item in enumerate(items):
-    print(f"{index}, {item}")
+    print(f"Specific item {index}: ID={item.id}")
 ```
 
 ### Downloading Assets
 
-#### Using Presigned URLs
+The EarthDaily client provides seamless asset downloading with automatic handling of proxy URLs and presigned URLs:
+
+#### Using the EarthDaily Client (Recommended)
 
 ```python
-# Request with presigned URLs
-items = client.search(
-    collections=["sentinel-2-l2a-cog-ag-cloud-mask"],
-    limit=20,
-    headers={"X-Signed-Asset-Urls": "true"}
-).items()
+# Search for items with assets to download
+search_results = client.platform.pystac_client.search(
+    collections=["edc-preview"],
+    datetime="2022-01-01T00:00:00Z/2023-01-01T00:00:00Z",
+    max_items=5
+)
 
+items = list(search_results.items())
+
+# Download assets using the client (automatically handles proxy/presigned URLs)
 for item in items:
-    for asset_key, asset in item.assets.items():
-        if "alternate" in asset.to_dict() and "download" in asset.to_dict()["alternate"]:
-            presigned_url = asset.to_dict()["alternate"]["download"]["href"]
-            print(f"Presigned URL for {asset_key}: {presigned_url}")
+    print(f"Downloading assets for item: {item.id}")
+    
+    # Download specific assets
+    downloads = client.platform.stac_item.download_assets(
+        item=item,
+        asset_keys=["image_file_R"],  # Specify which assets to download
+        output_dir="./downloads",
+        max_workers=3  # Parallel downloads
+    )
+    
+    # Print download results
+    for asset_key, download_path in downloads.items():
+        print(f"Downloaded {asset_key} to: {download_path}")
 ```
 
-#### Using Proxy URLs
+#### Advanced Download Options
 
 ```python
-import requests
+# Download all assets from an item
+downloads = client.platform.stac_item.download_assets(
+    item=item,
+    # asset_keys=None,  # Download all assets when not specified
+    output_dir="./all_assets",
+    max_workers=5,
+    overwrite=True  # Overwrite existing files
+)
 
-# Request with proxy URLs
-items = client.search(
-    collections=["sentinel-2-l2a-cog-ag-cloud-mask"],
-    limit=20,
-    headers={"X-Proxy-Asset-Urls": "true"}
-).items()
-
-for item in items:
-    for asset_key, asset in item.assets.items():
-        if "alternate" in asset.to_dict() and "download" in asset.to_dict()["alternate"]:
-            proxy_url = asset.to_dict()["alternate"]["download"]["href"]
-            
-            # Access proxy URL to get presigned URL
-            response = requests.get(
-                proxy_url,
-                headers={"Authorization": f"Bearer {token}"},
-                allow_redirects=False
-            )
-            
-            if response.status_code == 307:
-                presigned_url = response.headers.get("Location")
-                print(f"Proxy URL for {asset_key}: {proxy_url}")
-                print(f"Redirected to: {presigned_url}")
+# Download with custom naming
+downloads = client.platform.stac_item.download_assets(
+    item=item,
+    asset_keys=["image_file_R", "image_file_G", "image_file_B", "image_file_NIR"],
+    output_dir="./rgb_nir", 
+    filename_template="{item_id}_{asset_key}.tif"  # Custom naming pattern
+)
 ```
-
 ### Cloud Masks
 
 ```python
-# Query sentinel-2-l2a for ag cloud masks
-
-items = client.search(
+# Query sentinel-2-l2a for ag cloud masks using the client
+search_results = client.platform.pystac_client.search(
     collections=["sentinel-2-l2a"],
     datetime="2022-07-01T00:00:00.000000Z/2022-08-01T00:00:00.000000Z",
     query={
@@ -188,13 +213,10 @@ items = client.search(
         }
     },
     max_items=50
-).items()
+)
 
-for index, item in enumerate(items):
-    print(item)
-    cloud_mask_item = client.get_collection(item.properties["eda:ag_cloud_mask_collection_id"]
-                                            ).get_item(item.properties["eda:ag_cloud_mask_item_id"])
+items = list(search_results.items())
 
-    print(cloud_mask_item)
+print(f" Found {len(items)} items with agriculture cloud masks available")
 
 ```
