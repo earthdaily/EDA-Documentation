@@ -26,7 +26,8 @@ load_dotenv()
 CLIENT_ID = os.getenv("EDS_CLIENT_ID")
 CLIENT_SECRET = os.getenv("EDS_SECRET")
 EDS_AUTH_URL = os.getenv("EDS_AUTH_URL")
-API_URL = "https://api.earthdaily.com/platform/v1/stac"
+API_URL = os.getenv("EDS_API_URL")
+STAC_API_URL = f"{API_URL}/platform/v1/stac"
 
 # Setup requests session
 session = requests.Session()
@@ -53,7 +54,7 @@ def initialize_stac_client(api_url, token):
 
 def main():
     token = get_new_token(session)
-    client = initialize_stac_client(API_URL, token)
+    client = initialize_stac_client(STAC_API_URL, token)
 
     try:
         # Get all collections

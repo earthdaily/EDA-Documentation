@@ -53,6 +53,7 @@ CLIENT_ID = os.getenv("EDS_CLIENT_ID")
 CLIENT_SECRET = os.getenv("EDS_SECRET")
 EDS_AUTH_URL = os.getenv("EDS_AUTH_URL")
 API_URL = os.getenv("EDS_API_URL")
+STAC_API_URL = f"{API_URL}/platform/v1/stac"
 
 session = requests.Session()
 session.auth = (CLIENT_ID, CLIENT_SECRET)
@@ -72,7 +73,7 @@ def get_new_token(session):
 token = get_new_token(session)
 
 # Configure pystac client
-catalog = Client.open(API_URL, headers={"Authorization": f"bearer {token}"})
+client = Client.open(STAC_API_URL, headers={"Authorization": f"bearer {token}"})
 
 # Get collections
 
