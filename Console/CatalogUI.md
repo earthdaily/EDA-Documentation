@@ -23,7 +23,7 @@ Customers can access and browse through our image catalog and products through t
 ## Search
 EarthPlatform has a search panel with various customization options. Let's have a look at them.
 
-Once you login with your credentials, the landing page for EarthPlatform is shown:
+Once you login with your credentials, the landing page for EarthPlatform is shown. On the left hand side, you can find the search filters and search results panel:
 
 | S. No     | Label     | Description       |
 |-----------|-----------|-------------------|
@@ -37,6 +37,18 @@ Once you login with your credentials, the landing page for EarthPlatform is show
 | ![Eight](../Images/NumberLabels/Eight.png)| Reset Button | Click to reset all search filters. |
 | ![Nine](../Images/NumberLabels/Nine.png)| Search Button | Click to submit the search. |
 | ![Ten](../Images/NumberLabels/Ten.png) | Results Panel | This is the area where you would see the thumbnails of the search results for your images. |
+
+
+![EarthPlatform Landing Page - Search Filters and Results](../Images/CatalogUI/LandingPageFilters.png)
+
+NOTE : The Advanced Filters panel expands with additional parameters based on the Collection selected, as shown below. When there are results returned from the search, you can see the results panel populated with images, along with thumbnails if available. When you hover over a search result, the corresponding footprint will be highlighted in yellow on the map.
+
+![EarthPlatform Filter Panel](../Images/CatalogUI/Filter.png)
+
+On the right hand side is the map, where you can define the Area of Interest (AOI) and see the footprints of the search results:
+
+| S. No     | Label     | Description       |
+|-----------|-----------|-------------------|
 | ![Eleven](../Images/NumberLabels/Eleven.png) | App Switcher | Click this button to switch to another EDA-hosted application. |
 | ![Twelve](../Images/NumberLabels/Twelve.png) | Map Slider | Click to enable the Map Slider to enter the image comparison mode. |
 | ![Thirteen](../Images/NumberLabels/Thirteen.png) | Settings | Click to change base map layers, map projection, and units. |
@@ -44,12 +56,7 @@ Once you login with your credentials, the landing page for EarthPlatform is show
 | ![Fifteen](../Images/NumberLabels/Fifteen.png) | Help Center | Click to report an issue, contact us, or access the documentation. |
 | ![Sixteen](../Images/NumberLabels/Sixteen.png)| Bottom Panel | Shows latitude and longitude of current cursor position, current map zoom level, and the map scale bar. |
 
-
-![EarthPlatform Landing Page](../Images/CatalogUI/LandingPage.png)
-
-NOTE : The Advanced Filters panel expands with additional parameters based on the Collection selected, as shown below. When there are results returned from the search, you can see the results panel populated with images, along with thumbnails if available. When you hover over a search result, the corresponding footprint will be highlighted in yellow on the map.
-
-![EarthPlatform Filter Panel](../Images/CatalogUI/Filter.png)
+![EarthPlatform Landing Page - Map](../Images/CatalogUI/LandingPageMap.png)
 
 Below are some images that will give you an idea of how the various controls work.
 
