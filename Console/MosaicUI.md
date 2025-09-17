@@ -104,7 +104,7 @@ Once you have placed the Mosaic order (either Preview or Full), you will be redi
 
 ![AllOrdersFull](../Images/EarthMosaicsUI/MosaicDashboardOrder.png)
 
-Upon submission, you will see that your order is in In Progress state. There is a button on top right of the panel if you want to View all of your Mosaic Orders on the Visualizer (map)
+Upon submission, you will see that your order is in In Progress state. There is a button on top right of the panel if you want to View all of your Mosaic Orders on the Visualizer (opens the EarthPlatform in a new tab with your Mosaic products displayed)
 
 
 ![AllOrders](../Images/EarthMosaicsUI/MosaicAllOrdersList.png)
@@ -128,7 +128,7 @@ Once the order is processed successfully, you will see the state changed to "Com
 | ![Eleven](../Images/NumberLabels/Eleven.png) | Download | This is where you can download your product - Preview or Full |
 | ![Twelve](../Images/NumberLabels/Twelve.png) | View | This option allows you to view the product in the Visualizer  |
 
-Below is the Visualizer that opens up when you click on the View button on the Orders page. This visualizer is very similar to our EarthPlatform UI and has many common components needed to interact with the Mosaic product similar to our other products
+Below is the Visualizer that opens up in a new tab when you click on the View button on the Orders page. This visualizer is part of the [EarthPlatform UI](CatalogUI.md)
 
 ![Visualizer](../Images/EarthMosaicsUI/MosaicVisualizer.png)
 
