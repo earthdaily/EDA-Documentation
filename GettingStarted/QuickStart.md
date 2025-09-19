@@ -45,9 +45,13 @@ PySTAC is a library for working with [SpatioTemporal Asset Catalogs (STAC)](http
 Here is a small snippet to give you an idea
 
 ```python
-from dotenv import load_dotenv
+import os
+import requests
 
-load_dotenv()  # take environment variables from .env.
+from dotenv import load_dotenv
+from pystac.client import Client
+
+load_dotenv()  # take environment variables from .env
 
 CLIENT_ID = os.getenv("EDS_CLIENT_ID")
 CLIENT_SECRET = os.getenv("EDS_SECRET")
@@ -76,7 +80,6 @@ token = get_new_token(session)
 client = Client.open(STAC_API_URL, headers={"Authorization": f"bearer {token}"})
 
 # Get collections
-
 for collection in client.get_all_collections():
     print(collection)
 ```
