@@ -16,7 +16,11 @@ Below are the various sections of the script in reagrds to STAC endpoints
 ### Getting the authentication token for Pystac Client
 
 ```python
+import os
+import requests
+
 from dotenv import load_dotenv
+from pystac.client import Client
 
 load_dotenv()  # take environment variables from .env.
 
