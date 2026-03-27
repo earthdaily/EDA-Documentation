@@ -256,6 +256,8 @@ For private and requester-pays S3 assets, and Azure Blob assets, we offer presig
 > **Default Behavior**: Presigned URLs are automatically included for single item requests (`/items/{item_id}`) but not for searches (`/search` or `/items`) due to performance considerations.
 > **Customization**: You can request presigned URLs in search responses by using the `X-Signed-Asset-Urls` header set to `true`. Note that using a high `limit` parameter during search queries along with a large number of assets might increase response times significantly.
 
+Alternatively, `X-Proxy-Asset-Urls` header set to `true` can be used to request non-expiring URLs. When downloading via proxy URLs access token must be supplied.
+
 **Usage Notes**
 
 Presigned URLs are available for all assets in EDA buckets across all customer accounts. For third-party buckets, such as `s3://sentinel-s2-l1c`, the availability of presigned URLs depends on specific account setups. These URLs are valid for 12 hours, after which they expire.
