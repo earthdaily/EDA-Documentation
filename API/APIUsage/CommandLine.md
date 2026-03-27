@@ -168,6 +168,8 @@ curl --location 'https://api.earthdaily.com/platform/v1/stac/search' \
 
 ## Downloading Assets
 
+### Presigned URLs
+
 ```
 curl --location 'https://api.earthdaily.com/platform/v1/stac/search' \
 --header 'Content-Type: application/json' \
@@ -190,6 +192,36 @@ Example response
         "alternate": {
             "download": {
                 "href": "https://earthdaily-eds-edc-skyfox-generic.s3.amazonaws.com/_PUBLIC/sentinel-2-l2a-cog-ag-cloud-mask/2017/09/09/S2A_MSIL2A_20170909T174911_N0001_R141_T13TFG_20200331T022338.SAFE_AG_CLOUD_MASK_20230412004218/S2A_MSIL2A_20170909T174911_N0001_R141_T13TFG_20200331T022338.SAFE_AG_CLOUD_MASK_20230412004218.tif?AWSAccessKeyId=.....&Signature=.......&x-amz-security-........&Expires=1694739928"
+            }
+        }
+        ....
+    }
+}
+```
+
+### Proxy URLs
+
+```
+curl --location 'https://api.earthdaily.com/platform/v1/stac/search' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Bearer <ACCESS_TOKEN HERE>' \
+--header 'X-Proxy-Asset-Urls: true' \
+--data '{
+    "limit": 20,
+    "collections": [
+        "sentinel-2-l2a-cog-ag-cloud-mask"
+    ]
+}'
+```
+
+Example response
+```
+"assets": {
+    "agriculture-cloud-mask": {
+        "href": "s3://earthdaily-eds-edc-skyfox-generic/_PUBLIC/sentinel-2-l2a-cog-ag-cloud-mask/2017/09/09/S2A_MSIL2A_20170909T174911_N0001_R141_T13TFG_20200331T022338.SAFE_AG_CLOUD_MASK_20230412004218/S2A_MSIL2A_20170909T174911_N0001_R141_T13TFG_20200331T022338.SAFE_AG_CLOUD_MASK_20230412004218.tif",
+        "alternate": {
+            "download": {
+                "href": "https://api.earthdaily.com/platform/v1/asset?asset_path=https://earthdaily-eds-edc-skyfox-generic.s3.us-east-1.amazonaws.com/_PUBLIC/sentinel-2-l2a-cog-ag-cloud-mask/2017/09/09/S2A_MSIL2A_20170909T174911_N0001_R141_T13TFG_20200331T022338.SAFE_AG_CLOUD_MASK_20230412004218/S2A_MSIL2A_20170909T174911_N0001_R141_T13TFG_20200331T022338.SAFE_AG_CLOUD_MASK_20230412004218.tif&item_id=S2A_MSIL2A_20170909T174911_N0001_R141_T13TFG_20200331T022338.SAFE_AG_CLOUD_MASK_20230412004218&collection_id=sentinel-2-l2a-cog-ag-cloud-mask&asset=agriculture-cloud-mask"
             }
         }
         ....
